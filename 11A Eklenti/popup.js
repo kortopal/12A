@@ -3,15 +3,15 @@ function go(url) {
 }
 
 document.getElementById("btn1").addEventListener("click", function() {
-    go("https://www.google.com/search?q=dolar%2Ftl");
+    go("https://www.google.com/search?q=dolar%2FTL");
 });
 
 document.getElementById("btn2").addEventListener("click", function() {
-    go("https://www.google.com/search?q=euro%2Ftl");
+    go("https://www.google.com/search?q=euro%2FTL");
 });  
 
 document.getElementById("btn3").addEventListener("click", function() {
-    go("https://www.google.com/search?q=sterlin%2Ftl");
+    go("https://www.google.com/search?q=sterlin%2FTL");
 });
 
 document.getElementById("btn4").addEventListener("click", function() {
