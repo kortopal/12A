@@ -15,7 +15,7 @@ document.getElementById("btn3").addEventListener("click", function() {
 });
 
 document.getElementById("btn4").addEventListener("click", function() {
-    go("http://www.biyolojisitesi.net");
+    go("https://covid19.saglik.gov.tr/");
 });
 
 document.getElementById("btn5").addEventListener("click", function() {
