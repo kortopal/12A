@@ -1,4 +1,18 @@
 var input1 = document.getElementById("input1");
+var header_text = document.getElementById("header_text");
+var date = new Date();
+
+window.onload = function() {
+    if(5<date.getHours() && date.getHours()<=9) {
+        header_text.innerHTML = "Günaydın";
+    } else if(9<date.getHours() && date.getHours()<12) {
+        header_text.innerHTML = "11/A";
+    } else if(12<=date.getHours() && date.getHours()<=14) {
+        header_text.innerHTML = "Tünaydın";
+    } else {
+        header_text.innerHTML = "11/A";
+    }
+}
 
 function go(url) {
     window.open(url, "_blank");
@@ -32,6 +46,7 @@ input1.addEventListener("keyup", function(event) {
 });
 
 input1.addEventListener("click", function() {
+    document.getElementById("btn5").disabled = true;
     document.getElementById("numpad").style.display = "block";
     document.getElementById("numpad").scrollIntoView();
 });
@@ -78,7 +93,9 @@ document.getElementById("numback").addEventListener("click", function() {
 document.getElementById("numclose").addEventListener("click", function() {
     input1.value = null;
     document.getElementById("numpad").style.display = "none";
+    document.getElementById("btn5").disabled = false;
 });
 document.getElementById("numstart").addEventListener("click", function() {
+    document.getElementById("btn5").disabled = false;
     document.getElementById("btn5").click();
 });
