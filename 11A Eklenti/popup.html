@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         :root{
-            --theme-color: rgb(245, 212, 26);
+            --theme-color: #EFA110;
         }
 
         ::-webkit-scrollbar {
@@ -37,7 +37,7 @@
         body{
             font: 17px Helvetica;
             width: 400px;
-            height: 500px;
+            height: 520px;
             color: white;
             background-color: rgb(23, 23, 23);
         }
@@ -87,7 +87,7 @@
             right: 0;
             bottom: 0;
             top: 110px;
-            height: 400px;
+            height: 420px;
             padding: 10px;
             margin: auto;
             width: 80%;
@@ -113,7 +113,7 @@
 </head>
 <body>
     <header style="color: white;">
-        <h1 id="logo" class="noselect">11/A</h1>
+        <h1 id="logo" class="noselect"><span id="header_text"></span></h1>
     </header>
 
     <div id="main" class="noselect">
@@ -135,19 +135,20 @@
             <button id="num1">1</button>
             <button id="num2">2</button>
             <button id="num3">3</button>
-            <button id="num4">4</button>
             <br>
+            <button id="num4">4</button>
             <button id="num5">5</button>
             <button id="num6">6</button>
+            <br>
             <button id="num7">7</button>
             <button id="num8">8</button>
-            <br>
             <button id="num9">9</button>
+            <br>
             <button id="num0">0</button>
             <button id="numback" style="font-size: 23px;"><i class="fas fa-backspace"></i></button>
-            <button id="numclose" style="font-size: 23px;"><i class="fas fa-times-circle"></i></button>
+            <button id="numclose" style="font-size: 23px;"><i class="fas fa-window-close"></i></button>
             <br>
-            <button id="numstart" style="width: 270px;font-size: 23px;">Zamanlayıcıyı Başlat</button>
+            <button id="numstart" style="width: 235px;"><i class="fas fa-stopwatch"></i> Başlat</button>
         </div>
     </div>
 </body>
