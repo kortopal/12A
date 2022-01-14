@@ -2,6 +2,7 @@ var input1 = document.getElementById("input1");
 var header_text = document.getElementById("header_text");
 var date = new Date();
 
+window.addEventListener("contextmenu", e => e.preventDefault());
 window.onload = function() {
     if(5<date.getHours() && date.getHours()<=9) {
         header_text.innerHTML = "Günaydın";
