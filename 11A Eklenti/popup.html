@@ -126,9 +126,11 @@
             border-bottom: 3px solid white;
             padding-bottom: 3px;
         }
+        .sh{display: inline-block;margin-bottom: 5px;}
 
         #input1{width: 99%;margin: auto;text-align: center;display: block;font-size: 23px;}
         #div1 button{width: 150px;}
+        #div2 button{width: 230px;}
         #header{width: 150px;margin: auto;height: 45px;text-align: center;background: var(--theme-color);color: var(--theme-txt-color);padding: 5px;border-radius: 0px 0px 30px 30px;box-shadow: 0px 0px 23px 0px black;animation: headerAnim 3s linear}
         #header_text{position: relative;top: 12.5px;font-size: 23px;}
         #numpad{margin: auto;text-align: center;margin-bottom: 10px;display: none;}
@@ -169,15 +171,18 @@
     <div id="main" class="noselect">
         <h3 class="ch"><i class="fas fa-chart-line icon"></i> Döviz Takibi</h3>
         <div id="div1" style="overflow: auto;white-space: nowrap;margin: auto;text-align: center;">
-            <button id="btn1"><i class="fas fa-dollar-sign"></i> Dolar</button>
-            <button id="btn2"><i class="fas fa-euro-sign"></i> Euro</button>
-            <button id="btn3"><i class="fas fa-pound-sign"></i> Sterlin</button>
+            <button id="btn_dolar"><i class="fas fa-dollar-sign"></i> Dolar</button>
+            <button id="btn_euro"><i class="fas fa-euro-sign"></i> Euro</button>
+            <button id="btn_pound"><i class="fas fa-pound-sign"></i> Sterlin</button>
         </div>
-        <br><br>
-        <h3 class="ch"><i class="fas fa-puzzle-piece icon"></i> Diğer</h3>
-        <button style="width: 100%;" id="btn4"><i class="fas fa-virus"></i> Covid-19 Vaka Sayısı</button>
         <br>
-        <button style="width: 100%;" id="btn5"><i class="fas fa-stopwatch"></i> Zamanlayıcı</button>
+        <h3 class="ch"><i class="fas fa-puzzle-piece icon"></i> Diğer</h3>
+        <div id="div2" style="overflow: auto;white-space: nowrap;margin: auto;text-align: center;">
+            <button id="btn_weather"><i class="fas fa-temperature-high"></i> Tunceli Hava Durumu</button>
+            <button id="btn_covid19"><i class="fas fa-virus"></i> Covid-19 Vaka Sayısı</button>
+        </div>
+        <br>
+        <button style="width: 100%;" id="btn_timer"><i class="fas fa-stopwatch"></i> Zamanlayıcı</button>
         <br>
         <input type="number" id="input1" min="0" maxlength="6" placeholder="Zamanlayıcı Süresi (dk.)" autocomplete="off">
         <br>
@@ -208,7 +213,7 @@
 
     <div id="settings" class="noselect">
         <h3 class="ch"><i class="fas fa-cog icon"></i> Ayarlar</h3>
-        <b><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
+        <b class="sh"><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
         <br>
         <select id="select_theme_color">
             <optgroup label="Renkler">
