@@ -126,16 +126,11 @@
             padding-bottom: 3px;
         }
 
-        #input1{width: 98%;margin: auto;text-align: center;border-radius: 30px;display: block;font-size: 23px;}
+        #input1{width: 99%;margin: auto;text-align: center;border-radius: 30px;display: block;font-size: 23px;}
         #div1 button{width: 150px;}
-        #logo{text-align: center;background: rgba(0, 0, 0, 0.63);padding: 3px;animation: logoAnim 5s linear infinite alternate-reverse;}
+        #logo{text-align: center;background: rgba(0, 0, 0, 0.63);padding: 3px;color: var(--theme-color);}
         #numpad{margin: auto;text-align: center;margin-bottom: 10px;display: none;}
         #numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;}
-
-        @keyframes logoAnim {
-            0% { color: white; }
-            100% { color: var(--theme-color); }
-        }
 
         @keyframes fullScreenAnim {
             0% {transform: translate(2px,-2px);}
@@ -208,13 +203,18 @@
         <h3 class="ch"><i class="fas fa-cog icon"></i> Ayarlar</h3>
         <b><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
         <br>
-        <select id="select_theme_color">
-            <option value="#EFA110">Sarı (Varsayılan)</option>
-            <option value="#C80815">Kırmızı</option>
-            <option value="#244BBF">Mavi</option>
+        <select id="select_theme_color" style="padding: 5px;">
+            <optgroup label="Renkler">
+                <option value="#EFA110">Sarı (Varsayılan)</option>
+                <option value="#C80815">Kırmızı</option>
+                <option value="#244BBF">Mavi</option>
+                <option value="#6351CF">Mor</option>
+                <option value="#622814">Kahverengi</option>
+                <option value="#8C342B">Bordo</option>
+            </optgroup>
         </select>
     </div>
 </body>
-<script src="popup.js"></script>
 <script src="background.js"></script>
+<script src="popup.js"></script>
 </html>
