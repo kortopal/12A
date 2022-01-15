@@ -7,12 +7,20 @@ window.addEventListener("contextmenu", e => e.preventDefault());
 function popupOnload() {
     if(5<date.getHours() && date.getHours()<10) {
         header_text.innerHTML = "Günaydın";
+        header_text.style.fontSize = "23px";
+        header_text.style.top = "12.5px";
     } else if(9<date.getHours() && date.getHours()<12) {
         header_text.innerHTML = "11/A";
+        header_text.style.fontSize = "28px";
+        header_text.style.top = "6.5px";
     } else if(12<=date.getHours() && date.getHours()<15) {
         header_text.innerHTML = "Tünaydın";
+        header_text.style.fontSize = "23px";
+        header_text.style.top = "12.5px";
     } else {
         header_text.innerHTML = "11/A";
+        header_text.style.fontSize = "28px";
+        header_text.style.top = "6.5px";
     }
 }
 
@@ -129,4 +137,5 @@ document.getElementById("numclose").addEventListener("click", function() {
 document.getElementById("numstart").addEventListener("click", function() {
     document.getElementById("btn5").disabled = false;
     document.getElementById("btn5").click();
+    document.getElementById("numclose").click();
 });
