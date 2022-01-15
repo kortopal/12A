@@ -9,7 +9,7 @@ function loadStorage() {
     chrome.storage.sync.get(['theme_color'], function(data) {
         select_theme_color.value = data.theme_color;
         document.documentElement.style.setProperty('--theme-color', select_theme_color.value);
-        if(select_theme_color.value == "#C80815" || select_theme_color.value == "#244BBF") {document.documentElement.style.setProperty('--theme-txt-color', "white");}
+        if(select_theme_color.value == "#C80815" || select_theme_color.value == "#244BBF" || select_theme_color.value == "#6351CF" || select_theme_color.value == "#622814" || select_theme_color.value == "#8C342B") {document.documentElement.style.setProperty('--theme-txt-color', "white");}
         else{document.documentElement.style.setProperty('--theme-txt-color', "black");}
     });
 }
