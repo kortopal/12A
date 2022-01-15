@@ -2,9 +2,6 @@ const select_theme_color = document.getElementById("select_theme_color");
 
 function setToStorage() {
     chrome.storage.sync.set({"theme_color": select_theme_color.value}, function() {
-        if (chrome.runtime.error) {
-            console.log("Runtime error.");
-          }
     });
 }
 
