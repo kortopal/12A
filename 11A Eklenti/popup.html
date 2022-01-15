@@ -41,17 +41,16 @@
             height: 520px;
             color: white;
             background-color: rgb(23, 23, 23);
+            background-image: url("images/Dersim.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         header{
-            height: 100%;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background-image: url("images/Dersim.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         button{
@@ -62,7 +61,7 @@
             font: 17px Helvetica;
             height: 45px;
             cursor: pointer;
-            border-radius: 30px;
+            border-radius: 3px;
             margin-bottom: 5px;
             transition: 0.2s;
         }
@@ -77,12 +76,12 @@
             outline: none;
             margin-top: 5px;
             margin-bottom: 5px;
-            border-radius: 30px;
+            border-radius: 3px;
         }
 
         #main,#settings{
             overflow-y: auto;
-            border-radius: 30px 30px 0px 0px;
+            border-radius: 3px 3px 0px 0px;
             padding: 5px;
             background-color: rgb(23, 23, 23,0.6);
             position: fixed;
@@ -94,7 +93,7 @@
             padding: 10px;
             margin: auto;
             width: 80%;
-            box-shadow: 0px 0px 12px 0px var(--theme-color);
+            box-shadow: 0px 0px 23px 0px var(--theme-color);
         }
 
         #settings{display: none;}
@@ -107,6 +106,7 @@
             height: 50px;
             border-radius: 0px 0px 0px 30px;
             font-size: 23px;
+            box-shadow: 0px 0px 23px 0px black;
         }
 
         #btn_settings_off{display: none;}
@@ -118,19 +118,26 @@
             height: 50px;
             border-radius: 0px 0px 30px 0px;
             font-size: 23px;
+            box-shadow: 0px 0px 23px 0px black;
         }
 
         .icon{font-size: 23px;}
         .ch{
-            border-bottom: 2px solid white;
+            border-bottom: 3px solid white;
             padding-bottom: 3px;
         }
 
-        #input1{width: 99%;margin: auto;text-align: center;border-radius: 30px;display: block;font-size: 23px;}
+        #input1{width: 99%;margin: auto;text-align: center;display: block;font-size: 23px;}
         #div1 button{width: 150px;}
-        #logo{text-align: center;background: rgba(0, 0, 0, 0.8);padding: 3px;color: var(--theme-color);}
+        #header{width: 150px;margin: auto;height: 45px;text-align: center;background: var(--theme-color);color: var(--theme-txt-color);padding: 5px;border-radius: 0px 0px 30px 30px;box-shadow: 0px 0px 23px 0px black;animation: headerAnim 3s linear}
+        #header_text{position: relative;top: 12.5px;font-size: 23px;}
         #numpad{margin: auto;text-align: center;margin-bottom: 10px;display: none;}
-        #numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;}
+        #numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;border-radius: 30px;}
+
+        @keyframes headerAnim {
+            0% {transform: translate(0px,-75px);}
+            100% {transform: translate(0px,0px);}
+        }
 
         @keyframes fullScreenAnim {
             0% {transform: translate(2px,-2px);}
@@ -156,7 +163,7 @@
 </head>
 <body>
     <header style="color: white;">
-        <h1 id="logo" class="noselect"><span id="header_text"></span></h1>
+        <div id="header" class="noselect"><span id="header_text"></span></div>
     </header>
 
     <div id="main" class="noselect">
@@ -203,14 +210,18 @@
         <h3 class="ch"><i class="fas fa-cog icon"></i> Ayarlar</h3>
         <b><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
         <br>
-        <select id="select_theme_color" style="padding: 5px;">
+        <select id="select_theme_color">
             <optgroup label="Renkler">
                 <option value="#EFA110">Sarı (Varsayılan)</option>
                 <option value="#C80815">Kırmızı</option>
                 <option value="#244BBF">Mavi</option>
+                <option value="#A69D1F">Yeşil</option>
+                <option value="#FF6600">Turuncu</option>
                 <option value="#6351CF">Mor</option>
-                <option value="#622814">Kahverengi</option>
                 <option value="#8C342B">Bordo</option>
+                <option value="#622814">Kahverengi</option>
+                <option value="#192E59">Lacivert</option>
+                <option value="#13141C">Siyah</option>
             </optgroup>
         </select>
     </div>
