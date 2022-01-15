@@ -7,6 +7,7 @@
     <style>
         :root{
             --theme-color: #EFA110;
+            --theme-txt-color: black;
         }
 
         ::-webkit-scrollbar {
@@ -55,6 +56,7 @@
 
         button{
             background-color: var(--theme-color);
+            color: var(--theme-txt-color);
             border: none;
             outline: none;
             font: 17px Helvetica;
@@ -67,7 +69,7 @@
 
         button:hover{opacity: 0.8;}
 
-        input{
+        input,select{
             font: 17px Helvetica;
             min-width: 150px;
             height: 45px;
@@ -75,9 +77,10 @@
             outline: none;
             margin-top: 5px;
             margin-bottom: 5px;
+            border-radius: 30px;
         }
 
-        #main{
+        #main,#settings{
             overflow-y: auto;
             border-radius: 30px 30px 0px 0px;
             padding: 5px;
@@ -94,6 +97,27 @@
             box-shadow: 0px 0px 8px 0px var(--theme-color);
         }
 
+        #settings{display: none;}
+        #settings select{width: 100%;padding: 5px;}
+        #btn_settings_on,#btn_settings_off{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+            border-radius: 0px 0px 0px 30px;
+            font-size: 23px;
+        }
+        #btn_settings_off{display: none;}
+        #btn_fullscreen{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 50px;
+            height: 50px;
+            border-radius: 0px 0px 30px 0px;
+            font-size: 23px;
+        }
         .ch{
             border-bottom: 2px solid white;
             padding-bottom: 3px;
@@ -108,6 +132,15 @@
         @keyframes logo {
             0% { color: white; }
             100% { color: var(--theme-color); }
+        }
+
+        @media screen and (min-width:900px) {
+            #main,#settings{
+                width: 50%;
+                height: 480px;
+            }
+
+            #btn_fullscreen{display: none;}
         }
     </style>
 </head>
@@ -144,13 +177,29 @@
             <button id="num2">2</button>
             <button id="num3">3</button>
             <br>
-            <button id="numback" style="font-size: 23px;background-color: #FF0000;"><i class="fas fa-backspace"></i></button>
+            <button id="numback" style="font-size: 23px;"><i class="fas fa-backspace"></i></button>
             <button id="num0">0</button>
-            <button id="numclose" style="font-size: 23px;background-color: #FF0000;"><i class="fas fa-window-close"></i></button>
+            <button id="numclose" style="font-size: 23px;"><i class="fas fa-window-close"></i></button>
             <br>
-            <button id="numstart" style="width: 235px;font-size:23px;background-color: #369E00;"><i class="fas fa-stopwatch"></i> Başlat</button>
+            <button id="numstart" style="width: 235px;font-size:23px;"><i class="fas fa-stopwatch"></i> Başlat</button>
         </div>
+    </div>
+
+    <button id="btn_settings_on"><i class="fas fa-cog"></i></button>
+    <button id="btn_settings_off"><i class="fas fa-arrow-left"></i></button>
+    <button id="btn_fullscreen"><i class="fas fa-external-link-alt"></i></button>
+
+    <div id="settings" class="noselect">
+        <h3 class="ch"><i class="fas fa-cog"></i> Ayarlar</h3>
+        <b><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
+        <br>
+        <select id="select_theme_color">
+            <option value="#EFA110">Sarı (Varsayılan)</option>
+            <option value="#C80815">Kırmızı</option>
+            <option value="#244BBF">Mavi</option>
+        </select>
     </div>
 </body>
 <script src="popup.js"></script>
+<script src="background.js"></script>
 </html>
