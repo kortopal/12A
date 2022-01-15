@@ -1,5 +1,5 @@
 let url = chrome.runtime.getURL("popup.html");
-const input1 = document.getElementById("input1");
+const input_timer = document.getElementById("input_timer");
 const header_text = document.getElementById("header_text");
 var date = new Date();
 
@@ -44,98 +44,102 @@ function go(url) {
     window.open(url, "_blank");
 }
 
-document.getElementById("btn1").addEventListener("click", function() {
+document.getElementById("btn_dolar").addEventListener("click", function() {
     go("https://www.google.com/search?q=dolar%2FTL");
 });
 
-document.getElementById("btn2").addEventListener("click", function() {
+document.getElementById("btn_euro").addEventListener("click", function() {
     go("https://www.google.com/search?q=euro%2FTL");
 });  
 
-document.getElementById("btn3").addEventListener("click", function() {
+document.getElementById("btn_pound").addEventListener("click", function() {
     go("https://www.google.com/search?q=sterlin%2FTL");
 });
 
-document.getElementById("btn4").addEventListener("click", function() {
-    go("https://covid19.saglik.gov.tr/");
+document.getElementById("btn_covid19").addEventListener("click", function() {
+    go("https://covid19.saglik.gov.tr");
 });
 
-document.getElementById("btn5").addEventListener("click", function() {
-    go("http://timer.onlinealarmkur.com/" + "#" + document.getElementById("input1").value);
+document.getElementById("btn_timer").addEventListener("click", function() {
+    go("http://timer.onlinealarmkur.com/" + "#" + document.getElementById("input_timer").value);
 });
 
-input1.addEventListener("keyup", function(event) {
+document.getElementById("btn_weather").addEventListener("click", function() {
+    go("http://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli");
+});
+
+input_timer.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        document.getElementById("btn5").disabled = false;
-        document.getElementById("btn5").click();
+        document.getElementById("btn_timer").disabled = false;
+        document.getElementById("btn_timer").click();
     }
 });
 
-input1.addEventListener("click", function() {
-    document.getElementById("btn5").disabled = true;
+input_timer.addEventListener("click", function() {
+    document.getElementById("btn_timer").disabled = true;
     document.getElementById("numpad").style.display = "block";
-    document.getElementById("numpad").scrollIntoView();
+    document.getElementById("input_timer").scrollIntoView();
 });
 
 var newinputvalue;
 function numpadAdd(num) {
-    newinputvalue = parseInt(document.getElementById("input1").value + num);
-    input1.value = newinputvalue;
+    newinputvalue = parseInt(document.getElementById("input_timer").value + num);
+    input_timer.value = newinputvalue;
 }
 
 document.getElementById("num1").addEventListener("click", function() {
     numpadAdd(1);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num2").addEventListener("click", function() {
     numpadAdd(2);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num3").addEventListener("click", function() {
     numpadAdd(3);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num4").addEventListener("click", function() {
     numpadAdd(4);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num5").addEventListener("click", function() {
     numpadAdd(5);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num6").addEventListener("click", function() {
     numpadAdd(6);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num7").addEventListener("click", function() {
     numpadAdd(7);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num8").addEventListener("click", function() {
     numpadAdd(8);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num9").addEventListener("click", function() {
     numpadAdd(9);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("num0").addEventListener("click", function() {
     numpadAdd(0);
-    input1.focus();
+    input_timer.focus();
 });
 document.getElementById("numback").addEventListener("click", function() {
-    if(input1.value.toString().length > 0) {input1.value = parseInt(input1.value.toString().slice(0, -1));}
-    else{input1.value = null;}
-    input1.focus();
+    if(input_timer.value.toString().length > 0) {input_timer.value = parseInt(input_timer.value.toString().slice(0, -1));}
+    else{input_timer.value = null;}
+    input_timer.focus();
 });
 document.getElementById("numclose").addEventListener("click", function() {
-    input1.value = null;
+    input_timer.value = null;
     document.getElementById("numpad").style.display = "none";
-    document.getElementById("btn5").disabled = false;
+    document.getElementById("btn_timer").disabled = false;
 });
 document.getElementById("numstart").addEventListener("click", function() {
-    document.getElementById("btn5").disabled = false;
-    document.getElementById("btn5").click();
+    document.getElementById("btn_timer").disabled = false;
+    document.getElementById("btn_timer").click();
     document.getElementById("numclose").click();
 });
