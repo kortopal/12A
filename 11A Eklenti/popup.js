@@ -1,19 +1,36 @@
-var input1 = document.getElementById("input1");
-var header_text = document.getElementById("header_text");
+let url = chrome.runtime.getURL("popup.html");
+const input1 = document.getElementById("input1");
+const header_text = document.getElementById("header_text");
 var date = new Date();
 
 window.addEventListener("contextmenu", e => e.preventDefault());
-window.onload = function() {
-    if(5<date.getHours() && date.getHours()<=9) {
+function popupOnload() {
+    if(5<date.getHours() && date.getHours()<10) {
         header_text.innerHTML = "Günaydın";
     } else if(9<date.getHours() && date.getHours()<12) {
         header_text.innerHTML = "11/A";
-    } else if(12<=date.getHours() && date.getHours()<=14) {
+    } else if(12<=date.getHours() && date.getHours()<15) {
         header_text.innerHTML = "Tünaydın";
     } else {
         header_text.innerHTML = "11/A";
     }
 }
+
+document.getElementById("btn_settings_on").addEventListener("click", function() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("btn_settings_on").style.display = "none";
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("btn_settings_off").style.display = "block";
+});
+document.getElementById("btn_settings_off").addEventListener("click", function() {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("btn_settings_on").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+    document.getElementById("btn_settings_off").style.display = "none";
+});
+document.getElementById("btn_fullscreen").addEventListener("click", function() {
+    chrome.tabs.create({ url });
+});
 
 function go(url) {
     window.open(url, "_blank");
@@ -100,7 +117,8 @@ document.getElementById("num0").addEventListener("click", function() {
     input1.focus();
 });
 document.getElementById("numback").addEventListener("click", function() {
-    input1.value = parseInt(input1.value.toString().slice(0, -1));
+    if(input1.value.toString().length > 0) {input1.value = parseInt(input1.value.toString().slice(0, -1));}
+    else{input1.value = null;}
     input1.focus();
 });
 document.getElementById("numclose").addEventListener("click", function() {
