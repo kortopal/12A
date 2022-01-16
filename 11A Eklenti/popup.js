@@ -129,7 +129,7 @@ document.getElementById("num0").addEventListener("click", function() {
     input_timer.focus();
 });
 document.getElementById("numback").addEventListener("click", function() {
-    if(input_timer.value.toString().length > 0) {input_timer.value = parseInt(input_timer.value.toString().slice(0, -1));}
+    if(input_timer.value.toString().length > 1) {input_timer.value = parseInt(input_timer.value.toString().slice(0, -1));}
     else{input_timer.value = null;}
     input_timer.focus();
 });
