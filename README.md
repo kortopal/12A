@@ -6,4 +6,4 @@ Bu sürüm neler içeriyor?
 * Pencere genişletme özelliği eklendi. (Artık eklentiyi ayrı sayfa olarak açabileceksiniz.)
 * Zamanlayıcı için dakika ayarlamanıza kolaylık sağlaması için numerik tuş takımı eklendi.
 * Dinamik olarak zaman aralıklarına göre değişen animasyonlu açılır metin kutusu eklendi.
-* Birçok hata giderildi ve kullanıcı deneyimi iyileştirildi.
+* Birçok hata giderildi ve kullanıcı deneyimi (yeni animasyonlar, öğelerin yerleşimi, içerik ve sayfa tasarımları vb.) iyileştirildi.
