@@ -1,4 +1,4 @@
-# 11/A Akıllı Tahta Eklentisi Sürüm 2.1 🎉
+# 11/A Akıllı Tahta Eklentisi Sürüm: 2.1 🎉
 
 ## Bu sürüm neler içeriyor?
 
@@ -7,7 +7,7 @@
 
 
 
-# 11/A Akıllı Tahta Eklentisi Sürüm 2.0 🎉
+# 11/A Akıllı Tahta Eklentisi Sürüm: 2.0 🎉
 
 ## Bu sürüm neler içeriyor?
 
