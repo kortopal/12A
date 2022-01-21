@@ -2,7 +2,7 @@
 
 ## Bu sürüm neler içeriyor?
 
-* Bazı hatalar giderildi.
+* Performans iyileştirildi ve bazı hatalar giderildi.
 * Kaynak dosyaları dizini yapısı iyileştirildi.
 
 
