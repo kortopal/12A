@@ -1,7 +1,7 @@
 {
     "name": "11/A Akıllı Tahta Eklentisi",
     "description": "Çok amaçlı eklenti... Geliştirilmeye başlanma tarihi: 13.01.2022",
-    "version": "2.0",
+    "version": "2.1",
     "manifest_version": 3,
     "background.service_worker": {
       "scripts": ["background.js"],
