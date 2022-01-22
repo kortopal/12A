@@ -12,7 +12,7 @@ var date = new Date();
 var lastSettingsUpdate;
 var numpadType;
 
-//window.addEventListener("contextmenu", e => e.preventDefault());
+window.addEventListener("contextmenu", e => e.preventDefault());
 function popupOnload() {
     if(5<date.getHours() && date.getHours()<10) {
         header_text.innerHTML = "Günaydın";
