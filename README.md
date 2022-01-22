@@ -3,7 +3,7 @@
 ## 11/A Akıllı Tahta Eklentisi Nedir?
 Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.0'dır.
 Akıllı tahta üzerinde çok fonksiyonelli bir yapı sunan bu eklenti
-kolaylık sağlamaktadır.
+birçok alanda kolaylık sağlamaktadır.
 
 ## 11/A Akıllı Tahta Eklentisi Özellikleri
 * Hızlı döviz sorgulama özelliği ile kolayca döviz takibi yapabilirsiniz.
