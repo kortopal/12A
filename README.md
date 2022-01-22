@@ -1,20 +1,14 @@
-# 11/A Akıllı Tahta Eklentisi Sürüm: 2.1 🎉
+# 11/A Akıllı Tahta Eklentisi Sürüm: 3.0 🎉
 
-## Bu sürüm neler içeriyor?
+## 11/A Akıllı Tahta Eklentisi Nedir?
+Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.0'dır.
+Akıllı tahta üzerinde çok fonksiyonelli bir yapı sunan bu eklenti
+kolaylık sağlamaktadır.
 
-* Döviz miktarı girme özelliği eklendi.
-* Numerik tuş takımı açılır pencere görünümüne dönüştürüldü.
-* Performans iyileştirildi ve bazı hatalar giderildi.
-* Kaynak dosyaları dizini yapısı iyileştirildi.
-
-
-
-# 11/A Akıllı Tahta Eklentisi Sürüm: 2.0 🎉
-
-## Bu sürüm neler içeriyor?
-
-* Ayarlar sekmesi eklendi. (Artık tema rengi değişiklikleri otomatik olarak kaydediliyor ve Chrome Sync ile tüm cihazlarınızda eşitleniyor.)
-* Pencere genişletme özelliği eklendi. (Artık eklentiyi ayrı sayfa olarak açabileceksiniz.)
-* Zamanlayıcıda dakika ayarlamanıza kolaylık sağlaması için numerik tuş takımı eklendi.
-* Dinamik olarak zaman aralıklarına göre değişen animasyonlu açılır metin kutusu eklendi.
-* Birçok hata giderildi ve kullanıcı deneyimi (yeni animasyonlar, öğelerin yerleşimi, içerik ve sayfa tasarımları vb.) iyileştirildi.
+## 11/A Akıllı Tahta Eklentisi Özellikleri
+* Hızlı döviz sorgulama özelliği ile kolayca döviz takibi yapabilirsiniz.
+* Hızlı erişim paneli ile kolayca en çok kullanılan web adreslerini ziyaret edebilirsiniz.
+* Zamanlayıcı ile kolayca sınav için veya farklı bir amaç için zamanlayıcı oluşturabilirsiniz.
+* Eklenti temasını 12 farklı tema rengi ile özelleştirebilirsiniz.
+* Eklenti dinamik zaman aralıklarına göre değişen animasyonlu pencere ile sizi açılışta karşılar.
+* Genişletme özelliği ile eklentiyi ayrı pencere olarak açabilirsiniz.
