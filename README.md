@@ -16,8 +16,5 @@ birçok alanda kolaylık sağlamaktadır.
 
 
 
-## Ekran Görüntüleri 📷
+<center>## Ekran Görüntüleri 📷</center>
 
-<details>
-  <summary>Selam</summary>
-</details>
