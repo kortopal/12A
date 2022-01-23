@@ -16,7 +16,7 @@ birçok alanda kolaylık sağlamaktadır.
 
 
 
-## Ekran Görüntüleri
+## Ekran Görüntüleri 📷
 
 ![Ekran Görüntüsü (4)](https://user-images.githubusercontent.com/95717415/150674483-e477afa7-7e43-45e1-9473-ea932c93a214.png)
 
