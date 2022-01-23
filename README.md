@@ -10,6 +10,7 @@ birçok alanda kolaylık sağlamaktadır.
 * Hızlı erişim paneli ile kolayca en çok kullanılan web adreslerini ziyaret edebilirsiniz.
 * Zamanlayıcı ile kolayca sınav için veya farklı bir amaç için zamanlayıcı oluşturabilirsiniz.
 * Eklenti temasını 12 farklı tema rengi ile özelleştirebilirsiniz.
+* Geçmiş etkinliklerinizi görebilir ve temizleyebilirsiniz.
 * Eklenti dinamik zaman aralıklarına göre değişen animasyonlu pencere ile sizi açılışta karşılar.
 * Genişletme özelliği ile eklentiyi ayrı pencere olarak açabilirsiniz.
 
