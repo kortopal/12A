@@ -4,7 +4,7 @@ const months_tr = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
 /**
  * getDateAndTime() fonksiyonu tarih/zaman verisi döndürür.
  * @param {*}  command Döndürülecek değer tipi ["Day", "Month", "Year", "Hours", "Minutes", "DateAndTime"];
- * two digit veri döndürmek için ["0Day", "0Hours", "0Minutes"]
+ * two digits veri döndürmek için ["0Day", "0Hours", "0Minutes"]
  * 
  * @returns "Gün", "Ay", "Yıl", "Saat", "Dakika" veya "Tarih - Zaman" değeri döndürür.
  */
