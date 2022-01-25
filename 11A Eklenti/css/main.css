@@ -1,6 +1,7 @@
 :root{
     --theme-color: #EFA110; /* #EFA110 */
     --theme-txt-color: black;
+    --theme-font: 18px Helvetica;
     --theme-border-radius: 3px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 body{
-    font: 17px Helvetica;
+    font: var(--theme-font);
     width: 420px;
     height: 580px;
     color: white;
@@ -51,7 +52,7 @@ button{
     color: var(--theme-txt-color);
     border: none;
     outline: none;
-    font: 17px Helvetica;
+    font: var(--theme-font);
     height: 45px;
     cursor: pointer;
     border-radius:  var(--theme-border-radius);
@@ -63,7 +64,7 @@ button:hover{opacity: 0.8;}
 
 input,select{
     margin: auto;
-    font: 17px Helvetica;
+    font: var(--theme-font);
     min-width: 150px;
     height: 45px;
     border: none;
@@ -139,6 +140,7 @@ input,select{
     margin-top: 10px;
     margin-bottom: 5px;
 }
+#history_content .border:last-child{display: none;}
 #btn_show_details,#btn_hide_details,#btn_show_history,#btn_hide_history{width: 100%;}
 #btn_hide_details,#btn_hide_history{
     display: none;
