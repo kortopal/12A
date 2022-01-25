@@ -22,7 +22,7 @@ birçok alanda kolaylık sağlamaktadır.
 ## Desteklenen Tarayıcılar
   
 ![Google_Chrome_icon_(2011)](https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png)
-
+<img width="960" alt="Ekran Alıntısı 1-min" src="https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png">
   
 ## Ekran Görüntüleri 📷
 
