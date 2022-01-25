@@ -18,10 +18,13 @@ birçok alanda kolaylık sağlamaktadır.
 ➤ Geçmiş etkinliklerinizi görebilir ve temizleyebilirsiniz. <br>
 ➤ Eklenti dinamik zaman aralıklarına göre değişen animasyonlu pencere ile sizi açılışta karşılar. <br>
 ➤ Genişletme özelliği ile eklentiyi ayrı pencere olarak açabilirsiniz. <br>
+
+## Desteklenen Tarayıcılar
   
-<details>
+![Google_Chrome_icon_(2011)](https://user-images.githubusercontent.com/95717415/151046449-eda784a6-cff0-4712-9eb7-04f05ba12a8c.png)
+
   
-  <summary>## Ekran Görüntüleri 📷</summary>
+## Ekran Görüntüleri 📷
 
 <img width="960" alt="Ekran Alıntısı 1-min" src="https://user-images.githubusercontent.com/95717415/150791761-0ea88347-b605-45d6-8b94-e795df2140a8.PNG">
 
@@ -36,7 +39,5 @@ birçok alanda kolaylık sağlamaktadır.
 <img width="960" alt="Ekran Alıntısı 6-min" src="https://user-images.githubusercontent.com/95717415/150791992-21062caf-745c-4aa8-9f3e-c95a53ed1fc7.PNG">
 
 <img width="960" alt="Ekran Alıntısı 7-min" src="https://user-images.githubusercontent.com/95717415/150792016-277d8fe9-3779-43e0-a265-57553d8ed21d.PNG">
-
-</details>
   
 </div>
