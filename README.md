@@ -21,7 +21,7 @@ birçok alanda kolaylık sağlamaktadır.
 
 ## Desteklenen Tarayıcılar
   
-![Google_Chrome_icon_(2011)](https://user-images.githubusercontent.com/95717415/151046449-eda784a6-cff0-4712-9eb7-04f05ba12a8c.png)
+<img width="64" alt="Chrome" src="https://user-images.githubusercontent.com/95717415/151046449-eda784a6-cff0-4712-9eb7-04f05ba12a8c.PNG">
 
   
 ## Ekran Görüntüleri 📷
