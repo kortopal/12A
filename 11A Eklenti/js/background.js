@@ -73,7 +73,7 @@ function openTab(tab_url) {
         }
     });
 
-    if(tab_url != "chrome-extension://" + chrome.runtime.id + "/popup.html" && tab_url != "chrome://extensions/?id=" + chrome.runtime.id) {
+    if(tab_url !== "chrome-extension://" + chrome.runtime.id + "/popup.html" && tab_url !== "chrome://extensions/?id=" + chrome.runtime.id) {
         setHistory(tab_url,45);
     }
 }
