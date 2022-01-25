@@ -1,6 +1,7 @@
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.0 🎉
 
-<div class="BorderGrid-cell">
+<div class="BorderGrid-row">
+            <div class="BorderGrid-cell">
               <h2 class="h4 mb-3">Languages</h2>
 <div class="mb-2">
   <span data-view-component="true" class="Progress">
@@ -37,6 +38,7 @@
       </a>
     </li>
 </ul>
+</div>
 </div>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
