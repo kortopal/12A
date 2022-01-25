@@ -14,15 +14,15 @@ var lastHistoryClear;
 
 document.oncontextmenu = function() {return false;}
 function popupOnload() {
-    if(5<getDateAndTime("DateAndTime") && getDateAndTime("DateAndTime")<10) {
+    if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         header_text.innerHTML = "Günaydın";
         header_text.style.fontSize = "23px";
         header_text.style.top = "9px";
-    } else if(9<getDateAndTime("DateAndTime") && getDateAndTime("DateAndTime")<12) {
+    } else if(9<getDateAndTime("Hours") && getDateAndTime("Hours")<12) {
         header_text.innerHTML = "11/A";
         header_text.style.fontSize = "28px";
         header_text.style.top = "6.5px";
-    } else if(12<=getDateAndTime("DateAndTime") && getDateAndTime("DateAndTime")<15) {
+    } else if(12<=getDateAndTime("Hours") && getDateAndTime("Hours")<15) {
         header_text.innerHTML = "Tünaydın";
         header_text.style.fontSize = "23px";
         header_text.style.top = "9px";

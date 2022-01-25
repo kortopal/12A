@@ -44,9 +44,9 @@ function loadStorage() {
 
 function setHistory(tab_url,max_char) {
     if(tab_url.length >= max_char) {
-        historyContent = "<span class='small_header_text'>Tarih: " + getDateAndTime("DateAndTime") + "</span><br>" + tab_url.substring(0,max_char) + "..." + "<div class='border'></div>" + historyContent;
+        historyContent = "<span class='small_header_text'>" + getDateAndTime("DateAndTime") + "</span><br>" + tab_url.substring(0,max_char) + "..." + "<div class='border'></div>" + historyContent;
     } else{
-        historyContent = "<span class='small_header_text'>Tarih: " + getDateAndTime("DateAndTime") + "</span><br>" + tab_url + "<div class='border'></div>" + historyContent;
+        historyContent = "<span class='small_header_text'>" + getDateAndTime("DateAndTime") + "</span><br>" + tab_url + "<div class='border'></div>" + historyContent;
     }
     document.getElementById("history_content").innerHTML = historyContent;
     setStorage();
