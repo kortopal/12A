@@ -1,6 +1,6 @@
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.0 🎉
 
-[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=jasongaylord&langs_count=5&theme=tokyonight)]()
+[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=kortopal&langs_count=5&theme=tokyonight)]()
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
 Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.0'dır.
