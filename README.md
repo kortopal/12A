@@ -1,4 +1,5 @@
-# 11/A Akıllı Tahta Eklentisi Sürüm: 3.0 🎉
+<div align="center">
+  # 11/A Akıllı Tahta Eklentisi Sürüm: 3.0 🎉
 
 <br>
 
@@ -33,3 +34,4 @@ birçok alanda kolaylık sağlamaktadır.
 <img width="960" alt="Ekran Alıntısı 6-min" src="https://user-images.githubusercontent.com/95717415/150791992-21062caf-745c-4aa8-9f3e-c95a53ed1fc7.PNG">
 
 <img width="960" alt="Ekran Alıntısı 7-min" src="https://user-images.githubusercontent.com/95717415/150792016-277d8fe9-3779-43e0-a265-57553d8ed21d.PNG">
+</div>
