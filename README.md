@@ -1,6 +1,6 @@
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.0 🎉
 
-
+<br>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
 Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.0'dır.
