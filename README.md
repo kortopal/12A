@@ -4,6 +4,7 @@
 
 <br>
 
+![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
 ## 11/A Akıllı Tahta Eklentisi Nedir?
 Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.0'dır.
 Akıllı tahta üzerinde çok fonksiyonelli bir yapı sunan bu eklenti
