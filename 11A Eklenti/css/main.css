@@ -57,7 +57,6 @@ button{
     cursor: pointer;
     border-radius:  var(--theme-border-radius);
     margin-bottom: 5px;
-    padding: 0px;
     transition: 0.2s;
 }
 
@@ -236,7 +235,7 @@ input,select{
         left: 23%;
         right: 23%;
     }
-    #div_currency button{width: calc(33.33% - 4px);}
+    #div_currency button{width: calc(33.33% - 3.25px);}
     #div_other button{width: calc(50% - 3.25px);}
     #btn_fullscreen{display: none;}
 }
