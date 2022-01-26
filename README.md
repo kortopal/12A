@@ -42,6 +42,6 @@ birçok alanda kolaylık sağlamaktadır.
 <img width="960" alt="Ekran Alıntısı 7-min" src="https://user-images.githubusercontent.com/95717415/150792016-277d8fe9-3779-43e0-a265-57553d8ed21d.PNG">
   
   <br><br>
-![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <span>`developed by Ekin`</span>
+![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <span>`developed by Ekin`</span> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
   
 </div>
