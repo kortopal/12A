@@ -23,7 +23,7 @@ birçok alanda kolaylık sağlamaktadır.
   
 <img width="64" alt="Chrome" src="https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png">
   
-'<b>UYARI: </b> Sadece Chrome'da çalışır. Diğer tarayıcılar şu an desteklenmemektedir.'
+`<b>UYARI: </b> Sadece Chrome'da çalışır. Diğer tarayıcılar şu an desteklenmemektedir.`
   
 ## Ekran Görüntüleri 📷
 
