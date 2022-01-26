@@ -24,6 +24,11 @@
     "action": {
       "default_title": "11/A Akıllı Tahta Eklentisi",
         "default_popup": "popup.html",
-        "default_icon": "/img/48.png"
+        "default_icon": {
+          "16": "/img/16.png",
+          "32": "/img/32.png",
+          "48": "/img/48.png",
+          "128": "/img/128.png"
+        }
       }
 }
