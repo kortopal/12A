@@ -44,4 +44,5 @@ birçok alanda kolaylık sağlamaktadır.
 </div>
 
 
-`developed by Ekin`
+<span align="left">`developed by Ekin`</span>
+<span align="right">`developed by Ekin`</span>
