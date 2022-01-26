@@ -56,7 +56,6 @@ function openNumpad(numpad_type) {
 function numpadAdd(num) {
     var new_input_timer_value;
     var new_input_currency_value;
-    
     if(numpadType === "Timer") {
         new_input_timer_value = parseInt(input_timer_numpad.value + num);
         input_timer_numpad.value = new_input_timer_value;
