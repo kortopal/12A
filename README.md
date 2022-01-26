@@ -23,6 +23,8 @@ birçok alanda kolaylık sağlamaktadır.
   
 <img width="64" alt="Chrome" src="https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png">
   
+<div style='padding:10px;background-color:#C80815;'><b>UYARI: </b> Sadece Chrome'da çalışır. Diğer tarayıcılar şu an desteklenmemektedir.</div>
+  
 ## Ekran Görüntüleri 📷
 
 <img width="960" alt="Ekran Alıntısı 1-min" src="https://user-images.githubusercontent.com/95717415/150791761-0ea88347-b605-45d6-8b94-e795df2140a8.PNG">
