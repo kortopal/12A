@@ -34,8 +34,8 @@ function popupOnload() {
 }
 
 function openNumpad(numpad_type) {
-    $id("numpad").style.display = "block";
     $id("fill_bg").style.display = "block";
+    $id("numpad").style.display = "block";
     $id("numpad").style.animation = "numpadAnim 600ms linear";
     if(numpad_type === "Timer") {
         $id("btn_timer").disabled = true;
@@ -122,8 +122,10 @@ $id("btn_covid19").addEventListener("click", function() {
 });
 
 $id("btn_timer").addEventListener("click", function() {
-    input_timer_numpad.value = Math.abs(input_timer_numpad.value);
-    input_timer_numpad.value = parseInt(input_timer_numpad.value);
+    if(input_timer_numpad.value.toString().length > 0) {
+        input_timer_numpad.value = Math.abs(input_timer_numpad.value);
+        input_timer_numpad.value = parseInt(input_timer_numpad.value);
+    }
     if(input_timer_numpad.value.toString().length > 4) {
         input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
     }
@@ -210,9 +212,9 @@ $id("btn_numback").addEventListener("click", function() {
 $id("btn_numclose").addEventListener("click", function() {
     input_timer_numpad.value = null;
     input_currency_numpad.value = null;
+    $id("fill_bg").style.display = "none";
     $id("numpad").style.animation = "numpadAnim 0s linear";
     $id("numpad").style.display = "none";
-    $id("fill_bg").style.display = "none";
     if(numpadType === "Timer") {
         $id("btn_timer").disabled = false;
     }
@@ -261,13 +263,23 @@ $id("btn_hide_history").addEventListener("click", function() {
     $id("history_content").style.display = "none";
 });
 $id("btn_clear_history").addEventListener("click", function() {
+    $id("fill_bg").style.display = "block";
+    $id("dialog").style.display = "block";
+});
+$id("btn_extension_page").addEventListener("click", function() {
+    openTab("chrome://extensions/?id=" + chrome.runtime.id);
+});
+$id("btn_dialog_yes").addEventListener("click", function() {
     $id("history_content").innerHTML = "<i style='font-size: 120px;margin-bottom: 5px;' class='fas fa-trash'></i><br>Geçmiş Boş";
     $id("btn_clear_history").style.display = "none";
     lastHistoryClear = getDateAndTime("DateAndTime");
     historyContent = "";
     setStorage();
     loadStorage();
+    $id("fill_bg").style.display = "none";
+    $id("dialog").style.display = "none";
 });
-$id("btn_extension_page").addEventListener("click", function() {
-    openTab("chrome://extensions/?id=" + chrome.runtime.id);
+$id("btn_dialog_no").addEventListener("click", function() {
+    $id("fill_bg").style.display = "none";
+    $id("dialog").style.display = "none";
 });

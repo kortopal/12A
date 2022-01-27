@@ -39,6 +39,7 @@ function loadStorage() {
     chrome.storage.local.get({"history_clear": "Henüz Geçmiş Silinmedi"}, function(data) {
         lastHistoryClear = data.history_clear;
         history_clear_text.innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
+        dialog_history_clear_text.innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
     });
 }
 
