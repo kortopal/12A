@@ -226,6 +226,7 @@ input,select{
     background-color: white;
     color: var(--theme-color);
     width: calc(50% - 3.25px);
+    font-weight: bold;
 }
 
 @keyframes headerAnim {
