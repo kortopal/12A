@@ -93,7 +93,6 @@ input,select{
     width: 80%;
     box-shadow: 0px 0px 23px 0px var(--theme-color);
 }
-
 #settings{display: none;}
 #settings select{width: 100%;padding: 5px;}
 #btn_settings_on,#btn_settings_off{
@@ -106,7 +105,6 @@ input,select{
     font-size: 23px;
     box-shadow: 0px 0px 23px 0px black;
 }
-
 #btn_settings_off{display: none;}
 #btn_fullscreen{
     position: fixed;
