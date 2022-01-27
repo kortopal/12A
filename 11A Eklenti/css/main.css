@@ -9,17 +9,17 @@
     height: 12px;
     width: 12px;
 }
-
 ::-webkit-scrollbar-track{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 1ex;
 }
-
 ::-webkit-scrollbar-thumb{
     background: var(--theme-color);
     border-radius: 1ex;
 }
-
+::-webkit-scrollbar-corner{
+    background: none;
+}
 #details_content::-webkit-scrollbar-thumb,#history_content::-webkit-scrollbar-thumb{
     border: 2px solid var(--theme-txt-color);
 }
