@@ -191,7 +191,7 @@ input,select{
     padding: 5px;
     padding-bottom: 10px;
     display: none;
-    z-index: 99;
+    z-index: 90;
 }
 #numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;border-radius: 30px;background-color: white;color: var(--theme-color);}
 
@@ -202,8 +202,30 @@ input,select{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(23, 23, 23,0.6);
+    background-color: rgb(23, 23, 23,0.8);
     transition: 0.2s;
+    z-index: 80;
+}
+
+#dialog{
+    background-color: var(--theme-color);
+    color: var(--theme-txt-color);
+    position: fixed;
+    top: calc(50% - 10px);
+    left: calc(10% - 10px);
+    transform: translateY(calc(-50% + 10px));
+    width: 80%;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: var(--theme-border-radius);
+    padding: 10px;
+    display: none;
+    z-index: 100;
+}
+#dialog button{
+    background-color: white;
+    color: var(--theme-color);
+    width: calc(50% - 3.25px);
 }
 
 @keyframes headerAnim {
@@ -240,4 +262,5 @@ input,select{
     #div_currency button{width: calc(33.33% - 3.25px);}
     #div_other button{width: calc(50% - 3.25px);}
     #btn_fullscreen{display: none;}
+    #dialog{width: 600px;left: calc(50% - 10px);transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));}
 }
