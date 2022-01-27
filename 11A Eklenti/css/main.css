@@ -20,6 +20,10 @@
     border-radius: 1ex;
 }
 
+#details_content::-webkit-scrollbar-thumb,#history_content::-webkit-scrollbar-thumb{
+    border: 2px solid var(--theme-txt-color);
+}
+
 .noselect{
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
