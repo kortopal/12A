@@ -57,8 +57,10 @@ function numpadAdd(num) {
     var new_input_timer_value;
     var new_input_currency_value;
     if(numpadType === "Timer") {
-        new_input_timer_value = parseInt(input_timer_numpad.value + num);
-        input_timer_numpad.value = new_input_timer_value;
+        if(input_timer_numpad.value.toString().length < 4) {
+            new_input_timer_value = parseInt(input_timer_numpad.value + num);
+            input_timer_numpad.value = new_input_timer_value;
+        }
         input_timer_numpad.focus();
     } else if(numpadType === "Currency") {
         new_input_currency_value = parseInt(input_currency_numpad.value + num);
@@ -120,6 +122,11 @@ $id("btn_covid19").addEventListener("click", function() {
 });
 
 $id("btn_timer").addEventListener("click", function() {
+    input_timer_numpad.value = Math.abs(input_timer_numpad.value);
+    input_timer_numpad.value = parseInt(input_timer_numpad.value);
+    if(input_timer_numpad.value.toString().length > 4) {
+        input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
+    }
     openTab("https://timer.onlinealarmkur.com/" + "#" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : ""));
 });
 
@@ -128,16 +135,19 @@ $id("btn_weather").addEventListener("click", function() {
 });
 
 input_timer_numpad.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
+    if(event.keyCode === 13) {
         event.preventDefault();
         $id("btn_timer").disabled = false;
         $id("btn_timer").click();
         $id("btn_numclose").click();
     }
+    if(input_timer_numpad.value.toString().length > 4) {
+        input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
+    }
 });
 
 input_currency_numpad.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
+    if(event.keyCode === 13) {
         event.preventDefault();
         $id("btn_currency_numpad").click();
     }
