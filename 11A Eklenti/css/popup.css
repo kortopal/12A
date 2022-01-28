@@ -154,8 +154,8 @@ header{
     color: var(--theme-txt-color);
     position: fixed;
     top: calc(50% - 10px);
-    left: calc(10% - 10px);
-    transform: translateY(calc(-50% + 10px));
+    left: calc(50% - 10px);
+    transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));
     width: 80%;
     text-align: center;
     border: 2px solid white;
@@ -202,8 +202,8 @@ header{
         left: 23%;
         right: 23%;
     }
-    #div_currency button{width: calc(33.33% - 3.25px);}
+    #div_currency button{width: calc(33.333% - 3.25px);}
     #div_other button{width: calc(50% - 3.25px);}
     #btn_fullscreen{display: none;}
-    #dialog{width: 600px;left: calc(50% - 10px);transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));}
+    #dialog{width: 600px;}
 }

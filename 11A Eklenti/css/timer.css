@@ -11,23 +11,26 @@ body{
 
 #main{
     background-color: var(--theme-color);
+    color: var(--theme-txt-color);
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
     text-align: center;
     padding: 10px;
-    width: 50%;
-    height: 286px;
-    transform: translateX(calc(50% - 10px)) translateY(calc(50% - 10px));
+    transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));
     border-radius: var(--theme-border-radius);
 }
-#main select{width: calc(33.33% - 4px);padding: 5px;}
+#main select{display: inline-block; width: calc(33.333% - 3.5px);padding: 5px;}
 #main button{
     background-color: white;
     color: var(--theme-color);
 }
 #btn_start_timer{width: 100%;}
-#btn_pause_timer,#btn_resume_timer,#btn_reset_timer{width: calc(50% - 4px);display: none;}
-
+#btn_pause_timer,#btn_resume_timer,#btn_reset_timer{width: calc(50% - 3px);display: none;}
 #timer_text{
-    font-size: 90px;
+    font-size: 8vw;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -42,4 +45,11 @@ body{
     background-color: rgb(23, 23, 23,0.8);
     transition: 0.2s;
     z-index: -1;
+}
+
+@media screen and (max-width:930px) {
+    #main select{
+        display: block;
+        width: 100%;
+    }
 }
