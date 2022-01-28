@@ -1,0 +1,209 @@
+#details_content::-webkit-scrollbar-thumb,#history_content::-webkit-scrollbar-thumb{
+    border: 2px solid var(--theme-txt-color);
+}
+
+body{
+    font: var(--theme-font);
+    width: 420px;
+    height: 580px;
+    color: white;
+    background-color: rgb(23, 23, 23);
+    background-image: url("/img/Dersim.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#main,#settings{
+    overflow-y: auto;
+    border-radius: 3px 3px 0px 0px;
+    padding: 5px;
+    background-color: rgb(23, 23, 23,0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0px 0px 23px 0px var(--theme-color);
+}
+#settings{display: none;}
+#settings select{width: 100%;padding: 5px;}
+#btn_settings_on,#btn_settings_off{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 0px 0px 30px;
+    font-size: 23px;
+    box-shadow: 0px 0px 23px 0px black;
+}
+#btn_settings_off{display: none;}
+#btn_fullscreen{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 0px 30px 0px;
+    font-size: 23px;
+    box-shadow: 0px 0px 23px 0px black;
+}
+
+#details,#history{
+    background-color: var(--theme-color);
+    color: var(--theme-txt-color);
+    border-radius:  var(--theme-border-radius);
+    margin-top: 5px;
+    padding: 5px;
+}
+#details button,#history button{margin-bottom: 0px;}
+#details_content{
+    display: none;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+#history_content{
+    display: none;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#history_content .border:last-child{display: none;}
+#btn_show_details,#btn_hide_details,#btn_show_history,#btn_hide_history{width: 100%;}
+#btn_hide_details,#btn_hide_history{
+    display: none;
+    box-shadow: 0px 0px 16px 0px black;
+}
+#btn_extension_page{
+    background-color: white;
+    color: var(--theme-color);
+    width: 100%;
+    margin-top: 10px;
+}
+#btn_clear_history{
+    background-color: white;
+    color: var(--theme-color);
+    width: 100%;
+    display: none;
+}
+
+.small_header_text{
+    display: inline-block;
+    background-color: white;
+    color: var(--theme-color);
+    padding: 3px;
+    border-radius:  var(--theme-border-radius);
+    margin-bottom: 3px;
+}
+.icon{font-size: 23px;}
+.ch{border-bottom: 3px solid white;padding-bottom: 3px;}
+.sh{display: inline-block;margin-bottom: 5px;}
+.border{border-bottom: 2px solid var(--theme-txt-color);margin-top: 5px;margin-bottom: 5px;}
+
+#input_timer,#input_timer_numpad{width: calc(100% - 4px);text-align: center;display: block;font-size: 20px;}
+#input_currency,#input_currency_numpad{width: calc(100% - 4px);text-align: center;display: block;font-size: 20px;}
+#div_currency button{width: 150px;}
+#div_other button{width: 230px;}
+#header{width: 150px;margin: auto;height: 45px;text-align: center;background: var(--theme-color);color: var(--theme-txt-color);padding: 5px;border-radius: 0px 0px 30px 30px;box-shadow: 0px 0px 23px 0px black;animation: headerAnim 3s linear;}
+#header_text{position: relative;top: 12.5px;font-size: 25px;font-weight: bold;}
+#numpad{
+    background-color: var(--theme-color);
+    position: fixed;
+    left: 7%;
+    right: 7%;
+    bottom: 0;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    display: none;
+    z-index: 90;
+}
+#numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;border-radius: 30px;background-color: white;color: var(--theme-color);}
+
+#fill_bg{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(23, 23, 23,0.8);
+    transition: 0.2s;
+    z-index: 80;
+}
+
+#dialog{
+    background-color: var(--theme-color);
+    color: var(--theme-txt-color);
+    position: fixed;
+    top: calc(50% - 10px);
+    left: calc(10% - 10px);
+    transform: translateY(calc(-50% + 10px));
+    width: 80%;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: var(--theme-border-radius);
+    padding: 10px;
+    display: none;
+    z-index: 100;
+}
+#dialog button{
+    background-color: white;
+    color: var(--theme-color);
+    width: calc(50% - 3.25px);
+    font-weight: bold;
+}
+
+@keyframes headerAnim {
+    0% {transform: translate(0px,-75px);}
+    100% {transform: translate(0px,0px);}
+}
+
+@keyframes numpadAnim {
+    0% {transform: translate(0px,120%);}
+    100% {transform: translate(0px,0px);}
+}
+
+@keyframes fullScreenAnim {
+    0% {transform: scale(1.2);}
+    100% {transform: scale(1);} 
+}
+
+@keyframes settingsAnim {
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@media screen and (min-width:900px) {
+    #main,#settings{
+        width: 50%;
+        height: 80%;
+    }
+    #numpad{
+        left: 23%;
+        right: 23%;
+    }
+    #div_currency button{width: calc(33.33% - 3.25px);}
+    #div_other button{width: calc(50% - 3.25px);}
+    #btn_fullscreen{display: none;}
+    #dialog{width: 600px;left: calc(50% - 10px);transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));}
+}
