@@ -6,6 +6,7 @@ var hours;
 var minutes;
 var seconds;
 
+document.oncontextmenu = function() {return false;}
 function getParam(parameterName) {
     parameters = new URLSearchParams(window.location.search);
     return parameters.get(parameterName);
@@ -16,12 +17,12 @@ function setTimer() {
         seconds--;
     } else if(seconds == 0) {
         if(minutes > 0) {
-            seconds = 60;
             minutes--;
+            seconds = 59;
         } else if(minutes == 0) {
             if(hours > 0) {
                 minutes = 59;
-                seconds = 60;
+                seconds = 59;
                 hours--;
             } else if(hours == 0) {
                 seconds = 0;
@@ -42,7 +43,7 @@ function setTimer() {
 $id("btn_start_timer").addEventListener("click", function() {
     hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
     minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = (parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", "")) + 1);
+    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
     timer = setInterval(setTimer,1000);
     $id("btn_start_timer").style.display = "none";
     $id("btn_pause_timer").style.display = "inline-block";
@@ -79,6 +80,9 @@ $id("btn_reset_timer").addEventListener("click", function() {
     $id("select_timer_hours").disabled = false;
     $id("select_timer_minutes").disabled = false;
     $id("select_timer_seconds").disabled = false;
+    $id("select_timer_hours").value = hours + " Saat";
+    $id("select_timer_minutes").value = minutes + " Dakika";
+    $id("select_timer_seconds").value = seconds + " Saniye";
     alarmSound.pause();
     document.title = "Zamanlayıcı | 11/A Akıllı Tahta Eklentisi";
 });
