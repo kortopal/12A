@@ -1,6 +1,6 @@
+const alarmSound = new Audio(chrome.runtime.getURL("/sounds/alarm.mp3"));
 var parameters;
 var paramTimer;
-const alarmSound = new Audio(chrome.runtime.getURL("/sounds/alarm.mp3"));
 var timer;
 var hours;
 var minutes;
