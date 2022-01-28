@@ -13,7 +13,8 @@ var lastSettingsUpdate;
 var lastHistoryClear;
 
 document.oncontextmenu = function() {return false;}
-function popupOnload() {
+window.addEventListener("load",function(event) {
+    extension32("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         header_text.innerHTML = "Günaydın";
         header_text.style.fontSize = "25px";
@@ -31,7 +32,7 @@ function popupOnload() {
         header_text.style.fontSize = "28px";
         header_text.style.top = "6.5px";
     }
-}
+},false);
 
 function openNumpad(numpad_type) {
     $id("fill_bg").style.display = "block";

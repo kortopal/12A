@@ -1,6 +1,16 @@
-window.onload = function() {
-    loadStorage();
-    popupOnload();// popup.js fonksiyonu
+function extension32(file) {
+    if(file === "popup.html") {
+        loadStorage();
+    } else if(file === "timer.html") {
+        chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
+            document.documentElement.style.setProperty("--theme-color", data.theme_color);
+            if(getThemeColor() === "#C80815" || getThemeColor() === "#244BBF" || getThemeColor() === "#6351CF" || getThemeColor() === "#622814" || getThemeColor() === "#192E59" || getThemeColor() === "#13141C" || getThemeColor() === "#59364A" || getThemeColor() === "#8B150B") {
+                document.documentElement.style.setProperty("--theme-txt-color", "white");
+            } else{
+                document.documentElement.style.setProperty("--theme-txt-color", "black");
+            }
+        });
+    }
 }
 
 function setStorage() {
@@ -17,7 +27,7 @@ function setStorage() {
 function loadStorage() {
     chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
         select_theme_color.value = data.theme_color;
-        document.documentElement.style.setProperty("--theme-color", select_theme_color.value);
+        document.documentElement.style.setProperty("--theme-color", data.theme_color);
         if(select_theme_color.value === "#C80815" || select_theme_color.value === "#244BBF" || select_theme_color.value === "#6351CF" || select_theme_color.value === "#622814" || select_theme_color.value === "#192E59" || select_theme_color.value === "#13141C" || select_theme_color.value === "#59364A" || select_theme_color.value === "#8B150B") {
             document.documentElement.style.setProperty("--theme-txt-color", "white");
         } else{

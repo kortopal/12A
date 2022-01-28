@@ -4,6 +4,10 @@ function $id(id) {
     return document.getElementById(id);
 }
 
+function getThemeColor() {
+    return getComputedStyle(document.documentElement).getPropertyValue('--theme-color');
+}
+
 function getDateAndTime(command) {
     const date = new Date();
     switch(command){

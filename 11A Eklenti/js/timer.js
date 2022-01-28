@@ -7,6 +7,10 @@ var minutes;
 var seconds;
 
 document.oncontextmenu = function() {return false;}
+window.addEventListener("load",function(event) {
+    extension32("timer.html");
+},false);
+
 function getParam(parameterName) {
     parameters = new URLSearchParams(window.location.search);
     return parameters.get(parameterName);
