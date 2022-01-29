@@ -47,6 +47,11 @@ input,select{
     margin-bottom: 5px;
     border-radius:  var(--theme-border-radius);
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0pxss;
+}
 
 .noselect{
     -webkit-touch-callout: none; /* iOS Safari */
