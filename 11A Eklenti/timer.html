@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Zamanlayıcı | 11/A Akıllı Tahta Eklentisi</title>
+    <link rel="icon" href="/img/48.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/timer.css">
+</head>
+<body class="noselect">
+    <div id="fill_bg"></div>
+    <div id="main">
+        <span style="font-weight: bold;font-size: 4vw;">Zamanlayıcı</span>
+        <div id="timer_text">00:00:00</div>
+        <div id="div_set_timer">
+            <select id="select_timer_hours"></select>
+            <select id="select_timer_minutes"></select>
+            <select id="select_timer_seconds"></select>
+        </div>
+        <button id="btn_start_timer"><i class="fas fa-stopwatch"></i> Başlat</button>
+        <button id="btn_pause_timer"><i class="fas fa-pause"></i> Duraklat</button>
+        <button id="btn_resume_timer"><i class="fas fa-play"></i> Devam Et</button>
+        <button id="btn_reset_timer"><i class="fas fa-redo"></i> Sıfırla</button>
+
+        <button id="btn_focus_mode_on"><i class="fas fa-expand"></i></button>
+        <button id="btn_focus_mode_off"><i class="fas fa-compress"></i></button>
+    </div>
+</body>
+<script src="/js/functions.js"></script>
+<script src="/js/background.js"></script>
+<script src="/js/timer.js"></script>
+</html>
