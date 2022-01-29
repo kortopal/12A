@@ -20,7 +20,9 @@ function setStorage() {
     });
     chrome.storage.sync.set({"settings_update": lastSettingsUpdate}, function() {
     });
-    chrome.storage.local.set({"history_clear": lastHistoryClear}, function() {
+    chrome.storage.local.set({"last_history_clear": lastHistoryClear}, function() {
+    });
+    chrome.storage.local.set({"total_history_content": totalHistoryContent}, function() {
     });
 }
 
@@ -46,14 +48,19 @@ function loadStorage() {
         lastSettingsUpdate = data.settings_update;
         settings_update_text.innerHTML = "<span class='small_header_text'>Ayarlar İçin Son Değişiklik Tarihi</span><br>" + lastSettingsUpdate;
     });
-    chrome.storage.local.get({"history_clear": "Henüz Geçmiş Silinmedi"}, function(data) {
-        lastHistoryClear = data.history_clear;
+    chrome.storage.local.get({"last_history_clear": "Henüz Geçmiş Silinmedi"}, function(data) {
+        lastHistoryClear = data.last_history_clear;
         history_clear_text.innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
         dialog_history_clear_text.innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
+    });
+    chrome.storage.local.get({"total_history_content": 0}, function(data) {
+        totalHistoryContent = data.total_history_content;
+        $id("dialog_title").innerHTML = "Emin Misiniz?<br><span style='font-size:16px;font-weight:normal;'>(Toplam " + totalHistoryContent + " öğe)</span>";
     });
 }
 
 function openTab(tab_url) {
+    totalHistoryContent++;
     var tabStatus = false;
     var tabId = 0;
     chrome.tabs.query({}, function(tabs) { 

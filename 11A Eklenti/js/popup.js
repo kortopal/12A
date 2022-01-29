@@ -8,9 +8,10 @@ const header_text = $id("header_text");
 const settings_update_text = $id("settings_update_text");
 const history_clear_text = $id("history_clear_text");
 var historyContent = "";
-var numpadType;
+var totalHistoryContent;
 var lastSettingsUpdate;
 var lastHistoryClear;
+var numpadType;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function(event) {
@@ -275,6 +276,7 @@ $id("btn_dialog_yes").addEventListener("click", function() {
     $id("btn_clear_history").style.display = "none";
     lastHistoryClear = getDateAndTime("DateAndTime");
     historyContent = "";
+    totalHistoryContent = 0;
     setStorage();
     loadStorage();
     $id("fill_bg").style.display = "none";
