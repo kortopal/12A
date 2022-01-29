@@ -30,7 +30,7 @@ body{
     color: var(--theme-color);
 }
 #btn_start_timer{width: 100%;}
-#btn_pause_timer,#btn_resume_timer,#btn_reset_timer{width: calc(50% - 3px);display: none;}
+#btn_pause_timer,#btn_resume_timer,#btn_reset_timer{width: calc(50% - 1.5px);display: none;}
 #timer_text{
     font-size: 8vw;
     font-weight: bold;
