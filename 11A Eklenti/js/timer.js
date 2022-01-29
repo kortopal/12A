@@ -7,7 +7,7 @@ var minutes;
 var seconds;
 
 document.oncontextmenu = function() {return false;}
-window.addEventListener("load",function(event) {
+window.addEventListener("load",function() {
     extension32("timer.html");
 },false);
 
@@ -44,7 +44,7 @@ function setTimer() {
     $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     for(var i=0;i<24;i++) {
         $id("select_timer_hours").innerHTML += "<option value'" + i + "'>" + i + " Saat</option>";
     }
@@ -141,15 +141,4 @@ $id("btn_reset_timer").addEventListener("click", function() {
     $id("select_timer_seconds").value = seconds + " Saniye";
     alarmSound.pause();
     document.title = "Zamanlayıcı | 11/A Akıllı Tahta Eklentisi";
-});
-
-$id("btn_focus_mode_on").addEventListener("click", function() {
-    $id("btn_focus_mode_on").style.display = "none";
-    $id("btn_focus_mode_off").style.display = "inline-block";
-    document.documentElement.requestFullscreen();
-});
-$id("btn_focus_mode_off").addEventListener("click", function() {
-    $id("btn_focus_mode_on").style.display = "inline-block";
-    $id("btn_focus_mode_off").style.display = "none";
-    document.exitFullscreen();
 });

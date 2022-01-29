@@ -55,7 +55,7 @@ function loadStorage() {
     });
     chrome.storage.local.get({"total_history_content": 0}, function(data) {
         totalHistoryContent = data.total_history_content;
-        $id("dialog_title").innerHTML = "Emin Misiniz?<br><span style='font-size:16px;font-weight:normal;'>(Toplam " + totalHistoryContent + " öğe)</span>";
+        $id("dialog_title").innerHTML = "Emin Misiniz?<br><span style='font-size:16px;font-weight:normal;'>(Toplam " + totalHistoryContent + " öğe silinecek)</span>";
     });
 }
 

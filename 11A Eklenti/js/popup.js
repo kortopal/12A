@@ -14,7 +14,7 @@ var lastHistoryClear;
 var numpadType;
 
 document.oncontextmenu = function() {return false;}
-window.addEventListener("load",function(event) {
+window.addEventListener("load",function() {
     extension32("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         header_text.innerHTML = "Günaydın";
@@ -139,7 +139,7 @@ $id("btn_weather").addEventListener("click", function() {
 });
 
 input_timer_numpad.addEventListener("keyup", function(event) {
-    if(event.keyCode === 13) {
+    if(event.key === "Enter") {
         event.preventDefault();
         $id("btn_timer").disabled = false;
         $id("btn_timer").click();
@@ -151,7 +151,7 @@ input_timer_numpad.addEventListener("keyup", function(event) {
 });
 
 input_currency_numpad.addEventListener("keyup", function(event) {
-    if(event.keyCode === 13) {
+    if(event.key === "Enter") {
         event.preventDefault();
         $id("btn_currency_numpad").click();
     }
