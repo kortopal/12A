@@ -44,6 +44,58 @@ function setTimer() {
     $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    for(var i=0;i<24;i++) {
+        $id("select_timer_hours").innerHTML += "<option value'" + i + "'>" + i + " Saat</option>";
+    }
+    for(var i=0;i<=60;i++) {
+        $id("select_timer_minutes").innerHTML += "<option value'" + i + "'>" + i + " Dakika</option>";
+    }
+    for(var i=0;i<=60;i++) {
+        $id("select_timer_seconds").innerHTML += "<option value'" + i + "'>" + i + " Saniye</option>";
+    }
+
+    parameters = new URLSearchParams(window.location.search);
+    if(parameters.has("timer") == true) {
+        paramTimer = parseInt(getParam("timer"));
+        paramTimer = Math.abs(paramTimer);
+        if(paramTimer <= 1440) {
+            if(paramTimer == 1440) {
+                hours = 23;
+                minutes = 59;
+                seconds = 59;
+            } else{
+                hours = parseInt(paramTimer/60);
+                minutes = parseInt(paramTimer%60);
+                seconds = 0;
+            }
+            $id("select_timer_hours").value = hours + " Saat";
+            $id("select_timer_minutes").value = minutes + " Dakika";
+            $id("select_timer_seconds").value = seconds + " Saniye";
+            $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+        }
+    }
+}, false);
+
+select_timer_hours.addEventListener("change", function() {
+    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
+    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
+    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
+    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+});
+select_timer_minutes.addEventListener("change", function() {
+    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
+    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
+    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
+    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+});
+select_timer_seconds.addEventListener("change", function() {
+    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
+    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
+    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
+    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+});
+
 $id("btn_start_timer").addEventListener("click", function() {
     hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
     minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
@@ -91,54 +143,13 @@ $id("btn_reset_timer").addEventListener("click", function() {
     document.title = "Zamanlayıcı | 11/A Akıllı Tahta Eklentisi";
 });
 
-select_timer_hours.addEventListener("change", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+$id("btn_focus_mode_on").addEventListener("click", function() {
+    $id("btn_focus_mode_on").style.display = "none";
+    $id("btn_focus_mode_off").style.display = "inline-block";
+    document.documentElement.requestFullscreen();
 });
-select_timer_minutes.addEventListener("change", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+$id("btn_focus_mode_off").addEventListener("click", function() {
+    $id("btn_focus_mode_on").style.display = "inline-block";
+    $id("btn_focus_mode_off").style.display = "none";
+    document.exitFullscreen();
 });
-select_timer_seconds.addEventListener("change", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    for(var i=0;i<24;i++) {
-        $id("select_timer_hours").innerHTML += "<option value'" + i + "'>" + i + " Saat</option>";
-    }
-    for(var i=0;i<=60;i++) {
-        $id("select_timer_minutes").innerHTML += "<option value'" + i + "'>" + i + " Dakika</option>";
-    }
-    for(var i=0;i<=60;i++) {
-        $id("select_timer_seconds").innerHTML += "<option value'" + i + "'>" + i + " Saniye</option>";
-    }
-
-    parameters = new URLSearchParams(window.location.search);
-    if(parameters.has("timer") == true) {
-        paramTimer = parseInt(getParam("timer"));
-        paramTimer = Math.abs(paramTimer);
-        if(paramTimer <= 1440) {
-            if(paramTimer == 1440) {
-                hours = 23;
-                minutes = 59;
-                seconds = 59;
-            } else{
-                hours = parseInt(paramTimer/60);
-                minutes = parseInt(paramTimer%60);
-                seconds = 0;
-            }
-            $id("select_timer_hours").value = hours + " Saat";
-            $id("select_timer_minutes").value = minutes + " Dakika";
-            $id("select_timer_seconds").value = seconds + " Saniye";
-            $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
-        }
-    }
-}, false);
