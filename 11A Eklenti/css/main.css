@@ -1,5 +1,5 @@
 :root{
-    --theme-color: ; /* #EFA110 */
+    --theme-color: none; /* #EFA110 */
     --theme-txt-color: black;
     --theme-font: 18px Helvetica;
     --theme-border-radius: 3px;
