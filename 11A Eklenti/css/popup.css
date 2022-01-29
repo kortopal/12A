@@ -103,19 +103,6 @@ header{
     display: none;
 }
 
-.small_header_text{
-    display: inline-block;
-    background-color: white;
-    color: var(--theme-color);
-    padding: 3px;
-    border-radius:  var(--theme-border-radius);
-    margin-bottom: 3px;
-}
-.icon{font-size: 23px;}
-.ch{border-bottom: 3px solid white;padding-bottom: 3px;}
-.sh{display: inline-block;margin-bottom: 5px;}
-.border{border-bottom: 2px solid var(--theme-txt-color);margin-top: 5px;margin-bottom: 5px;}
-
 #input_timer,#input_timer_numpad{width: calc(100% - 4px);text-align: center;display: block;font-size: 20px;}
 #input_currency,#input_currency_numpad{width: calc(100% - 4px);text-align: center;display: block;font-size: 20px;}
 #div_currency button{width: 150px;}

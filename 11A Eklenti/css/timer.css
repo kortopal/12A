@@ -2,8 +2,10 @@
 
 body{
     font: var(--theme-font);
-    color: white;
     background-color: rgb(23, 23, 23);
+    color: white;
+    margin: 0px;
+    height: 100vh;
     background-image: url("/img/Dersim.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,6 +37,16 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#btn_focus_mode_on,#btn_focus_mode_off{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 0px 0px 0px 30px;
+    font-weight: bold;
+}
+#btn_focus_mode_off{display: none;}
 
 #fill_bg{
     position: fixed;
