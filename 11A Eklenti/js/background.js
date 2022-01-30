@@ -14,7 +14,7 @@ function extension32(file) {
 }
 
 function setStorage() {
-    chrome.storage.sync.set({"theme_color": select_theme_color.value}, function() {
+    chrome.storage.sync.set({"theme_color": $id("select_theme_color").value}, function() {
     });
     chrome.storage.local.set({"history_content": historyContent}, function() {
     });
@@ -28,9 +28,9 @@ function setStorage() {
 
 function loadStorage() {
     chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
-        select_theme_color.value = data.theme_color;
+        $id("select_theme_color").value = data.theme_color;
         document.documentElement.style.setProperty("--theme-color", data.theme_color);
-        if(select_theme_color.value === "#C80815" || select_theme_color.value === "#244BBF" || select_theme_color.value === "#6351CF" || select_theme_color.value === "#622814" || select_theme_color.value === "#192E59" || select_theme_color.value === "#13141C" || select_theme_color.value === "#59364A" || select_theme_color.value === "#8B150B") {
+        if($id("select_theme_color").value === "#C80815" || $id("select_theme_color").value === "#244BBF" || $id("select_theme_color").value === "#6351CF" || $id("select_theme_color").value === "#622814" || $id("select_theme_color").value === "#192E59" || $id("select_theme_color").value === "#13141C" || $id("select_theme_color").value === "#59364A" || $id("select_theme_color").value === "#8B150B") {
             document.documentElement.style.setProperty("--theme-txt-color", "white");
         } else{
             document.documentElement.style.setProperty("--theme-txt-color", "black");
@@ -46,11 +46,11 @@ function loadStorage() {
     });
     chrome.storage.sync.get({"settings_update": "Henüz Değişiklik Yapılmadı"}, function(data) {
         lastSettingsUpdate = data.settings_update;
-        settings_update_text.innerHTML = "<span class='small_header_text'>Ayarlar İçin Son Değişiklik Tarihi</span><br>" + lastSettingsUpdate;
+        $id("settings_update_text").innerHTML = "<span class='small_header_text'>Ayarlar İçin Son Değişiklik Tarihi</span><br>" + lastSettingsUpdate;
     });
     chrome.storage.local.get({"last_history_clear": "Henüz Geçmiş Silinmedi"}, function(data) {
         lastHistoryClear = data.last_history_clear;
-        history_clear_text.innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
+        $id("history_clear_text").innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
         dialog_history_clear_text.innerHTML = "<span class='small_header_text'>Geçmiş İçin Son Temizlik Tarihi</span><br>" + lastHistoryClear;
     });
     chrome.storage.local.get({"total_history_content": 0}, function(data) {

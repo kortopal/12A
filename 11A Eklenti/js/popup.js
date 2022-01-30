@@ -1,12 +1,7 @@
-const popup_url = chrome.runtime.getURL("/popup.html");
-const select_theme_color = $id("select_theme_color");
 const input_timer = $id("input_timer");
 const input_currency = $id("input_currency");
 const input_timer_numpad = $id("input_timer_numpad");
 const input_currency_numpad = $id("input_currency_numpad");
-const header_text = $id("header_text");
-const settings_update_text = $id("settings_update_text");
-const history_clear_text = $id("history_clear_text");
 var historyContent = "";
 var totalHistoryContent;
 var lastSettingsUpdate;
@@ -17,21 +12,21 @@ document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
     extension32("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
-        header_text.innerHTML = "Günaydın";
-        header_text.style.fontSize = "25px";
-        header_text.style.top = "8px";
+        $id("header_text").innerHTML = "Günaydın";
+        $id("header_text").style.fontSize = "25px";
+        $id("header_text").style.top = "8px";
     } else if(9<getDateAndTime("Hours") && getDateAndTime("Hours")<12) {
-        header_text.innerHTML = "11/A";
-        header_text.style.fontSize = "28px";
-        header_text.style.top = "6.5px";
+        $id("header_text").innerHTML = "11/A";
+        $id("header_text").style.fontSize = "28px";
+        $id("header_text").style.top = "6.5px";
     } else if(12<=getDateAndTime("Hours") && getDateAndTime("Hours")<15) {
-        header_text.innerHTML = "Tünaydın";
-        header_text.style.fontSize = "25px";
-        header_text.style.top = "8px";
+        $id("header_text").innerHTML = "Tünaydın";
+        $id("header_text").style.fontSize = "25px";
+        $id("header_text").style.top = "8px";
     } else{
-        header_text.innerHTML = "11/A";
-        header_text.style.fontSize = "28px";
-        header_text.style.top = "6.5px";
+        $id("header_text").innerHTML = "11/A";
+        $id("header_text").style.fontSize = "28px";
+        $id("header_text").style.top = "6.5px";
     }
 },false);
 
@@ -88,7 +83,7 @@ $id("btn_settings_off").addEventListener("click", function() {
     document.title = "11/A Akıllı Tahta Eklentisi";
 });
 $id("btn_fullscreen").addEventListener("click", function() {
-    openTab(popup_url);
+    openTab(chrome.runtime.getURL("/popup.html"));
 });
 
 input_currency.addEventListener("click", function() {
@@ -232,7 +227,7 @@ $id("btn_currency_numpad").addEventListener("click", function() {
     $id("btn_numclose").click();
 });
 
-select_theme_color.addEventListener("change", function() {
+$id("select_theme_color").addEventListener("change", function() {
     lastSettingsUpdate = getDateAndTime("DateAndTime");
     setStorage();
     loadStorage();
