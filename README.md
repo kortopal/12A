@@ -5,7 +5,7 @@
 <br>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
-Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.0'dır.
+Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.3'dür.
 Akıllı tahta üzerinde çok fonksiyonelli bir yapı sunan bu eklenti
 birçok alanda kolaylık sağlamaktadır.
 
