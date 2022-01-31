@@ -90,7 +90,7 @@ input_currency.addEventListener("click", function() {
     openNumpad("Currency");
 });
 
-$id("btn_dolar").addEventListener("click", function() {
+$id("btn_dollar").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
         openTab("https://www.google.com/search?q=" + input_currency.value + "+dolar+ka%C3%A7+TL&ie=UTF-8");
     } else{
