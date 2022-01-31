@@ -1,4 +1,4 @@
-function extension32(file) {
+function setBackground(file) {
     if(file === "popup.html") {
         loadStorage();
     } else if(file === "timer.html") {
@@ -60,9 +60,9 @@ function loadStorage() {
 }
 
 function openTab(tab_url) {
-    totalHistoryContent++;
     var tabStatus = false;
     var tabId = 0;
+    totalHistoryContent++;
     chrome.tabs.query({}, function(tabs) { 
         for(var i=0;i<tabs.length;i++) {
             if(tab_url === tabs[i].url) {

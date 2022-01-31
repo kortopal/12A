@@ -10,7 +10,7 @@ var numpadType;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
-    extension32("popup.html");
+    setBackground("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         $id("header_text").innerHTML = "Günaydın";
         $id("header_text").style.fontSize = "25px";
@@ -97,7 +97,6 @@ $id("btn_dolar").addEventListener("click", function() {
         openTab("https://www.google.com/search?q=dolar%2FTL&ie=UTF-8");
     }
 });
-
 $id("btn_euro").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
         openTab("https://www.google.com/search?q=" + input_currency.value + "+euro+ka%C3%A7+TL&ie=UTF-8");
@@ -105,7 +104,6 @@ $id("btn_euro").addEventListener("click", function() {
         openTab("https://www.google.com/search?q=euro%2FTL&ie=UTF-8");
     }
 });  
-
 $id("btn_pound").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
         openTab("https://www.google.com/search?q=" + input_currency.value + "+sterlin+ka%C3%A7+TL&ie=UTF-8");
@@ -113,11 +111,9 @@ $id("btn_pound").addEventListener("click", function() {
         openTab("https://www.google.com/search?q=sterlin%2FTL&ie=UTF-8");
     }
 });
-
 $id("btn_covid19").addEventListener("click", function() {
     openTab("https://covid19.saglik.gov.tr/");
 });
-
 $id("btn_timer").addEventListener("click", function() {
     if(input_timer_numpad.value.toString().length > 0) {
         input_timer_numpad.value = Math.abs(input_timer_numpad.value);
@@ -128,7 +124,6 @@ $id("btn_timer").addEventListener("click", function() {
     }
     openTab("chrome-extension://" + chrome.runtime.id + "/timer.html?timer=" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : ""));
 });
-
 $id("btn_weather").addEventListener("click", function() {
     openTab("https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli");
 });
@@ -144,7 +139,6 @@ input_timer_numpad.addEventListener("keyup", function(event) {
         input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
     }
 });
-
 input_currency_numpad.addEventListener("keyup", function(event) {
     if(event.key === "Enter") {
         event.preventDefault();

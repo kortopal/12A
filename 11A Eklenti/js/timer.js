@@ -8,7 +8,7 @@ var seconds;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
-    extension32("timer.html");
+    setBackground("timer.html");
 },false);
 
 function getParam(parameterName) {
@@ -29,9 +29,9 @@ function setTimer() {
                 seconds = 59;
                 hours--;
             } else if(hours == 0) {
-                seconds = 0;
-                minutes = 0;
                 hours = 0;
+                minutes = 0;
+                seconds = 0;
                 clearInterval(timer);
                 $id("btn_pause_timer").style.display = "none";
                 $id("btn_reset_timer").style.width = "100%";
@@ -77,25 +77,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 }, false);
 
-select_timer_hours.addEventListener("change", function() {
+$id("select_timer_hours").addEventListener("change", function() {
     hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
     minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
     seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
     $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 });
-select_timer_minutes.addEventListener("change", function() {
+$id("select_timer_minutes").addEventListener("change", function() {
     hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
     minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
     seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
     $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 });
-select_timer_seconds.addEventListener("change", function() {
+$id("select_timer_seconds").addEventListener("change", function() {
     hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
     minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
     seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
     $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 });
-
 $id("btn_start_timer").addEventListener("click", function() {
     hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
     minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
