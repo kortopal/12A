@@ -45,6 +45,5 @@ birçok alanda kolaylık sağlamaktadır.
 
   
 <br><br>
-![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <b> <code>developed by</code> </b> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
-<h2><code>Ekin</code></h2>
+![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <b> <code>developed by Ekin</code> </b> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
 </div>
