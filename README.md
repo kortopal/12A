@@ -2,6 +2,10 @@
   
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.3 🎉
 
+  🟡    🟡     🟡
+🟡🟡  🟡🟡    🟡🟡 
+  🟡    🟡   🟡🟡🟡
+  🟡    🟡  🟡    🟡
 <br>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
@@ -28,7 +32,7 @@ birçok alanda kolaylık sağlamaktadır.
 ## Ekran Görüntüleri 📷
 
 ![1-min](https://user-images.githubusercontent.com/95717415/151656267-eb2b1673-27a7-4ce4-99fb-c07886e0f09d.png)
-🟡🟡🟡
+
 ![2-min](https://user-images.githubusercontent.com/95717415/151656270-2b9b7ab0-595d-43fc-b092-ae560d238a0f.png)
 
 ![3-min](https://user-images.githubusercontent.com/95717415/151607454-9fc17706-e9bf-465b-9036-c2abd7ffb48d.png)
