@@ -2,7 +2,7 @@
   
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.3 🎉
   
-<a href="https://forms.gle/KjQJ32UaovhmBi1w9"><img src="https://img.shields.io/badge/Eklenti%20%C4%B0%C3%A7in%20%C3%96neride%20Bulun-T%C4%B1kla-red?style=flat-square&logo=google&logoColor=white&logoWidth=60"></a>
+<a href="https://forms.gle/KjQJ32UaovhmBi1w9"><img src="https://img.shields.io/badge/Eklenti%20%C4%B0%C3%A7in%20%C3%96neride%20Bulun-T%C4%B1kla-red?logo=google&logoColor=white"></a>
 </div>
 
 <br>
