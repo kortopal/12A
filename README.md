@@ -1,7 +1,7 @@
 <div align="center">
   
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.3 🎉
-
+https://img.shields.io/github/stars/kortopal/11A?color=%23EFA110&label=Eklenti%20Puan%C4%B1
 <br>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
