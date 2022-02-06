@@ -29,7 +29,7 @@ birçok alanda kolaylık sağlamaktadır.
   
 <br>
   
-<img width="100%" src="https://img.shields.io/badge/UYARI%3A-Eklenti%20sadece%20Chrome'da%20%C3%A7al%C4%B1%C5%9F%C4%B1r.-gray?labelColor=red">
+<img width="50%" src="https://img.shields.io/badge/UYARI%3A-Eklenti%20sadece%20Chrome'da%20%C3%A7al%C4%B1%C5%9F%C4%B1r.-gray?labelColor=red">
   
 ## Ekran Görüntüleri 📷
 
@@ -95,6 +95,6 @@ birçok alanda kolaylık sağlamaktadır.
   
 <br><br>
   
-![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <img height="30" src="https://img.shields.io/badge/developed%20by-Ekin-%23EFA110"> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
+![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <img width="50%" src="https://img.shields.io/badge/developed%20by-Ekin-%23EFA110"> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
 
 </div>
