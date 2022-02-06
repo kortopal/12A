@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for(var i=0;i<24;i++) {
         $id("select_timer_hours").innerHTML += "<option value'" + i + "'>" + i + " Saat</option>";
     }
-    for(var i=0;i<=60;i++) {
+    for(var i=0;i<60;i++) {
         $id("select_timer_minutes").innerHTML += "<option value'" + i + "'>" + i + " Dakika</option>";
     }
     for(var i=0;i<=60;i++) {
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(paramTimer == 1440) {
                 hours = 23;
                 minutes = 59;
-                seconds = 59;
+                seconds = 60;
             } else{
                 hours = parseInt(paramTimer/60);
                 minutes = parseInt(paramTimer%60);
