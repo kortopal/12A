@@ -79,7 +79,7 @@ birçok alanda kolaylık sağlamaktadır.
 </details>
   
 <details>
-  <summary><b>5 Farklı Temayı Görüntüle</b></summary>
+  <summary><b>5 Farklı Özel Temayı Görüntüle</b></summary>
   
   <img width="320" alt="r11-min" src="https://user-images.githubusercontent.com/95717415/152671769-291bb42c-51a6-43d6-87b8-0de80ce774ef.PNG">
 
