@@ -29,6 +29,7 @@ birçok alanda kolaylık sağlamaktadır.
   
 <img width="64" alt="Chrome" src="https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png" align="center">
   
+
 <br>
   
 <img src="https://img.shields.io/badge/UYARI%3A-Eklenti%20sadece%20Chrome'da%20%C3%A7al%C4%B1%C5%9F%C4%B1r.-gray?labelColor=red">
