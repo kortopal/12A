@@ -21,6 +21,8 @@ birçok alanda kolaylık sağlamaktadır.
 ➤ Eklenti dinamik zaman aralıklarına göre değişen animasyonlu pencere ile sizi açılışta karşılar. <br>
 ➤ Genişletme özelliği ile eklentiyi ayrı pencere olarak açabilirsiniz. <br>
 
+<div align="center">
+
 ## Desteklenen Tarayıcılar
   
 <img width="64" alt="Chrome" src="https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png" align="center">
@@ -49,3 +51,5 @@ birçok alanda kolaylık sağlamaktadır.
 <br><br>
   
 ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <b> <code>developed by Ekin</code> </b> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
+
+</div>
