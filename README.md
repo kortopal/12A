@@ -4,7 +4,7 @@
   
 </div>
 
-<br>
+<br><br>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
 Eklenti akıllı tahta için geliştirilmiştir. Son sürümü 3.3'dür.
