@@ -25,9 +25,9 @@ function setTimer() {
             seconds = 59;
         } else if(minutes == 0) {
             if(hours > 0) {
+                hours--;
                 minutes = 59;
                 seconds = 59;
-                hours--;
             } else if(hours == 0) {
                 hours = 0;
                 minutes = 0;
