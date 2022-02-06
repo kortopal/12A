@@ -29,7 +29,7 @@ birçok alanda kolaylık sağlamaktadır.
   
 <br>
   
-<img height="30" src="https://img.shields.io/badge/UYARI%3A-Eklenti%20sadece%20Chrome'da%20%C3%A7al%C4%B1%C5%9F%C4%B1r.-gray?labelColor=red">
+<img width="100%" src="https://img.shields.io/badge/UYARI%3A-Eklenti%20sadece%20Chrome'da%20%C3%A7al%C4%B1%C5%9F%C4%B1r.-gray?labelColor=red">
   
 ## Ekran Görüntüleri 📷
 
