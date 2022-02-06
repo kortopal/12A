@@ -51,7 +51,7 @@ birçok alanda kolaylık sağlamaktadır.
 
 <img width="960" alt="9-min" src="https://user-images.githubusercontent.com/95717415/152671573-29a1f8d8-b938-4003-be45-949320fcafdb.PNG">
 
-<br>
+<br><br>
   
 <details>
   <summary><b>10 Farklı Tema Rengini Görüntüle</b></summary>
@@ -77,8 +77,6 @@ birçok alanda kolaylık sağlamaktadır.
   <img width="480" alt="r10-min" src="https://user-images.githubusercontent.com/95717415/152671665-b2de7c78-d891-4ebd-bbfb-fad424b966fd.PNG">
   
 </details>
-  
-<br>
   
 <details>
   <summary><b>10 Farklı Tema Rengini Görüntüle</b></summary>
