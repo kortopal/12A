@@ -60,19 +60,19 @@ birçok alanda kolaylık sağlamaktadır.
   
   <img width="480" alt="r3-min" src="https://user-images.githubusercontent.com/95717415/152671632-f8674df4-fb68-4f41-8649-2d58fe819e4c.PNG">
 
-  <img width="960" alt="r4-min" src="https://user-images.githubusercontent.com/95717415/152671636-fb31b1a3-3fe7-4f58-96a6-cb460f73aa73.PNG">
+  <img width="480" alt="r4-min" src="https://user-images.githubusercontent.com/95717415/152671636-fb31b1a3-3fe7-4f58-96a6-cb460f73aa73.PNG">
 
-  <img width="960" alt="r5-min" src="https://user-images.githubusercontent.com/95717415/152671642-9ce2f8ec-4253-4e81-9428-3ac8456e8367.PNG">
+  <img width="480" alt="r5-min" src="https://user-images.githubusercontent.com/95717415/152671642-9ce2f8ec-4253-4e81-9428-3ac8456e8367.PNG">
 
-  <img width="960" alt="r6-min" src="https://user-images.githubusercontent.com/95717415/152671646-9a427f90-b642-4702-a1a8-c741c26972d1.PNG">
+  <img width="480" alt="r6-min" src="https://user-images.githubusercontent.com/95717415/152671646-9a427f90-b642-4702-a1a8-c741c26972d1.PNG">
 
-  <img width="960" alt="r7-min" src="https://user-images.githubusercontent.com/95717415/152671649-4ac6758e-bdf7-4447-8eb9-62a375e52ab2.PNG">
+  <img width="480" alt="r7-min" src="https://user-images.githubusercontent.com/95717415/152671649-4ac6758e-bdf7-4447-8eb9-62a375e52ab2.PNG">
 
-  <img width="960" alt="r8-min" src="https://user-images.githubusercontent.com/95717415/152671653-c23186df-31cb-42b4-ada3-0bc419182b45.PNG">
+  <img width="480" alt="r8-min" src="https://user-images.githubusercontent.com/95717415/152671653-c23186df-31cb-42b4-ada3-0bc419182b45.PNG">
   
-  <img width="960" alt="r9-min" src="https://user-images.githubusercontent.com/95717415/152671657-7b7b5c3c-1957-40ef-a65e-107378d8e63d.PNG">
+  <img width="480" alt="r9-min" src="https://user-images.githubusercontent.com/95717415/152671657-7b7b5c3c-1957-40ef-a65e-107378d8e63d.PNG">
 
-  <img width="960" alt="r10-min" src="https://user-images.githubusercontent.com/95717415/152671665-b2de7c78-d891-4ebd-bbfb-fad424b966fd.PNG">
+  <img width="480" alt="r10-min" src="https://user-images.githubusercontent.com/95717415/152671665-b2de7c78-d891-4ebd-bbfb-fad424b966fd.PNG">
   
 </details>
   
