@@ -2,6 +2,7 @@
   
 # 11/A Akıllı Tahta Eklentisi Sürüm: 3.3 🎉
 <a href="https://github.com/kortopal/11A/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/kortopal/11A?color=%23EFA110&label=Eklenti%20Puan%C4%B1"></a>
+<img src="https://img.shields.io/badge/Eklenti%20S%C3%BCr%C3%BCm%C3%BC-3.3-%23EFA110">
 <br>
 
 ## 11/A Akıllı Tahta Eklentisi Nedir?
