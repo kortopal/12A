@@ -52,7 +52,7 @@ birçok alanda kolaylık sağlamaktadır.
 <img width="960" alt="9-min" src="https://user-images.githubusercontent.com/95717415/152671573-29a1f8d8-b938-4003-be45-949320fcafdb.PNG">
 
 <br><br>
-<a href="https://forms.gle/KjQJ32UaovhmBi1w9"><img src="https://img.shields.io/badge/Eklenti%20%C4%B0%C3%A7in%20%C3%96neride%20Bulun-T%C4%B1kla-red?logo=logo"></a>
+<a href="https://forms.gle/KjQJ32UaovhmBi1w9"><img src="https://img.shields.io/badge/Eklenti%20%C4%B0%C3%A7in%20%C3%96neride%20Bulun-T%C4%B1kla-red?logo=appveyor"></a>
 <br>
 ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <img src="https://img.shields.io/badge/developed%20by-Ekin-red?labelColor=gray"> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
 
