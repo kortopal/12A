@@ -52,6 +52,6 @@ birçok alanda kolaylık sağlamaktadır.
   
 <br><br>
   
-![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <b> <code>developed by Ekin</code> </b> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
+![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png) <img src="https://img.shields.io/badge/developed%20by-Ekin-%23EFA110"> ![16](https://user-images.githubusercontent.com/95717415/151242069-a7465549-6735-4eef-9063-1e1ac138d8db.png)
 
 </div>
