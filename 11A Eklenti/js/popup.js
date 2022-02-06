@@ -94,21 +94,21 @@ $id("btn_dollar").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
         openTab("https://www.google.com/search?q=" + input_currency.value + "+dolar+ka%C3%A7+TL&ie=UTF-8");
     } else{
-        openTab("https://www.google.com/search?q=dolar%2FTL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=Dolar%2FTL&ie=UTF-8");
     }
 });
 $id("btn_euro").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
         openTab("https://www.google.com/search?q=" + input_currency.value + "+euro+ka%C3%A7+TL&ie=UTF-8");
     } else{
-        openTab("https://www.google.com/search?q=euro%2FTL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=Euro%2FTL&ie=UTF-8");
     }
 });  
 $id("btn_pound").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
         openTab("https://www.google.com/search?q=" + input_currency.value + "+sterlin+ka%C3%A7+TL&ie=UTF-8");
     } else{
-        openTab("https://www.google.com/search?q=sterlin%2FTL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=Sterlin%2FTL&ie=UTF-8");
     }
 });
 $id("btn_covid19").addEventListener("click", function() {
