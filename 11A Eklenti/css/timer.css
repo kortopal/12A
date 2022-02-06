@@ -1,5 +1,3 @@
-@import "main.css";
-
 body{
     font: var(--theme-font);
     background-color: rgb(23, 23, 23);
