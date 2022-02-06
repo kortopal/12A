@@ -52,13 +52,13 @@ birçok alanda kolaylık sağlamaktadır.
 <img width="960" alt="9-min" src="https://user-images.githubusercontent.com/95717415/152671573-29a1f8d8-b938-4003-be45-949320fcafdb.PNG">
 
 <details>
-  <summary>10 Farklı Tema Rengini Görüntüle</summary>
+  <summary><b>10 Farklı Tema Rengini Görüntüle</b></summary>
   
-  <img width="960" alt="r1-min" src="https://user-images.githubusercontent.com/95717415/152671623-c15dd7a2-cd5f-43df-b78d-132c1c30f6de.PNG">
+  <img width="480" alt="r1-min" src="https://user-images.githubusercontent.com/95717415/152671623-c15dd7a2-cd5f-43df-b78d-132c1c30f6de.PNG">
 
-  <img width="960" alt="r2-min" src="https://user-images.githubusercontent.com/95717415/152671629-c36e90b2-a635-4a5b-970f-c0133efbcadb.PNG">
+  <img width="480" alt="r2-min" src="https://user-images.githubusercontent.com/95717415/152671629-c36e90b2-a635-4a5b-970f-c0133efbcadb.PNG">
   
-  <img width="960" alt="r3-min" src="https://user-images.githubusercontent.com/95717415/152671632-f8674df4-fb68-4f41-8649-2d58fe819e4c.PNG">
+  <img width="480" alt="r3-min" src="https://user-images.githubusercontent.com/95717415/152671632-f8674df4-fb68-4f41-8649-2d58fe819e4c.PNG">
 
   <img width="960" alt="r4-min" src="https://user-images.githubusercontent.com/95717415/152671636-fb31b1a3-3fe7-4f58-96a6-cb460f73aa73.PNG">
 
