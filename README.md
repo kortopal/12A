@@ -26,7 +26,9 @@ birçok alanda kolaylık sağlamaktadır.
 ## Desteklenen Tarayıcılar
   
 <img width="64" alt="Chrome" src="https://user-images.githubusercontent.com/95717415/151046778-e77289cb-1542-4d46-ae73-de1ad231da32.png" align="center">
-  <br>
+  
+<br>
+  
 <img src="https://img.shields.io/badge/UYARI-Eklenti%20sadece%20Chrome'da%20%C3%A7al%C4%B1%C5%9F%C4%B1r.%20Di%C4%9Fer%20taray%C4%B1c%C4%B1lar%20%C5%9Fu%20an%20i%C3%A7in%20desteklenmemektedir.-red">
   
 ## Ekran Görüntüleri 📷
