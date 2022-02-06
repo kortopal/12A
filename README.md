@@ -33,22 +33,48 @@ birçok alanda kolaylık sağlamaktadır.
   
 ## Ekran Görüntüleri 📷
 
-![1-min](https://user-images.githubusercontent.com/95717415/151656267-eb2b1673-27a7-4ce4-99fb-c07886e0f09d.png)
+<img width="960" alt="1-min" src="https://user-images.githubusercontent.com/95717415/152671519-e43de4a8-c71b-46f4-8b09-aaa4686b3990.PNG">
 
-![2-min](https://user-images.githubusercontent.com/95717415/151656270-2b9b7ab0-595d-43fc-b092-ae560d238a0f.png)
+<img width="960" alt="2-min" src="https://user-images.githubusercontent.com/95717415/152671522-08378e89-03df-44a9-8c00-ae8658209f17.PNG">
 
-![3-min](https://user-images.githubusercontent.com/95717415/151607454-9fc17706-e9bf-465b-9036-c2abd7ffb48d.png)
-  
-![4-min](https://user-images.githubusercontent.com/95717415/151607462-c50be84b-ff87-40b9-bd41-1ce4fce6cf3a.png)
-  
-![5-min](https://user-images.githubusercontent.com/95717415/151607474-efaafe22-80db-4313-acb0-483a313288bd.png)
-  
-![6-min](https://user-images.githubusercontent.com/95717415/151607483-2ac6dcfe-9fbf-4894-8fd7-acde88526995.png)
-  
-![7-min](https://user-images.githubusercontent.com/95717415/151656278-c2b372f1-6cb5-4d9d-8f4c-072d6749d4d1.png)
-  
-![8-min](https://user-images.githubusercontent.com/95717415/151607509-639d6e67-3045-4d4e-b766-564263e9f31e.png)
+<img width="960" alt="3-min" src="https://user-images.githubusercontent.com/95717415/152671524-28e04056-9498-4a6c-a0f6-0a15bc88a632.PNG">
 
+<img width="960" alt="4-min" src="https://user-images.githubusercontent.com/95717415/152671552-60dac8a9-2db5-49d3-9eac-d738a41150ef.PNG">
+
+<img width="960" alt="5-min" src="https://user-images.githubusercontent.com/95717415/152671554-40a8db50-f9e1-45cb-8bcc-2e74374c4f80.PNG">
+
+<img width="960" alt="6-min" src="https://user-images.githubusercontent.com/95717415/152671558-f5150b59-5537-4077-b359-428a27100c22.PNG">
+
+<img width="960" alt="7-min" src="https://user-images.githubusercontent.com/95717415/152671567-bc1e6738-2d8c-4cb7-a772-79c92a35dba0.PNG">
+
+<img width="960" alt="8-min" src="https://user-images.githubusercontent.com/95717415/152671569-a1254bd4-861c-43fb-a210-f81e2a668a4a.PNG">
+
+<img width="960" alt="9-min" src="https://user-images.githubusercontent.com/95717415/152671573-29a1f8d8-b938-4003-be45-949320fcafdb.PNG">
+
+<details>
+  <summary>10 Farklı Tema Rengini Görüntüle</summary>
+  
+  <img width="960" alt="r1-min" src="https://user-images.githubusercontent.com/95717415/152671623-c15dd7a2-cd5f-43df-b78d-132c1c30f6de.PNG">
+
+  <img width="960" alt="r2-min" src="https://user-images.githubusercontent.com/95717415/152671629-c36e90b2-a635-4a5b-970f-c0133efbcadb.PNG">
+  
+  <img width="960" alt="r3-min" src="https://user-images.githubusercontent.com/95717415/152671632-f8674df4-fb68-4f41-8649-2d58fe819e4c.PNG">
+
+  <img width="960" alt="r4-min" src="https://user-images.githubusercontent.com/95717415/152671636-fb31b1a3-3fe7-4f58-96a6-cb460f73aa73.PNG">
+
+  <img width="960" alt="r5-min" src="https://user-images.githubusercontent.com/95717415/152671642-9ce2f8ec-4253-4e81-9428-3ac8456e8367.PNG">
+
+  <img width="960" alt="r6-min" src="https://user-images.githubusercontent.com/95717415/152671646-9a427f90-b642-4702-a1a8-c741c26972d1.PNG">
+
+  <img width="960" alt="r7-min" src="https://user-images.githubusercontent.com/95717415/152671649-4ac6758e-bdf7-4447-8eb9-62a375e52ab2.PNG">
+
+  <img width="960" alt="r8-min" src="https://user-images.githubusercontent.com/95717415/152671653-c23186df-31cb-42b4-ada3-0bc419182b45.PNG">
+  
+  <img width="960" alt="r9-min" src="https://user-images.githubusercontent.com/95717415/152671657-7b7b5c3c-1957-40ef-a65e-107378d8e63d.PNG">
+
+  <img width="960" alt="r10-min" src="https://user-images.githubusercontent.com/95717415/152671665-b2de7c78-d891-4ebd-bbfb-fad424b966fd.PNG">
+  
+</details>
   
 <br><br>
   
