@@ -194,3 +194,10 @@ header{
     #btn_fullscreen{display: none;}
     #dialog{width: 600px;}
 }
+
+@media screen and (min-width:421px) {
+    body{
+        margin: 0px;
+        height: 100vh;
+    }
+}
