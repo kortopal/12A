@@ -60,19 +60,19 @@ function loadStorage() {
 }
 
 function openTab(tab_url) {
-    var tabStatus = false;
+    var isTabActive = false;
     var tabId = 0;
     totalHistoryContent++;
     chrome.tabs.query({}, function(tabs) { 
         for(var i=0;i<tabs.length;i++) {
             if(tabs[i].url.toLowerCase().includes(tab_url.toLowerCase()) == true) {
-                tabStatus = true;
+                isTabActive = true;
                 tabId = tabs[i].id;
                 break;
             }
         }
 
-        if(tabStatus == false) {
+        if(isTabActive == false) {
             chrome.tabs.create({ url:tab_url });
         } else{
             chrome.tabs.update(tabId, {selected: true});

@@ -122,7 +122,7 @@ $id("btn_timer").addEventListener("click", function() {
     if(input_timer_numpad.value.toString().length > 4) {
         input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
     }
-    openTab("chrome-extension://" + chrome.runtime.id + "/timer.html?timer=" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : ""));
+    openTab("chrome-extension://" + chrome.runtime.id + "/timer.html?timer=" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : 0));
 });
 $id("btn_weather").addEventListener("click", function() {
     openTab("https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli");
