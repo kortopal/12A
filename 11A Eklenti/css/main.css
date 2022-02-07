@@ -21,6 +21,11 @@
     background: none;
 }
 
+::selection {
+    background-color: var(--theme-color);
+    color: var(--theme-txt-color);
+}
+
 button{
     background-color: var(--theme-color);
     color: var(--theme-txt-color);
