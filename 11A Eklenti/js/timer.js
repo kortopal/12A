@@ -35,6 +35,7 @@ function setTimer() {
                 clearInterval(timer);
                 $id("btn_pause_timer").style.display = "none";
                 $id("btn_reset_timer").style.width = "100%";
+                $id("timer_header").innerHTML = "Süre Bitti!";
                 alarmSound.load();
                 alarmSound.play();
                 document.title = "Süre Bitti!";
@@ -139,5 +140,6 @@ $id("btn_reset_timer").addEventListener("click", function() {
     $id("select_timer_minutes").value = minutes + " Dakika";
     $id("select_timer_seconds").value = seconds + " Saniye";
     alarmSound.pause();
+    $id("timer_header").innerHTML = "Zamanlayıcı";
     document.title = "Zamanlayıcı | 11/A Akıllı Tahta Eklentisi";
 });

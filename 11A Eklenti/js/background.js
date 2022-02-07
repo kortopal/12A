@@ -65,7 +65,7 @@ function openTab(tab_url) {
     totalHistoryContent++;
     chrome.tabs.query({}, function(tabs) { 
         for(var i=0;i<tabs.length;i++) {
-            if(tab_url === tabs[i].url) {
+            if(tabs[i].url.toLowerCase().includes(tab_url.toLowerCase()) == true) {
                 tabStatus = true;
                 tabId = tabs[i].id;
                 break;
