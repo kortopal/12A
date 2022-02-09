@@ -8,7 +8,7 @@ var seconds;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
-    setBackground("timer.html");
+    setBackgroundFile("timer.html");
 },false);
 
 function getParam(parameterName) {

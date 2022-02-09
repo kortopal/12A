@@ -1,4 +1,4 @@
-function setBackground(file) {
+function setBackgroundFile(file) {
     if(file === "popup.html") {
         loadStorage();
     } else if(file === "timer.html") {

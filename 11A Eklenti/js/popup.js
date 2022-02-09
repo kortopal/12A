@@ -10,7 +10,7 @@ var numpadType;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
-    setBackground("popup.html");
+    setBackgroundFile("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         $id("header_text").innerHTML = "Günaydın";
         $id("header_text").style.fontSize = "25px";
