@@ -204,7 +204,7 @@ $id("btn_numclose").addEventListener("click", function() {
     input_timer_numpad.value = null;
     input_currency_numpad.value = null;
     $id("fill_bg").style.display = "none";
-    $id("numpad").style.animation = "numpadAnim 0s linear";
+    $id("numpad").style.animation = "none !important";
     $id("numpad").style.display = "none";
     if(numpadType === "Timer") {
         $id("btn_timer").disabled = false;
