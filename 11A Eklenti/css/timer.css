@@ -26,6 +26,7 @@ body{
 #main button{
     background-color: white;
     color: var(--theme-color);
+    font-weight: bold;
 }
 #btn_start_timer{width: 100%;}
 #btn_pause_timer,#btn_resume_timer,#btn_reset_timer{width: calc(50% - 1.5px);display: none;}
