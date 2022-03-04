@@ -140,6 +140,6 @@ $id("btn_reset_timer").addEventListener("click", function() {
     $id("select_timer_minutes").value = minutes + " Dakika";
     $id("select_timer_seconds").value = seconds + " Saniye";
     $id("timer_header").innerHTML = "Zamanlayıcı";
-    document.title = "Zamanlayıcı | 11/A Akıllı Tahta Eklentisi";
+    document.title = "Zamanlayıcı - 11/A Akıllı Tahta Eklentisi";
     alarmSound.pause();
 });
