@@ -10,6 +10,9 @@ var numpadType;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
+    if(window.location.hash === "#settings") {
+        $id("btn_settings_on").click();
+    }
     setBackgroundFile("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         $id("header_text").innerHTML = "Günaydın";
