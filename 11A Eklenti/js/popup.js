@@ -71,7 +71,7 @@ $id("btn_settings_on").addEventListener("click", function() {
     $id("btn_settings_on").style.display = "none";
     $id("settings").style.display = "block";
     $id("btn_settings_off").style.display = "block";
-    document.title = "Ayarlar | 11/A Akıllı Tahta Eklentisi";
+    document.title = "Ayarlar - 11/A Akıllı Tahta Eklentisi";
 });
 $id("btn_settings_off").addEventListener("click", function() {
     $id("main").style.display = "block";
