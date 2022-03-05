@@ -6,20 +6,20 @@
     "background.service_worker": {
       "scripts": ["/js/background.js"],
       "persistent": false
-      },
+    },
 
     "permissions": [
       "storage",
       "unlimitedStorage",
       "tabs"
-      ],
+    ],
       
     "icons": {
       "16": "/img/16.png",
       "32": "/img/32.png",
       "48": "/img/48.png",
       "128": "/img/128.png"
-      },
+    },
 
     "action": {
       "default_title": "11/A Akıllı Tahta Eklentisi",
@@ -30,5 +30,5 @@
           "48": "/img/48.png",
           "128": "/img/128.png"
         }
-      }
+    }
 }
