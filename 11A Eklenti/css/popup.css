@@ -83,8 +83,10 @@ header{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
+    text-overflow: ellipsis;
 }
 #history_content .border:last-child{display: none;}
+.history_host_name{font-size: 15px;color: gray;}
 #btn_show_details,#btn_hide_details,#btn_show_history,#btn_hide_history{width: 100%;}
 #btn_hide_details,#btn_hide_history{
     display: none;

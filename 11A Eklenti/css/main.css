@@ -10,7 +10,7 @@
     width: 12px;
 }
 ::-webkit-scrollbar-track{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 1ex;
 }
 ::-webkit-scrollbar-thumb{
@@ -73,7 +73,7 @@ input::-webkit-inner-spin-button {
     color: var(--theme-color);
     padding: 3px;
     border-radius:  var(--theme-border-radius);
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 .icon{font-size: 23px;}
 .ch{border-bottom: 3px solid white;padding-bottom: 3px;}
