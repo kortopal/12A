@@ -1,7 +1,7 @@
 function setBackgroundFile(file) {
     if(file === "popup.html") {
         loadStorage();
-    } else if(file === "timer.html") {
+    } else{
         chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
             document.documentElement.style.setProperty("--theme-color", data.theme_color);
             if(getThemeColor() === "#C80815" || getThemeColor() === "#244BBF" || getThemeColor() === "#6351CF" || getThemeColor() === "#622814" || getThemeColor() === "#192E59" || getThemeColor() === "#13141C" || getThemeColor() === "#59364A" || getThemeColor() === "#8B150B") {
@@ -59,13 +59,13 @@ function loadStorage() {
     });
 }
 
-function openTab(tab_url) {
+function openTab(tabUrl, historyLabel, historyHostName) {
     var isTabActive = false;
     var tabId = 0;
     totalHistoryContent++;
     chrome.tabs.query({}, function(tabs) { 
         for(var i=0;i<tabs.length;i++) {
-            if(tabs[i].url.toLowerCase().includes(tab_url.toLowerCase()) == true) {
+            if(tabs[i].url.toLowerCase().includes(tabUrl.toLowerCase()) == true) {
                 isTabActive = true;
                 tabId = tabs[i].id;
                 break;
@@ -73,30 +73,23 @@ function openTab(tab_url) {
         }
 
         if(isTabActive == false) {
-            chrome.tabs.create({ url:tab_url });
+            chrome.tabs.create({ url:tabUrl });
         } else{
             chrome.tabs.update(tabId, {selected: true});
             chrome.tabs.reload(tabId);
         }
     });
 
-    if(tab_url !== "chrome-extension://" + chrome.runtime.id + "/popup.html" && tab_url !== "chrome://extensions/?id=" + chrome.runtime.id) {
-        setHistory(tab_url,49);
+    if(tabUrl !== "chrome-extension://" + chrome.runtime.id + "/popup.html" && tabUrl !== "chrome://extensions/?id=" + chrome.runtime.id) {
+        setHistory(historyLabel, historyHostName);
     }
 }
 
-function setHistory(tab_url,max_char) {
-    if(tab_url.toString().includes("timer.html") == true) {
-        historyContent = "<span class='small_header_text'>" + getDateAndTime("DateAndTime") + "</span><br>Zamanlayıcı" + ((input_timer_numpad.value.length > 0) ? " ("  + input_timer_numpad.value + " Dakika)" : "") + "<div class='border'></div>" + historyContent;
-    } else{
-        if(tab_url.length >= max_char) {
-            historyContent = "<span class='small_header_text'>" + getDateAndTime("DateAndTime") + "</span><br>" + tab_url.substring(0,max_char) + "..." + "<div class='border'></div>" + historyContent;
-        } else{
-            historyContent = "<span class='small_header_text'>" + getDateAndTime("DateAndTime") + "</span><br>" + tab_url + "<div class='border'></div>" + historyContent;
-        }
-    }
-    
-    $id("history_content").innerHTML = historyContent;
-    setStorage();
-    loadStorage();
+function setHistory(historyLabel, historyHostName) {
+    try {
+        historyContent = "<span class='small_header_text'>" + getDateAndTime("DateAndTime") + "<br><span class='history_host_name'>" + historyHostName + "</span></span><br>" + historyLabel + "<div class='border'></div>" + historyContent;
+        $id("history_content").innerHTML = historyContent;
+        setStorage();
+        loadStorage();
+    } catch (error) {}
 }

@@ -58,10 +58,16 @@ function numpadAdd(num) {
             new_input_timer_value = parseInt(input_timer_numpad.value + num);
             input_timer_numpad.value = new_input_timer_value;
         }
+        if(input_timer_numpad.value.charAt(0) === "0") {
+            input_timer_numpad.value = null;
+        }
         input_timer_numpad.focus();
     } else if(numpadType === "Currency") {
         new_input_currency_value = parseInt(input_currency_numpad.value + num);
         input_currency_numpad.value = new_input_currency_value;
+        if(input_currency_numpad.value.charAt(0) === "0") {
+            input_currency_numpad.value = null;
+        }
         input_currency_numpad.focus();
     }
 }
@@ -92,27 +98,27 @@ input_currency.addEventListener("click", function() {
 
 $id("btn_dollar").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
-        openTab("https://www.google.com/search?q=" + input_currency.value + "+dolar+ka%C3%A7+TL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=" + input_currency.value + "+Dolar+Ka%C3%A7+TL&ie=UTF-8", input_currency.value + " Dolar Kaç TL - Google'da Ara", "www.google.com");
     } else{
-        openTab("https://www.google.com/search?q=Dolar%2FTL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=Dolar%2FTL&ie=UTF-8", "Dolar/TL - Google'da Ara", "www.google.com");
     }
 });
 $id("btn_euro").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
-        openTab("https://www.google.com/search?q=" + input_currency.value + "+euro+ka%C3%A7+TL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=" + input_currency.value + "+Euro+Ka%C3%A7+TL&ie=UTF-8", input_currency.value + " Euro Kaç TL - Google'da Ara", "www.google.com");
     } else{
-        openTab("https://www.google.com/search?q=Euro%2FTL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=Euro%2FTL&ie=UTF-8", "Euro/TL - Google'da Ara", "www.google.com");
     }
 });  
 $id("btn_pound").addEventListener("click", function() {
     if(input_currency.value.length > 0) {
-        openTab("https://www.google.com/search?q=" + input_currency.value + "+sterlin+ka%C3%A7+TL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=" + input_currency.value + "+Sterlin+Ka%C3%A7+TL&ie=UTF-8", input_currency.value + " Sterlin Kaç TL - Google'da Ara", "www.google.com");
     } else{
-        openTab("https://www.google.com/search?q=Sterlin%2FTL&ie=UTF-8");
+        openTab("https://www.google.com/search?q=Sterlin%2FTL&ie=UTF-8", "Sterlin/TL - Google'da Ara", "www.google.com");
     }
 });
 $id("btn_covid19").addEventListener("click", function() {
-    openTab("https://covid19.saglik.gov.tr/");
+    openTab("https://covid19.saglik.gov.tr/", "Covid-19 Bilgi Paneli", "covid19.saglik.gov.tr");
 });
 $id("btn_timer").addEventListener("click", function() {
     if(input_timer_numpad.value.toString().length > 0) {
@@ -122,10 +128,10 @@ $id("btn_timer").addEventListener("click", function() {
     if(input_timer_numpad.value.toString().length > 4) {
         input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
     }
-    openTab("chrome-extension://" + chrome.runtime.id + "/timer.html?timer=" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : 0));
+    openTab("chrome-extension://" + chrome.runtime.id + "/timer.html?timer=" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : 0), "Zamanlayıcı" + ((input_timer_numpad.value.length > 0) ? " ("  + input_timer_numpad.value + " Dakika)" : ""), "Yerel Eklenti Dosyası");
 });
 $id("btn_weather").addEventListener("click", function() {
-    openTab("https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli");
+    openTab("https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli", "Tunceli Hava Durumu", "www.mgm.gov.tr");
 });
 
 input_timer_numpad.addEventListener("keyup", function(event) {
