@@ -3,6 +3,8 @@
     "description": "Döviz takibi, zamanlayıcı ve daha birçok özelliği içerisinde barındıran akıllı tahta eklentisi ile tanışın. Kullanıcı deneyimi genetiğinde var.",
     "version": "3.3",
     "manifest_version": 3,
+    "options_page": "popup.html#settings",
+
     "background.service_worker": {
       "scripts": ["/js/background.js"],
       "persistent": false
