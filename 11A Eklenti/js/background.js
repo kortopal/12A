@@ -4,17 +4,17 @@ function setBackgroundFile(file) {
     } else{
         chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
             document.documentElement.style.setProperty("--theme-color", data.theme_color);
-            if(getThemeColor() === "#C80815" || getThemeColor() === "#244BBF" || getThemeColor() === "#6351CF" || getThemeColor() === "#622814" || getThemeColor() === "#192E59" || getThemeColor() === "#13141C" || getThemeColor() === "#59364A" || getThemeColor() === "#8B150B") {
-                document.documentElement.style.setProperty("--theme-txt-color", "white");
+            if((hexToRgba(getThemeColor(),"r")*0.299 + hexToRgba(getThemeColor(),"g")*0.587 + hexToRgba(getThemeColor(),"b")*0.114) > 80) {
+                document.documentElement.style.setProperty("--theme-txt-color", "#000000");
             } else{
-                document.documentElement.style.setProperty("--theme-txt-color", "black");
+                document.documentElement.style.setProperty("--theme-txt-color", "#ffffff");
             }
         });
     }
 }
 
 function setStorage() {
-    chrome.storage.sync.set({"theme_color": $id("select_theme_color").value}, function() {
+    chrome.storage.sync.set({"theme_color": $id("input_theme_color").value}, function() {
     });
     chrome.storage.local.set({"history_content": historyContent}, function() {
     });
@@ -28,12 +28,12 @@ function setStorage() {
 
 function loadStorage() {
     chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
-        $id("select_theme_color").value = data.theme_color;
+        $id("input_theme_color").value = data.theme_color;
         document.documentElement.style.setProperty("--theme-color", data.theme_color);
-        if($id("select_theme_color").value === "#C80815" || $id("select_theme_color").value === "#244BBF" || $id("select_theme_color").value === "#6351CF" || $id("select_theme_color").value === "#622814" || $id("select_theme_color").value === "#192E59" || $id("select_theme_color").value === "#13141C" || $id("select_theme_color").value === "#59364A" || $id("select_theme_color").value === "#8B150B") {
-            document.documentElement.style.setProperty("--theme-txt-color", "white");
+        if((hexToRgba(getThemeColor(),"r")*0.299 + hexToRgba(getThemeColor(),"g")*0.587 + hexToRgba(getThemeColor(),"b")*0.114) > 80) {
+            document.documentElement.style.setProperty("--theme-txt-color", "#000000");
         } else{
-            document.documentElement.style.setProperty("--theme-txt-color", "black");
+            document.documentElement.style.setProperty("--theme-txt-color", "#ffffff");
         }
     });
     chrome.storage.local.get({"history_content": ""}, function(data) {

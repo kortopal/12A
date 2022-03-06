@@ -233,7 +233,7 @@ $id("btn_currency_numpad").addEventListener("click", function() {
     $id("btn_numclose").click();
 });
 
-$id("select_theme_color").addEventListener("change", function() {
+$id("input_theme_color").addEventListener("change", function() {
     lastSettingsUpdate = getDateAndTime("DateAndTime");
     setStorage();
     loadStorage();

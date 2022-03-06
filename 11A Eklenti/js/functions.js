@@ -4,6 +4,29 @@ function $id(id) {
     return document.getElementById(id);
 }
 
+function hexToRgba(hex,type){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+
+        switch(type) {
+            case "rgba":
+                return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',1)';
+            case "r":
+                return +[(c>>16)&255];
+            case "g":
+                return +[(c>>8)&255];
+            case "b":
+                return +[c&255];
+        }
+    }
+    throw new Error('Bad Hex');
+}
+
 function getThemeColor() {
     return getComputedStyle(document.documentElement).getPropertyValue('--theme-color');
 }
