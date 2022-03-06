@@ -51,7 +51,7 @@ birçok alanda kolaylık sağlamaktadır.
   
 ![ver3 6-9-min](https://user-images.githubusercontent.com/95717415/156929447-f9233890-7109-48bb-a93d-2b90e0fba0be.png)
   
-![ver3 6-10-min](https://user-images.githubusercontent.com/95717415/156929450-6c26ff89-9686-4397-ad93-4fbcef689338.png)
+![ver3 6-10-min](https://user-images.githubusercontent.com/95717415/156929618-a0e23b02-a45a-4cb7-9f7d-691aa425b1e1.png)
 
 <br><br>
 
