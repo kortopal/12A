@@ -1,4 +1,12 @@
 const alarmSound = new Audio(chrome.runtime.getURL("/sounds/alarm.mp3"));
+const select_timer_hours = $id("select_timer_hours");
+const select_timer_minutes = $id("select_timer_minutes");
+const select_timer_seconds = $id("select_timer_seconds");
+const timer_text = $id("timer_text");
+const btn_start_timer = $id("btn_start_timer");
+const btn_pause_timer = $id("btn_pause_timer");
+const btn_resume_timer = $id("btn_resume_timer");
+const btn_reset_timer = $id("btn_reset_timer");
 var parameters;
 var paramTimer;
 var timer;
@@ -33,8 +41,8 @@ function setTimer() {
                 minutes = 0;
                 seconds = 0;
                 clearInterval(timer);
-                $id("btn_pause_timer").style.display = "none";
-                $id("btn_reset_timer").style.width = "100%";
+                btn_pause_timer.style.display = "none";
+                btn_reset_timer.style.width = "100%";
                 $id("timer_header").innerHTML = "Süre Bitti!";
                 document.title = "Süre Bitti!";
                 alarmSound.load();
@@ -42,18 +50,18 @@ function setTimer() {
             }
         }
     }
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+    timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     for(var i=0;i<24;i++) {
-        $id("select_timer_hours").innerHTML += "<option value'" + i + "'>" + i + " Saat</option>";
+        select_timer_hours.innerHTML += "<option value'" + i + "'>" + i + " Saat</option>";
     }
     for(var i=0;i<60;i++) {
-        $id("select_timer_minutes").innerHTML += "<option value'" + i + "'>" + i + " Dakika</option>";
+        select_timer_minutes.innerHTML += "<option value'" + i + "'>" + i + " Dakika</option>";
     }
     for(var i=0;i<=60;i++) {
-        $id("select_timer_seconds").innerHTML += "<option value'" + i + "'>" + i + " Saniye</option>";
+        select_timer_seconds.innerHTML += "<option value'" + i + "'>" + i + " Saniye</option>";
     }
 
     parameters = new URLSearchParams(window.location.search);
@@ -70,75 +78,75 @@ document.addEventListener("DOMContentLoaded", function() {
                 minutes = parseInt(paramTimer%60);
                 seconds = 0;
             }
-            $id("select_timer_hours").value = hours + " Saat";
-            $id("select_timer_minutes").value = minutes + " Dakika";
-            $id("select_timer_seconds").value = seconds + " Saniye";
-            $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+            select_timer_hours.value = hours + " Saat";
+            select_timer_minutes.value = minutes + " Dakika";
+            select_timer_seconds.value = seconds + " Saniye";
+            timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
         }
     }
 }, false);
 
-$id("select_timer_hours").addEventListener("change", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+select_timer_hours.addEventListener("change", function() {
+    hours = parseInt(select_timer_hours.value.toString().replace(" Saat", "")); 
+    minutes = parseInt(select_timer_minutes.value.toString().replace(" Dakika", "")); 
+    seconds = parseInt(select_timer_seconds.value.toString().replace(" Saniye", ""));
+    timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 });
-$id("select_timer_minutes").addEventListener("change", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+select_timer_minutes.addEventListener("change", function() {
+    hours = parseInt(select_timer_hours.value.toString().replace(" Saat", "")); 
+    minutes = parseInt(select_timer_minutes.value.toString().replace(" Dakika", "")); 
+    seconds = parseInt(select_timer_seconds.value.toString().replace(" Saniye", ""));
+    timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 });
-$id("select_timer_seconds").addEventListener("change", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+select_timer_seconds.addEventListener("change", function() {
+    hours = parseInt(select_timer_hours.value.toString().replace(" Saat", "")); 
+    minutes = parseInt(select_timer_minutes.value.toString().replace(" Dakika", "")); 
+    seconds = parseInt(select_timer_seconds.value.toString().replace(" Saniye", ""));
+    timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
 });
-$id("btn_start_timer").addEventListener("click", function() {
-    hours = parseInt($id("select_timer_hours").value.toString().replace(" Saat", "")); 
-    minutes = parseInt($id("select_timer_minutes").value.toString().replace(" Dakika", "")); 
-    seconds = parseInt($id("select_timer_seconds").value.toString().replace(" Saniye", ""));
+btn_start_timer.addEventListener("click", function() {
+    hours = parseInt(select_timer_hours.value.toString().replace(" Saat", "")); 
+    minutes = parseInt(select_timer_minutes.value.toString().replace(" Dakika", "")); 
+    seconds = parseInt(select_timer_seconds.value.toString().replace(" Saniye", ""));
     timer = setInterval(setTimer,1000);
-    $id("btn_start_timer").style.display = "none";
-    $id("btn_pause_timer").style.display = "inline-block";
-    $id("btn_reset_timer").style.display = "inline-block";
-    $id("btn_reset_timer").style.width = "calc(50% - 4px)";
-    $id("select_timer_hours").disabled = true;
-    $id("select_timer_minutes").disabled = true;
-    $id("select_timer_seconds").disabled = true;
+    btn_start_timer.style.display = "none";
+    btn_pause_timer.style.display = "inline-block";
+    btn_reset_timer.style.display = "inline-block";
+    btn_reset_timer.style.width = "calc(50% - 4px)";
+    select_timer_hours.disabled = true;
+    select_timer_minutes.disabled = true;
+    select_timer_seconds.disabled = true;
     document.title = "Süre Devam Ediyor!";
 });
-$id("btn_pause_timer").addEventListener("click", function() {
+btn_pause_timer.addEventListener("click", function() {
     clearInterval(timer);
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
-    $id("btn_pause_timer").style.display = "none";
-    $id("btn_resume_timer").style.display = "inline-block";
+    timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+    btn_pause_timer.style.display = "none";
+    btn_resume_timer.style.display = "inline-block";
     document.title = "Zamanlayıcı Duraklatıldı!";
 });
-$id("btn_resume_timer").addEventListener("click", function() {
+btn_resume_timer.addEventListener("click", function() {
     timer = setInterval(setTimer,1000);
-    $id("btn_pause_timer").style.display = "inline-block";
-    $id("btn_resume_timer").style.display = "none";
+    btn_pause_timer.style.display = "inline-block";
+    btn_resume_timer.style.display = "none";
     document.title = "Süre Devam Ediyor!";
 });
-$id("btn_reset_timer").addEventListener("click", function() {
+btn_reset_timer.addEventListener("click", function() {
     clearInterval(timer);
     seconds = 0;
     minutes = 0;
     hours = 0;
-    $id("timer_text").innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
-    $id("btn_start_timer").style.display = "block";
-    $id("btn_pause_timer").style.display = "none";
-    $id("btn_resume_timer").style.display = "none";
-    $id("btn_reset_timer").style.display = "none";
-    $id("select_timer_hours").disabled = false;
-    $id("select_timer_minutes").disabled = false;
-    $id("select_timer_seconds").disabled = false;
-    $id("select_timer_hours").value = hours + " Saat";
-    $id("select_timer_minutes").value = minutes + " Dakika";
-    $id("select_timer_seconds").value = seconds + " Saniye";
+    timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
+    btn_start_timer.style.display = "block";
+    btn_pause_timer.style.display = "none";
+    btn_resume_timer.style.display = "none";
+    btn_reset_timer.style.display = "none";
+    select_timer_hours.disabled = false;
+    select_timer_minutes.disabled = false;
+    select_timer_seconds.disabled = false;
+    select_timer_hours.value = hours + " Saat";
+    select_timer_minutes.value = minutes + " Dakika";
+    select_timer_seconds.value = seconds + " Saniye";
     $id("timer_header").innerHTML = "Zamanlayıcı";
     document.title = "Zamanlayıcı - 11/A Akıllı Tahta Eklentisi";
     alarmSound.pause();

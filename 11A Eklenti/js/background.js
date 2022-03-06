@@ -9,6 +9,12 @@ function setBackgroundFile(file) {
             } else{
                 document.documentElement.style.setProperty("--theme-txt-color", "#ffffff");
             }
+
+            if((hexToRgba(getThemeColor(),"r")*0.299 + hexToRgba(getThemeColor(),"g")*0.587 + hexToRgba(getThemeColor(),"b")*0.114) > 200) {
+                document.documentElement.style.setProperty("--theme-adaptive-color", "black");
+            } else{
+                document.documentElement.style.setProperty("--theme-adaptive-color", "white");
+            }
         });
     }
 }
@@ -27,6 +33,7 @@ function setStorage() {
 }
 
 function loadStorage() {
+    //sync
     chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
         $id("input_theme_color").value = data.theme_color;
         document.documentElement.style.setProperty("--theme-color", data.theme_color);
@@ -35,7 +42,16 @@ function loadStorage() {
         } else{
             document.documentElement.style.setProperty("--theme-txt-color", "#ffffff");
         }
+
+        if((hexToRgba(getThemeColor(),"r")*0.299 + hexToRgba(getThemeColor(),"g")*0.587 + hexToRgba(getThemeColor(),"b")*0.114) > 200) {
+            document.documentElement.style.setProperty("--theme-adaptive-color", "black");
+        } else{document.documentElement.style.setProperty("--theme-adaptive-color", "white");}
     });
+    chrome.storage.sync.get({"settings_update": "Henüz Değişiklik Yapılmadı"}, function(data) {
+        lastSettingsUpdate = data.settings_update;
+        $id("settings_update_text").innerHTML = "<span class='small_header_text'>Ayarlar İçin Son Değişiklik Tarihi</span><br>" + lastSettingsUpdate;
+    });
+    //local
     chrome.storage.local.get({"history_content": ""}, function(data) {
         historyContent = data.history_content;
         if(historyContent.length > 0) {
@@ -43,10 +59,6 @@ function loadStorage() {
         } else{
             $id("history_content").innerHTML = "<i style='font-size: 120px;margin-bottom: 5px;' class='fas fa-trash'></i><br>Geçmiş Boş";
         }
-    });
-    chrome.storage.sync.get({"settings_update": "Henüz Değişiklik Yapılmadı"}, function(data) {
-        lastSettingsUpdate = data.settings_update;
-        $id("settings_update_text").innerHTML = "<span class='small_header_text'>Ayarlar İçin Son Değişiklik Tarihi</span><br>" + lastSettingsUpdate;
     });
     chrome.storage.local.get({"last_history_clear": "Henüz Geçmiş Silinmedi"}, function(data) {
         lastHistoryClear = data.last_history_clear;
@@ -56,6 +68,11 @@ function loadStorage() {
     chrome.storage.local.get({"total_history_content": 0}, function(data) {
         totalHistoryContent = data.total_history_content;
         $id("dialog_title").innerHTML = "Emin Misiniz?<br><span style='font-size:16px;font-weight:normal;'>(Toplam " + totalHistoryContent + " öğe silinecek)</span>";
+        if(totalHistoryContent > 0) {
+            $id("btn_hide_history_text").innerHTML = "Geçmiş (Toplam " + totalHistoryContent + " öğe)";
+        } else{
+            $id("btn_hide_history_text").innerHTML = "Geçmiş";
+        }
     });
 }
 

@@ -16,20 +16,16 @@ window.addEventListener("load",function() {
     setBackgroundFile("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         $id("header_text").innerHTML = "Günaydın";
-        $id("header_text").style.fontSize = "25px";
-        $id("header_text").style.top = "8px";
+        $id("header_text").style.fontSize = "26px";
     } else if(9<getDateAndTime("Hours") && getDateAndTime("Hours")<12) {
         $id("header_text").innerHTML = "11/A";
-        $id("header_text").style.fontSize = "28px";
-        $id("header_text").style.top = "6.5px";
+        $id("header_text").style.fontSize = "30px";
     } else if(12<=getDateAndTime("Hours") && getDateAndTime("Hours")<15) {
         $id("header_text").innerHTML = "Tünaydın";
-        $id("header_text").style.fontSize = "25px";
-        $id("header_text").style.top = "8px";
+        $id("header_text").style.fontSize = "26px";
     } else{
         $id("header_text").innerHTML = "11/A";
-        $id("header_text").style.fontSize = "28px";
-        $id("header_text").style.top = "6.5px";
+        $id("header_text").style.fontSize = "30px";
     }
 },false);
 
