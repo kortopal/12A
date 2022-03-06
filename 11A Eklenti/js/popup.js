@@ -123,7 +123,7 @@ $id("btn_pound").addEventListener("click", function() {
     }
 });
 $id("btn_covid19").addEventListener("click", function() {
-    openTab("https://covid19.saglik.gov.tr/", "Covid-19 Bilgi Paneli", "covid19.saglik.gov.tr");
+    openTab("https://covid19.saglik.gov.tr/", "Covid 19 - T.C. Sağlık Bakanlığı", "covid19.saglik.gov.tr");
 });
 $id("btn_timer").addEventListener("click", function() {
     if(input_timer_numpad.value.toString().length > 0) {

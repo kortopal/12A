@@ -80,9 +80,11 @@ function openTab(tabUrl, historyLabel, historyHostName) {
         }
     });
 
-    if(tabUrl.includes("chrome-extension://" + chrome.runtime.id + "/popup.html") == false && tabUrl.includes("chrome://extensions/?id=" + chrome.runtime.id) == false) {
-        setHistory(historyLabel, historyHostName);
-    }
+    try {
+        if(tabUrl.includes("chrome-extension://" + chrome.runtime.id + "/popup.html") == false && tabUrl.includes("chrome://extensions/?id=" + chrome.runtime.id) == false) {
+            setHistory(historyLabel, historyHostName);
+        }
+    } catch (error) {}
 }
 
 function setHistory(historyLabel, historyHostName) {
