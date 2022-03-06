@@ -59,6 +59,7 @@ header{
     box-shadow: 0px 0px 23px 0px black;
 }
 
+#input_theme_color{width: 100%;}
 #details,#history{
     background-color: var(--theme-color);
     color: var(--theme-txt-color);
