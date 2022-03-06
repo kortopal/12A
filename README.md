@@ -33,23 +33,25 @@ birçok alanda kolaylık sağlamaktadır.
   
 ## Ekran Görüntüleri 📷
 
-<img width="960" alt="1-min" src="https://user-images.githubusercontent.com/95717415/152671519-e43de4a8-c71b-46f4-8b09-aaa4686b3990.PNG">
-
-<img width="960" alt="2-min" src="https://user-images.githubusercontent.com/95717415/152671522-08378e89-03df-44a9-8c00-ae8658209f17.PNG">
-
-<img width="960" alt="3-min" src="https://user-images.githubusercontent.com/95717415/152671524-28e04056-9498-4a6c-a0f6-0a15bc88a632.PNG">
-
-<img width="960" alt="4-min" src="https://user-images.githubusercontent.com/95717415/152671552-60dac8a9-2db5-49d3-9eac-d738a41150ef.PNG">
-
-<img width="960" alt="5-min" src="https://user-images.githubusercontent.com/95717415/152671554-40a8db50-f9e1-45cb-8bcc-2e74374c4f80.PNG">
-
-<img width="960" alt="6-min" src="https://user-images.githubusercontent.com/95717415/152671558-f5150b59-5537-4077-b359-428a27100c22.PNG">
-
-<img width="960" alt="7-min" src="https://user-images.githubusercontent.com/95717415/152671567-bc1e6738-2d8c-4cb7-a772-79c92a35dba0.PNG">
-
-<img width="960" alt="8-min" src="https://user-images.githubusercontent.com/95717415/152671569-a1254bd4-861c-43fb-a210-f81e2a668a4a.PNG">
-
-<img width="960" alt="9-min" src="https://user-images.githubusercontent.com/95717415/152671573-29a1f8d8-b938-4003-be45-949320fcafdb.PNG">
+![ver3 6-1-min](https://user-images.githubusercontent.com/95717415/156929432-56f41a8b-4378-4611-acec-4ba4fa9d193b.png)
+  
+![ver3 6-2-min](https://user-images.githubusercontent.com/95717415/156929435-ba53285b-d588-4009-b665-7f7f17f69e4f.png)
+  
+![ver3 6-3-min](https://user-images.githubusercontent.com/95717415/156929438-4c051139-0042-4771-9f6d-7db3be546aa4.png)
+  
+![ver3 6-4-min](https://user-images.githubusercontent.com/95717415/156929439-35901766-7af9-4724-9d31-f08209fc9580.png)
+  
+![ver3 6-5-min](https://user-images.githubusercontent.com/95717415/156929440-ab229b3d-969e-4fd4-90b6-c7c638cd7fc6.png)
+  
+![ver3 6-6-min](https://user-images.githubusercontent.com/95717415/156929443-45ecea36-2478-47ee-92a9-5c36df21469a.png)
+  
+![ver3 6-7-min](https://user-images.githubusercontent.com/95717415/156929444-d47024fa-a244-4678-86c8-987a37e9691c.png)
+  
+![ver3 6-8-min](https://user-images.githubusercontent.com/95717415/156929445-098b4502-9abe-48bd-a4e1-55856c72ace3.png)
+  
+![ver3 6-9-min](https://user-images.githubusercontent.com/95717415/156929447-f9233890-7109-48bb-a93d-2b90e0fba0be.png)
+  
+![ver3 6-10-min](https://user-images.githubusercontent.com/95717415/156929450-6c26ff89-9686-4397-ad93-4fbcef689338.png)
 
 <br><br>
 
