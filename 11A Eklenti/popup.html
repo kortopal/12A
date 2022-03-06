@@ -47,7 +47,7 @@
         <div id="history_scroll" class="scroll"></div>
         <div id="history">
             <button id="btn_show_history"><i style="float: left;" class="fas fa-chevron-right"></i>Geçmiş<i style="float: right;" class="fas fa-history"></i></button>
-            <button id="btn_hide_history"><i style="float: left;transform: rotate(90deg);" class="fas fa-chevron-right"></i>Geçmiş<i style="float: right;" class="fas fa-history"></i></button>
+            <button id="btn_hide_history"><i style="float: left;transform: rotate(90deg);" class="fas fa-chevron-right"></i><span id="btn_hide_history_text">Geçmiş</span><i style="float: right;" class="fas fa-history"></i></button>
             <div id="history_content"></div>
             <button id="btn_clear_history">Geçmişi Temizle <i class="fas fa-trash-restore"></i></button>
         </div>
@@ -67,7 +67,7 @@
     </div>
 
     <div id="numpad">
-        <h3 class="ch"><i class="fas fa-keyboard icon"></i> Numerik Tuş Takımı</h3>
+        <h3 class="ch" style="color: var(--theme-txt-color);border-color: var(--theme-txt-color);"><i class="fas fa-keyboard icon"></i> Numerik Tuş Takımı</h3>
         <input type="number" id="input_timer_numpad" min="0" max="9999" placeholder="Zamanlayıcı Süresi (dk.)" autocomplete="off">
         <input type="number" id="input_currency_numpad" min="0" placeholder="Döviz Miktarı (Döviz/TL)" autocomplete="off">
         <br>
