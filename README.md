@@ -18,7 +18,7 @@ birçok alanda kolaylık sağlamaktadır.
 ➤ <b>Hızlı döviz sorgulama</b> özelliği ile kolayca döviz takibi yapabilirsiniz. <br>
 ➤ <b>Hızlı erişim paneli</b> ile kolayca en çok kullanılan web adreslerini ziyaret edebilirsiniz. <br>
 ➤ <b>Zamanlayıcı</b> ile kolayca sınav için veya farklı bir amaç için zamanlayıcı oluşturabilirsiniz. <br>
-➤ Eklenti temasını <b>10 farklı tema rengi</b> ve <b>5 farklı özel tema</b> ile özelleştirebilirsiniz. <br>
+➤ Eklenti temasını <b>dilediğiniz renkte</b> özelleştirebilirsiniz. <br>
 ➤ <b>Geçmiş</b> ile etkinlik aktivitenizi görebilir ve temizleyebilirsiniz. <br>
 ➤ Eklenti dinamik zaman aralıklarına göre değişen animasyonlu pencere ile sizi açılışta karşılar. <br>
 ➤ Genişletme özelliği ile eklentiyi ayrı pencere olarak açabilirsiniz. <br>
