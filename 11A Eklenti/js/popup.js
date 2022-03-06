@@ -12,7 +12,7 @@ document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
     if(window.location.hash === "#settings") {
         $id("btn_settings_on").click();
-    }
+    } else{window.location.hash = "#main";}
     setBackgroundFile("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         $id("header_text").innerHTML = "Günaydın";
@@ -80,6 +80,7 @@ $id("btn_settings_on").addEventListener("click", function() {
     $id("btn_settings_on").style.display = "none";
     $id("settings").style.display = "block";
     $id("btn_settings_off").style.display = "block";
+    window.location.hash = "#settings";
     document.title = "Ayarlar - 11/A Akıllı Tahta Eklentisi";
 });
 $id("btn_settings_off").addEventListener("click", function() {
@@ -89,6 +90,7 @@ $id("btn_settings_off").addEventListener("click", function() {
     $id("btn_settings_off").style.display = "none";
     $id("btn_hide_details").click();
     $id("btn_hide_history").click();
+    window.location.hash = "#main";
     document.title = "11/A Akıllı Tahta Eklentisi";
 });
 $id("btn_fullscreen").addEventListener("click", function() {
@@ -128,30 +130,32 @@ $id("btn_timer").addEventListener("click", function() {
         input_timer_numpad.value = Math.abs(input_timer_numpad.value);
         input_timer_numpad.value = parseInt(input_timer_numpad.value);
     }
-    if(input_timer_numpad.value.toString().length > 4) {
-        input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
-    }
     openTab("chrome-extension://" + chrome.runtime.id + "/timer.html?timer=" + ((input_timer_numpad.value.length > 0) ? input_timer_numpad.value : 0), "Zamanlayıcı" + ((input_timer_numpad.value.length > 0) ? " ("  + input_timer_numpad.value + " Dakika)" : ""), "Yerel Eklenti Dosyası");
 });
 $id("btn_weather").addEventListener("click", function() {
-    openTab("https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli", "Tunceli Hava Durumu", "www.mgm.gov.tr");
+    openTab("https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Tunceli", "Tunceli Hava Durumu - Meteoroloji Genel Müdürlüğü", "www.mgm.gov.tr");
 });
 
-input_timer_numpad.addEventListener("keyup", function(event) {
+input_timer_numpad.addEventListener("keypress", function(event) {
     if(event.key === "Enter") {
         event.preventDefault();
         $id("btn_timer").disabled = false;
         $id("btn_timer").click();
         $id("btn_numclose").click();
     }
-    if(input_timer_numpad.value.toString().length > 4) {
-        input_timer_numpad.value = parseInt(input_timer_numpad.value.toString().substring(0, 4));
+    if(input_timer_numpad.value.toString().length == 4) {
+        event.preventDefault();
+        return false;
     }
 });
-input_currency_numpad.addEventListener("keyup", function(event) {
+input_currency_numpad.addEventListener("keypress", function(event) {
     if(event.key === "Enter") {
         event.preventDefault();
         $id("btn_currency_numpad").click();
+    }
+    if(input_currency_numpad.value.toString().length == 15) {
+        event.preventDefault();
+        return false;
     }
 });
 
@@ -224,7 +228,6 @@ $id("btn_timer_numpad").addEventListener("click", function() {
     $id("btn_timer").click();
     $id("btn_numclose").click();
 });
-
 $id("btn_currency_numpad").addEventListener("click", function() {
     input_currency.value = input_currency_numpad.value;
     $id("btn_numclose").click();

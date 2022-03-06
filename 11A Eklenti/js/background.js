@@ -65,7 +65,7 @@ function openTab(tabUrl, historyLabel, historyHostName) {
     totalHistoryContent++;
     chrome.tabs.query({}, function(tabs) { 
         for(var i=0;i<tabs.length;i++) {
-            if(tabs[i].url.toLowerCase().includes(tabUrl.toLowerCase()) == true) {
+            if(tabs[i].url.toLowerCase().includes(tabUrl.toLowerCase()) == true || tabUrl.toLowerCase().includes(tabs[i].url.toLowerCase()) == true) {
                 isTabActive = true;
                 tabId = tabs[i].id;
                 break;
@@ -80,7 +80,7 @@ function openTab(tabUrl, historyLabel, historyHostName) {
         }
     });
 
-    if(tabUrl !== "chrome-extension://" + chrome.runtime.id + "/popup.html" && tabUrl !== "chrome://extensions/?id=" + chrome.runtime.id) {
+    if(tabUrl.includes("chrome-extension://" + chrome.runtime.id + "/popup.html") == false && tabUrl.includes("chrome://extensions/?id=" + chrome.runtime.id) == false) {
         setHistory(historyLabel, historyHostName);
     }
 }
