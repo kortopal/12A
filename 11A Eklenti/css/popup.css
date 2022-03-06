@@ -29,7 +29,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    height: 80%;
+    height: 82%;
     padding: 10px;
     margin: auto;
     width: 80%;
@@ -87,31 +87,32 @@ header{
     text-overflow: ellipsis;
 }
 #history_content .border:last-child{display: none;}
-.history_host_name{font-size: 15px;color: gray;}
+.history_host_name{font-size: 15px;}
 #btn_show_details,#btn_hide_details,#btn_show_history,#btn_hide_history{width: 100%;}
 #btn_hide_details,#btn_hide_history{
     display: none;
     box-shadow: 0px 0px 16px 0px black;
 }
 #btn_extension_page{
-    background-color: white;
+    background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
     width: 100%;
     margin-top: 10px;
 }
 #btn_clear_history{
-    background-color: white;
+    background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
     width: 100%;
     display: none;
 }
 
-#input_timer,#input_timer_numpad{width: calc(100% - 4px);text-align: center;display: block;font-size: 20px;}
-#input_currency,#input_currency_numpad{width: calc(100% - 4px);text-align: center;display: block;font-size: 20px;}
+#input_currency_numpad, #input_timer_numpad{border: 2px solid var(--theme-adaptive-color);}
+#input_timer,#input_timer_numpad{width: 100%;text-align: center;display: block;font-size: 20px;}
+#input_currency,#input_currency_numpad{width: 100%;text-align: center;display: block;font-size: 20px;}
 #div_currency button{width: 150px;}
 #div_other button{width: 230px;}
 #header{width: 150px;margin: auto;height: 45px;text-align: center;background: var(--theme-color);color: var(--theme-txt-color);padding: 5px;border-radius: 0px 0px 30px 30px;box-shadow: 0px 0px 23px 0px black;animation: headerAnim 3s linear;}
-#header_text{position: relative;top: 12.5px;font-size: 25px;font-weight: bold;}
+#header_text{font-size: 25px;font-weight: bold;}
 #numpad{
     background-color: var(--theme-color);
     position: fixed;
@@ -125,7 +126,7 @@ header{
     display: none;
     z-index: 90;
 }
-#numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;border-radius: 30px;background-color: white;color: var(--theme-color);}
+#numpad button{width: 60px;height: 60px;margin: 5px;font-weight: bold;border-radius: 30px;background-color: var(--theme-adaptive-color);color: var(--theme-color);}
 
 #fill_bg{
     display: none;
@@ -143,19 +144,19 @@ header{
     background-color: var(--theme-color);
     color: var(--theme-txt-color);
     position: fixed;
-    top: calc(50% - 10px);
-    left: calc(50% - 10px);
-    transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     width: 80%;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid var(--theme-adaptive-color);
     border-radius: var(--theme-border-radius);
     padding: 10px;
     display: none;
     z-index: 100;
 }
 #dialog button{
-    background-color: white;
+    background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
     width: calc(50% - 3.25px);
     font-weight: bold;
@@ -186,7 +187,7 @@ header{
 @media screen and (min-width:900px) {
     #main,#settings{
         width: 50%;
-        height: 80%;
+        height: 82%;
     }
     #numpad{
         left: 23%;

@@ -15,16 +15,16 @@ body{
     width: 50%;
     height: fit-content;
     position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 10px);
+    top: 50%;
+    left: 50%;
     text-align: center;
     padding: 10px;
-    transform: translateX(calc(-50% + 10px)) translateY(calc(-50% + 10px));
+    transform: translateX(-50%) translateY(-50%);
     border-radius: var(--theme-border-radius);
 }
-#main select{display: inline-block; width: calc(33.333% - 3.5px);padding: 5px;}
+#main select{display: inline-block; width: calc(33.333% - 3.5px);padding: 5px;border: 2px solid var(--theme-adaptive-color);}
 #main button{
-    background-color: white;
+    background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
     font-weight: bold;
 }

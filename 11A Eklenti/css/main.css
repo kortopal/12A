@@ -1,5 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     --theme-color: none; /* #EFA110 */
+    --theme-adaptive-color: none;
     --theme-txt-color: black;
     --theme-font: 18px Helvetica;
     --theme-border-radius: 3px;
@@ -69,13 +74,13 @@ input::-webkit-inner-spin-button {
 
 .small_header_text{
     display: inline-block;
-    background-color: white;
+    background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
     padding: 3px;
     border-radius:  var(--theme-border-radius);
     margin-bottom: 5px;
 }
 .icon{font-size: 23px;}
-.ch{border-bottom: 3px solid white;padding-bottom: 3px;}
+.ch{border-bottom: 3px solid white;padding-bottom: 10px;margin-top: 10px;margin-bottom: 10px;}
 .sh{display: inline-block;margin-bottom: 5px;}
 .border{border-bottom: 2px solid var(--theme-txt-color);margin-top: 5px;margin-bottom: 5px;}
