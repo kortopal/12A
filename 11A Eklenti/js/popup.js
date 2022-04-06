@@ -72,17 +72,17 @@ function numpadAdd(num) {
 }
 
 $id("btn_settings_on").addEventListener("click", function() {
-    $id("main").style.display = "none";
+    $id("fragment1").style.display = "none";
     $id("btn_settings_on").style.display = "none";
-    $id("settings").style.display = "block";
+    $id("fragment2").style.display = "block";
     $id("btn_settings_off").style.display = "block";
     window.location.hash = "#settings";
     document.title = "Ayarlar - 11/A Akıllı Tahta Eklentisi";
 });
 $id("btn_settings_off").addEventListener("click", function() {
-    $id("main").style.display = "block";
+    $id("fragment1").style.display = "block";
     $id("btn_settings_on").style.display = "block";
-    $id("settings").style.display = "none";
+    $id("fragment2").style.display = "none";
     $id("btn_settings_off").style.display = "none";
     $id("btn_hide_details").click();
     $id("btn_hide_history").click();
