@@ -20,7 +20,7 @@ header{
     right: 0;
 }
 
-#main,#settings{
+#main{
     overflow-y: auto;
     border-radius: 3px 3px 0px 0px;
     padding: 5px;
@@ -35,7 +35,7 @@ header{
     width: 80%;
     box-shadow: 0px 0px 23px 0px var(--theme-color);
 }
-#settings{display: none;}
+#fragment2{display: none;}
 #btn_settings_on,#btn_settings_off{
     position: fixed;
     top: 0px;
@@ -184,7 +184,7 @@ header{
 }
 
 @media screen and (min-width:900px) {
-    #main,#settings{
+    #main{
         width: 50%;
         height: 82%;
     }
