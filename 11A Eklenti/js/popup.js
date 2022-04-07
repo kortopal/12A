@@ -32,7 +32,6 @@ window.addEventListener("load",function() {
 function openNumpad(numpad_type) {
     $id("fill_bg").style.display = "block";
     $id("numpad").style.display = "block";
-    $id("numpad").style.animation = "numpadAnim 600ms linear";
     if(numpad_type === "Timer") {
         $id("btn_timer").disabled = true;
         input_timer_numpad.style.display = "block";
@@ -213,7 +212,6 @@ $id("btn_numclose").addEventListener("click", function() {
     input_timer_numpad.value = null;
     input_currency_numpad.value = null;
     $id("fill_bg").style.display = "none";
-    $id("numpad").style.animation = "none !important";
     $id("numpad").style.display = "none";
     if(numpadType === "Timer") {
         $id("btn_timer").disabled = false;
