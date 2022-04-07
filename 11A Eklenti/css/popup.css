@@ -114,10 +114,11 @@ header{
 #numpad{
     background-color: var(--theme-color);
     position: fixed;
-    left: 7%;
-    right: 7%;
-    bottom: 0;
-    border-radius: 30px 30px 0px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 350px;
+    border-radius: 30px;
     text-align: center;
     padding: 5px;
     padding-bottom: 10px;
@@ -165,11 +166,6 @@ header{
     100% {transform: translate(0px,0px);}
 }
 
-@keyframes numpadAnim {
-    0% {transform: translate(0px,120%);}
-    100% {transform: translate(0px,0px);}
-}
-
 @keyframes fullScreenAnim {
     0% {transform: scale(1.2);}
     100% {transform: scale(1);} 
@@ -186,10 +182,6 @@ header{
     #main{
         width: 50%;
         height: 82%;
-    }
-    #numpad{
-        left: 23%;
-        right: 23%;
     }
     #div_currency button{width: calc(33.333% - 3.25px);}
     #div_other button{width: calc(50% - 3.25px);}
