@@ -1,3 +1,4 @@
+const numpad = $id("numpad");
 const input_timer = $id("input_timer");
 const input_currency = $id("input_currency");
 const input_timer_numpad = $id("input_timer_numpad");
@@ -66,7 +67,7 @@ function numpadAdd(num) {
     var new_input_timer_value;
     var new_input_currency_value;
     if(numpadType === "Timer") {
-        if(input_timer_numpad.value.toString().length < 4) {
+        if(input_timer_numpad.value.toString().length < parseInt(input_timer_numpad.getAttribute("maxlength"))) {
             new_input_timer_value = parseInt(input_timer_numpad.value + num);
             input_timer_numpad.value = new_input_timer_value;
         }
@@ -75,8 +76,10 @@ function numpadAdd(num) {
         }
         input_timer_numpad.focus();
     } else if(numpadType === "Currency") {
-        new_input_currency_value = parseInt(input_currency_numpad.value + num);
-        input_currency_numpad.value = new_input_currency_value;
+        if(input_currency_numpad.value.length < parseInt(input_currency_numpad.getAttribute("maxlength"))) {
+            new_input_currency_value = parseInt(input_currency_numpad.value + num);
+            input_currency_numpad.value = new_input_currency_value;
+        }
         if(input_currency_numpad.value.charAt(0) === "0") {
             input_currency_numpad.value = null;
         }
@@ -177,35 +180,10 @@ input_currency.addEventListener("click", function() {
     input_currency_numpad.focus();
 });
 
-$id("btn_num0").addEventListener("click", function() {
-    numpadAdd(0);
-});
-$id("btn_num1").addEventListener("click", function() {
-    numpadAdd(1);
-});
-$id("btn_num2").addEventListener("click", function() {
-    numpadAdd(2);
-});
-$id("btn_num3").addEventListener("click", function() {
-    numpadAdd(3);
-});
-$id("btn_num4").addEventListener("click", function() {
-    numpadAdd(4);
-});
-$id("btn_num5").addEventListener("click", function() {
-    numpadAdd(5);
-});
-$id("btn_num6").addEventListener("click", function() {
-    numpadAdd(6);
-});
-$id("btn_num7").addEventListener("click", function() {
-    numpadAdd(7);
-});
-$id("btn_num8").addEventListener("click", function() {
-    numpadAdd(8);
-});
-$id("btn_num9").addEventListener("click", function() {
-    numpadAdd(9);
+numpad.addEventListener("click", function(e) {
+    if (e.target && e.target.nodeName.toLowerCase() === "button" && e.target.getAttribute("num") != null) {
+        numpadAdd(parseInt(e.target.getAttribute("num")));
+    }
 });
 
 $id("btn_numback").addEventListener("click", function() {
