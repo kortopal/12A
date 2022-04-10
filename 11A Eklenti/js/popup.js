@@ -227,6 +227,34 @@ $id("btn_currency_numpad").addEventListener("click", function() {
     $id("btn_numclose").click();
 });
 
+$id("fragment2_tab1").addEventListener("click", function() {
+    $id("fragment2_tab-fragment1").style.display = "block";
+    $id("fragment2_tab-fragment2").style.display = "none";
+    $id("fragment2_tab-fragment3").style.display = "none";
+    $id("fragment2_tab1").classList.add("active-tab");
+    $id("fragment2_tab2").classList.remove("active-tab");
+    $id("fragment2_tab3").classList.remove("active-tab");
+    window.location.hash = "#settings";
+});
+$id("fragment2_tab2").addEventListener("click", function() {
+    $id("fragment2_tab-fragment2").style.display = "block";
+    $id("fragment2_tab-fragment1").style.display = "none";
+    $id("fragment2_tab-fragment3").style.display = "none";
+    $id("fragment2_tab2").classList.add("active-tab");
+    $id("fragment2_tab1").classList.remove("active-tab");
+    $id("fragment2_tab3").classList.remove("active-tab");
+    window.location.hash = "#history";
+});
+$id("fragment2_tab3").addEventListener("click", function() {
+    $id("fragment2_tab-fragment3").style.display = "block";
+    $id("fragment2_tab-fragment2").style.display = "none";
+    $id("fragment2_tab-fragment1").style.display = "none";
+    $id("fragment2_tab3").classList.add("active-tab");
+    $id("fragment2_tab2").classList.remove("active-tab");
+    $id("fragment2_tab1").classList.remove("active-tab");
+    window.location.hash = "#other";
+});
+
 $id("input_theme_color").addEventListener("change", function() {
     lastSettingsUpdate = getDateAndTime("DateAndTime");
     setStorage();
