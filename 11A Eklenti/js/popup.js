@@ -10,9 +10,23 @@ var numpadType;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
-    if(window.location.hash === "#settings") {
-        $id("btn_settings_on").click();
-    } else{window.location.hash = "#main";}
+    switch (window.location.hash) {
+        case "#settings":
+            $id("btn_settings_on").click();
+            break;
+        case "#history":
+            $id("btn_settings_on").click();
+            $id("fragment2_tab2").click();
+            break;
+        case "#other":
+            $id("btn_settings_on").click();
+            $id("fragment2_tab3").click();
+            break;
+        default:
+            window.location.hash = "#main";
+            break;
+    }
+
     setBackgroundFile("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
         $id("header_text").innerHTML = "Günaydın";
