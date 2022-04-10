@@ -34,25 +34,25 @@ birçok alanda kolaylık sağlamaktadır.
   
 ## Ekran Görüntüleri 📷
 
-![ver3 6-1-min](https://user-images.githubusercontent.com/95717415/156929432-56f41a8b-4378-4611-acec-4ba4fa9d193b.png)
+![Ekran Alıntısı-min](https://user-images.githubusercontent.com/95717415/162623849-939e7b64-e59f-4686-ab26-bf3d6325ee60.PNG)
+
+![Ekran Alıntısı2-min](https://user-images.githubusercontent.com/95717415/162623860-61863512-30da-460a-8fda-18aef5b18244.PNG)
+
+![Ekran Alıntısı3-min](https://user-images.githubusercontent.com/95717415/162623867-7e48c0e4-c3b3-440b-8f13-edf526037057.PNG)
   
-![ver3 6-2-min](https://user-images.githubusercontent.com/95717415/156929435-ba53285b-d588-4009-b665-7f7f17f69e4f.png)
+![Ekran Alıntısı4-min](https://user-images.githubusercontent.com/95717415/162623870-4ec6a71d-7cff-48ca-a973-35a8d20e9c2d.PNG)
   
-![ver3 6-3-min](https://user-images.githubusercontent.com/95717415/156929438-4c051139-0042-4771-9f6d-7db3be546aa4.png)
+![Ekran Alıntısı5-min](https://user-images.githubusercontent.com/95717415/162623872-6378d8eb-429f-41c2-a14a-d00dc61ba82b.PNG)
   
-![ver3 6-4-min](https://user-images.githubusercontent.com/95717415/156929439-35901766-7af9-4724-9d31-f08209fc9580.png)
+![Ekran Alıntısı6-min](https://user-images.githubusercontent.com/95717415/162623874-ca9b75a9-49f0-41da-957e-63e9c6ee4f61.PNG)
   
-![ver3 6-5-min](https://user-images.githubusercontent.com/95717415/156929440-ab229b3d-969e-4fd4-90b6-c7c638cd7fc6.png)
+![Ekran Alıntısı7-min](https://user-images.githubusercontent.com/95717415/162623875-c1b2cc6b-50a6-4f96-83ca-f9f33c8b885b.PNG)
   
-![ver3 6-6-min](https://user-images.githubusercontent.com/95717415/156929443-45ecea36-2478-47ee-92a9-5c36df21469a.png)
+![Ekran Alıntısı8-min](https://user-images.githubusercontent.com/95717415/162623879-d7fff8f2-3f38-4db8-aa15-72289f2184b7.PNG)
   
-![ver3 6-7-min](https://user-images.githubusercontent.com/95717415/156929444-d47024fa-a244-4678-86c8-987a37e9691c.png)
+![Ekran Alıntısı9-min](https://user-images.githubusercontent.com/95717415/162623891-a22a0d15-22cf-4cdb-8a36-d0cd4bf80208.PNG)
   
-![ver3 6-8-min](https://user-images.githubusercontent.com/95717415/156929445-098b4502-9abe-48bd-a4e1-55856c72ace3.png)
-  
-![ver3 6-9-min](https://user-images.githubusercontent.com/95717415/156929447-f9233890-7109-48bb-a93d-2b90e0fba0be.png)
-  
-![ver3 6-10-min](https://user-images.githubusercontent.com/95717415/156929618-a0e23b02-a45a-4cb7-9f7d-691aa425b1e1.png)
+![Ekran Alıntısı10-min](https://user-images.githubusercontent.com/95717415/162623898-21bae091-de92-4554-b4f8-7938482cb5cd.PNG)
 
 <br><br>
 
