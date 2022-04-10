@@ -29,7 +29,7 @@
                 <button id="btn_pound"><i class="fas fa-pound-sign"></i> Sterlin</button>
             </div>
             <br>
-            <h3 class="ch"><i class="fas fa-box-open"></i> Diğer</h3>
+            <h3 class="ch"><i class="fas fa-braille"></i> Diğer</h3>
             <div id="div_other" style="overflow: auto;white-space: nowrap;margin: auto;text-align: center;">
                 <button id="btn_weather"><i class="fas fa-temperature-high"></i> Tunceli Hava Durumu</button>
                 <button id="btn_covid19"><i class="fas fa-virus"></i> Covid-19 Bilgi Paneli</button>
@@ -40,35 +40,45 @@
         </div>
 
         <div id="fragment2">
-            <div id="new-update">
-                <span><i class="fas fa-exclamation-triangle"></i> Yeni Sürüm Mevcut</span>
+            <div class="tabs">
+                <button id="fragment2_tab1" class="active-tab"><i class="fas fa-cog icon"></i> Ayarlar</button>
+                <button id="fragment2_tab2"><i class="fas fa-history"></i> Geçmiş</button>
+                <button id="fragment2_tab3"><i class="fas fa-ellipsis-v"></i> Diğer</button>
             </div>
 
-            <h3 class="ch"><i class="fas fa-cog icon"></i> Ayarlar</h3>
-            <b class="sh"><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
-            <br>
-            <input id="input_theme_color" type="color">
-            <br>
-            <div id="history_scroll" class="scroll"></div>
-            <div id="history">
-                <button id="btn_show_history"><i style="float: left;" class="fas fa-chevron-right"></i>Geçmiş<i style="float: right;" class="fas fa-history"></i></button>
-                <button id="btn_hide_history"><i style="float: left;transform: rotate(90deg);" class="fas fa-chevron-right"></i><span id="btn_hide_history_text">Geçmiş</span><i style="float: right;" class="fas fa-history"></i></button>
-                <div id="history_content"></div>
-                <button id="btn_clear_history">Geçmişi Temizle <i class="fas fa-trash-restore"></i></button>
+            <div id="fragment2_tab-fragment1" class="tab-fragment" style="display: block;">
+                <b class="sh"><i style="color: var(--theme-color);" class="fas fa-fill-drip"></i> Tema Rengi</b>
+                <br>
+                <input id="input_theme_color" type="color">
             </div>
 
-            <div id="details">
-                <button id="btn_show_details"><i style="float: left;" class="fas fa-chevron-right"></i>Detaylar<i style="float: right;" class="fas fa-info-circle"></i></button>
-                <button id="btn_hide_details"><i style="float: left;transform: rotate(90deg);" class="fas fa-chevron-right"></i>Detaylar<i style="float: right;" class="fas fa-info-circle"></i></button>
-                <div id="details_content">
-                    <span id="settings_update_text"></span>
-                    <div class="border"></div>
-                    <span id="history_clear_text"></span>
-                    <br>
-                    <button id="btn_extension_page">Eklenti Sayfası <i class="fas fa-external-link-square-alt"></i></button>
+            <div id="fragment2_tab-fragment2" class="tab-fragment">
+                <div id="history_scroll" class="scroll"></div>
+                <div id="history">
+                    <button id="btn_show_history"><i style="float: left;" class="fas fa-chevron-right"></i>Geçmiş<i style="float: right;" class="fas fa-history"></i></button>
+                    <button id="btn_hide_history"><i style="float: left;transform: rotate(90deg);" class="fas fa-chevron-right"></i><span id="btn_hide_history_text">Geçmiş</span><i style="float: right;" class="fas fa-history"></i></button>
+                    <div id="history_content"></div>
+                    <button id="btn_clear_history">Geçmişi Temizle <i class="fas fa-trash-restore"></i></button>
                 </div>
             </div>
-            <div id="details_scroll" class="scroll"></div>
+
+            <div id="fragment2_tab-fragment3" class="tab-fragment">
+                <div id="new-update">
+                    <span><i class="fas fa-exclamation-triangle"></i> Yeni Sürüm Mevcut</span>
+                </div>
+                <div id="details">
+                    <button id="btn_show_details"><i style="float: left;" class="fas fa-chevron-right"></i>Detaylar<i style="float: right;" class="fas fa-info-circle"></i></button>
+                    <button id="btn_hide_details"><i style="float: left;transform: rotate(90deg);" class="fas fa-chevron-right"></i>Detaylar<i style="float: right;" class="fas fa-info-circle"></i></button>
+                    <div id="details_content">
+                        <span id="settings_update_text"></span>
+                        <div class="border"></div>
+                        <span id="history_clear_text"></span>
+                        <br>
+                        <button id="btn_extension_page">Eklenti Sayfası <i class="fas fa-external-link-square-alt"></i></button>
+                    </div>
+                </div>
+                <div id="details_scroll" class="scroll"></div>
+            </div>
         </div>
     </div>
 
