@@ -84,23 +84,23 @@
 
     <div id="numpad">
         <h3 class="ch" style="color: var(--theme-txt-color);border-color: var(--theme-txt-color);"><i class="fas fa-keyboard icon"></i> Numerik Tuş Takımı</h3>
-        <input type="number" id="input_timer_numpad" min="0" max="9999" placeholder="Zamanlayıcı Süresi (dk.)" autocomplete="off">
-        <input type="number" id="input_currency_numpad" min="0" placeholder="Döviz Miktarı (Döviz/TL)" autocomplete="off">
+        <input type="number" id="input_timer_numpad" min="0" maxlength="4" max="1440" placeholder="Zamanlayıcı Süresi (dk.)" autocomplete="off">
+        <input type="number" id="input_currency_numpad" min="0" maxlength="12" placeholder="Döviz Miktarı (Döviz/TL)" autocomplete="off">
         <br>
-        <button id="btn_num1">1</button>
-        <button id="btn_num2">2</button>
-        <button id="btn_num3">3</button>
+        <button id="btn_num1" num="1">1</button>
+        <button id="btn_num2" num="2">2</button>
+        <button id="btn_num3" num="3">3</button>
         <br>
-        <button id="btn_num4">4</button>
-        <button id="btn_num5">5</button>
-        <button id="btn_num6">6</button>
+        <button id="btn_num4" num="4">4</button>
+        <button id="btn_num5" num="5">5</button>
+        <button id="btn_num6" num="6">6</button>
         <br>
-        <button id="btn_num7">7</button>
-        <button id="btn_num8">8</button>
-        <button id="btn_num9">9</button>
+        <button id="btn_num7" num="7">7</button>
+        <button id="btn_num8" num="8">8</button>
+        <button id="btn_num9" num="9">9</button>
         <br>
         <button id="btn_numback" style="font-size: 23px;"><i class="fas fa-backspace"></i></button>
-        <button id="btn_num0">0</button>
+        <button id="btn_num0" num="0">0</button>
         <button id="btn_numclose" style="font-size: 23px;"><i class="fas fa-window-close"></i></button>
         <br><br>
         <button id="btn_timer_numpad" style="width: 235px;font-size:23px;margin: auto;"><i class="fas fa-stopwatch"></i> Başlat</button>
