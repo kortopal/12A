@@ -90,4 +90,5 @@ input::-webkit-inner-spin-button {
 .tabs button:last-child{border-radius: 0px var(--theme-border-radius) var(--theme-border-radius) 0px;}
 .tabs .icon{font-size: 18px;}
 .active-tab{background-color: var(--theme-color) !important;color: var(--theme-txt-color) !important;}
+.active-tab:hover{opacity: 1 !important;cursor: default;}
 .tab-fragment{display: none;}
