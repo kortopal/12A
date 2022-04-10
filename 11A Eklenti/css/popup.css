@@ -78,7 +78,7 @@ header{
 #details_content{
     display: none;
     padding: 10px;
-    max-height: 200px;
+    max-height: 280px;
     overflow-y: auto;
     text-align: center;
     margin-top: 10px;
@@ -86,7 +86,7 @@ header{
 #history_content{
     display: none;
     padding: 10px;
-    max-height: 200px;
+    max-height: 280px;
     overflow-y: auto;
     text-align: center;
     margin-top: 10px;
