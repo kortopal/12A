@@ -34,11 +34,11 @@ birçok alanda kolaylık sağlamaktadır.
   
 ## Ekran Görüntüleri 📷
 
-![Ekran Alıntısı-min](https://user-images.githubusercontent.com/95717415/162623849-939e7b64-e59f-4686-ab26-bf3d6325ee60.PNG)
+![Ekran Alıntısı-min](https://user-images.githubusercontent.com/95717415/162773148-12f9220a-5af6-4471-8b3b-b99abde2c671.PNG)
 
 ![Ekran Alıntısı2-min](https://user-images.githubusercontent.com/95717415/162623860-61863512-30da-460a-8fda-18aef5b18244.PNG)
 
-![Ekran Alıntısı3-min](https://user-images.githubusercontent.com/95717415/162623867-7e48c0e4-c3b3-440b-8f13-edf526037057.PNG)
+![Ekran Alıntısı2-min](https://user-images.githubusercontent.com/95717415/162773236-1b8a48dd-ec68-4f0e-ba08-32bf09c5192d.PNG)
   
 ![Ekran Alıntısı4-min](https://user-images.githubusercontent.com/95717415/162623870-4ec6a71d-7cff-48ca-a973-35a8d20e9c2d.PNG)
   
