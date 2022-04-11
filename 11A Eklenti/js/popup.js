@@ -155,7 +155,7 @@ input_timer_numpad.addEventListener("keypress", function(event) {
         $id("btn_timer").click();
         $id("btn_numclose").click();
     }
-    if(input_timer_numpad.value.toString().length == 4) {
+    if(input_timer_numpad.value.toString().length == parseInt(input_timer_numpad.getAttribute("maxlength"))) {
         event.preventDefault();
         return false;
     }
@@ -165,7 +165,7 @@ input_currency_numpad.addEventListener("keypress", function(event) {
         event.preventDefault();
         $id("btn_currency_numpad").click();
     }
-    if(input_currency_numpad.value.toString().length == 15) {
+    if(input_currency_numpad.value.toString().length == parseInt(input_currency_numpad.getAttribute("maxlength"))) {
         event.preventDefault();
         return false;
     }
