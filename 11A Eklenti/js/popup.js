@@ -209,6 +209,12 @@ $id("btn_numclose").addEventListener("click", function() {
         $id("btn_timer").disabled = false;
     }
 });
+$id("btn_music").addEventListener("click", function() {
+    openTab("https://www.youtube.com/" + music, "Şarkı Köşesi", "www.youtube.com");
+    lastMusic = music;
+    setStorage();
+    loadStorage();
+});
 $id("btn_timer_numpad").addEventListener("click", function() {
     $id("btn_timer").disabled = false;
     $id("btn_timer").click();
