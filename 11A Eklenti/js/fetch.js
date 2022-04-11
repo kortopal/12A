@@ -13,7 +13,7 @@ window.addEventListener("load",function() {
                 $id("new-update").style.display = "block";
             }
             musicInterval = setInterval(function() {
-                music = json.musics[Math.floor(Math.random()*json.musics.length)].url;
+                music = json.musics[Math.floor(Math.random()*json.musics.length)];
                 if(music !== lastMusic){
                     clearInterval(musicInterval);
                 }
