@@ -259,6 +259,12 @@ $id("input_theme_color").addEventListener("change", function() {
     loadStorage();
 });
 
+$id("btn_reset_settings").addEventListener("click", function() {
+    $id("input_theme_color").value = "#EFA110";
+    lastSettingsUpdate = getDateAndTime("DateAndTime");
+    setStorage();
+    loadStorage();
+});
 $id("btn_show_details").addEventListener("click", function() {
     $id("btn_show_details").style.display = "none";
     $id("btn_hide_details").style.display = "block";
