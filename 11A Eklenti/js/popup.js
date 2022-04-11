@@ -211,7 +211,12 @@ $id("btn_numclose").addEventListener("click", function() {
 });
 $id("btn_music").addEventListener("click", function() {
     openTab("https://www.youtube.com/" + music, "Şarkı Köşesi", "www.youtube.com");
-    lastMusic = music;
+    if(lastMusics.length >= 3) {
+        lastMusics.shift();
+    }
+    if(lastMusics.includes(music) == false) {
+        lastMusics.push(music);
+    }
     setStorage();
     loadStorage();
 });

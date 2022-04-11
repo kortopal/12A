@@ -30,7 +30,7 @@ function setStorage() {
     });
     chrome.storage.local.set({"total_history_content": totalHistoryContent}, function() {
     });
-    chrome.storage.local.set({"last_music": lastMusic}, function() {
+    chrome.storage.local.set({"last_musics": lastMusics}, function() {
     });
 }
 
@@ -76,8 +76,8 @@ function loadStorage() {
             $id("btn_hide_history_text").innerHTML = "Geçmiş";
         }
     });
-    chrome.storage.local.get({"last_music": ""}, function(data) {
-        lastMusic = data.last_music;
+    chrome.storage.local.get({"last_musics": []}, function(data) {
+        lastMusics = data.last_musics;
     });
 }
 
