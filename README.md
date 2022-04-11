@@ -16,6 +16,7 @@ birçok alanda kolaylık sağlamaktadır.
 
 ## 11/A Akıllı Tahta Eklentisi Özellikleri
 
+➤ <b>Şarkı Köşesi</b> ile eklenti tarafından sana özel seçilen şarkının tadını çıkar. <br>
 ➤ <b>Hızlı döviz sorgulama</b> özelliği ile kolayca döviz takibi yapabilirsiniz. <br>
 ➤ <b>Hızlı erişim paneli</b> ile kolayca en çok kullanılan web adreslerini ziyaret edebilirsiniz. <br>
 ➤ <b>Zamanlayıcı</b> ile kolayca sınav için veya farklı bir amaç için zamanlayıcı oluşturabilirsiniz. <br>
