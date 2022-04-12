@@ -39,7 +39,7 @@ birçok alanda kolaylık sağlamaktadır.
 
 ![Ekran Alıntısı2-min](https://user-images.githubusercontent.com/95717415/162623860-61863512-30da-460a-8fda-18aef5b18244.PNG)
 
-![Ekran Alıntısı2-min](https://user-images.githubusercontent.com/95717415/162773236-1b8a48dd-ec68-4f0e-ba08-32bf09c5192d.PNG)
+![Ekran Alıntısı-min](https://user-images.githubusercontent.com/95717415/162910434-5d42f7ef-708e-4c80-938d-a4b6621e6993.PNG)
   
 ![Ekran Alıntısı4-min](https://user-images.githubusercontent.com/95717415/162623870-4ec6a71d-7cff-48ca-a973-35a8d20e9c2d.PNG)
   
@@ -53,7 +53,7 @@ birçok alanda kolaylık sağlamaktadır.
   
 ![Ekran Alıntısı9-min](https://user-images.githubusercontent.com/95717415/162623891-a22a0d15-22cf-4cdb-8a36-d0cd4bf80208.PNG)
   
-![Ekran Alıntısı10-min](https://user-images.githubusercontent.com/95717415/162623898-21bae091-de92-4554-b4f8-7938482cb5cd.PNG)
+![Ekran Alıntısız-min](https://user-images.githubusercontent.com/95717415/162910480-dc0f341d-74db-4687-a9c2-1ec32f379ee6.PNG)
 
 <br><br>
 
