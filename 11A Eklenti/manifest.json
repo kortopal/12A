@@ -1,7 +1,7 @@
 {
   "name": "11/A Akıllı Tahta Eklentisi",
   "description": "Döviz takibi, zamanlayıcı ve daha birçok özelliği içerisinde barındıran akıllı tahta eklentisi ile tanışın. Kullanıcı deneyimi genetiğinde var.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "manifest_version": 3,
   "options_page": "popup.html#settings",
 
