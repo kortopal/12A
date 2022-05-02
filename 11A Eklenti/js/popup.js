@@ -1,5 +1,6 @@
 const fragment1 = $id("fragment1");
 const fragment2 = $id("fragment2");
+const header_text = $id("header_text");
 const numpad = $id("numpad");
 const input_timer = $id("input_timer");
 const input_currency = $id("input_currency");
@@ -32,17 +33,17 @@ window.addEventListener("load",function() {
 
     setBackgroundFile("popup.html");
     if(5<getDateAndTime("Hours") && getDateAndTime("Hours")<10) {
-        $id("header_text").innerHTML = "Günaydın";
-        $id("header_text").style.fontSize = "26px";
+        header_text.innerHTML = "Günaydın";
+        header_text.style.fontSize = "26px";
     } else if(9<getDateAndTime("Hours") && getDateAndTime("Hours")<12) {
-        $id("header_text").innerHTML = "11/A";
-        $id("header_text").style.fontSize = "30px";
+        header_text.innerHTML = "11/A";
+        header_text.style.fontSize = "30px";
     } else if(12<=getDateAndTime("Hours") && getDateAndTime("Hours")<15) {
-        $id("header_text").innerHTML = "Tünaydın";
-        $id("header_text").style.fontSize = "26px";
+        header_text.innerHTML = "Tünaydın";
+        header_text.style.fontSize = "26px";
     } else{
-        $id("header_text").innerHTML = "11/A";
-        $id("header_text").style.fontSize = "30px";
+        header_text.innerHTML = "11/A";
+        header_text.style.fontSize = "30px";
     }
 },false);
 
