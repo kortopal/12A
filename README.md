@@ -49,6 +49,13 @@ birçok alanda kolaylık sağlamaktadır.
   
 ![Ekran Alıntısı7-min](https://user-images.githubusercontent.com/95717415/162623875-c1b2cc6b-50a6-4f96-83ca-f9f33c8b885b.PNG)
   
+![Ekran Alıntısı-min](https://user-images.githubusercontent.com/95717415/166408862-d0dead95-1a54-4dbd-b277-867979cac0c4.PNG)
+  
+![Ekran Alıntısı 2-min](https://user-images.githubusercontent.com/95717415/166408769-1e5a0d12-07a3-4327-91dc-f441aeae0917.PNG)
+  
+![Ekran Alıntısı 3-min](https://user-images.githubusercontent.com/95717415/166408775-a8d92eaa-b974-4925-994c-77010217f212.PNG)
+
+  
 ![Ekran Alıntısı8-min](https://user-images.githubusercontent.com/95717415/162623879-d7fff8f2-3f38-4db8-aa15-72289f2184b7.PNG)
   
 ![Ekran Alıntısı9-min](https://user-images.githubusercontent.com/95717415/162623891-a22a0d15-22cf-4cdb-8a36-d0cd4bf80208.PNG)
