@@ -55,13 +55,6 @@ birçok alanda kolaylık sağlamaktadır.
   
 ![Ekran Alıntısı 3-min](https://user-images.githubusercontent.com/95717415/166408775-a8d92eaa-b974-4925-994c-77010217f212.PNG)
 
-  
-![Ekran Alıntısı8-min](https://user-images.githubusercontent.com/95717415/162623879-d7fff8f2-3f38-4db8-aa15-72289f2184b7.PNG)
-  
-![Ekran Alıntısı9-min](https://user-images.githubusercontent.com/95717415/162623891-a22a0d15-22cf-4cdb-8a36-d0cd4bf80208.PNG)
-  
-![Ekran Alıntısız-min](https://user-images.githubusercontent.com/95717415/162910480-dc0f341d-74db-4687-a9c2-1ec32f379ee6.PNG)
-
 <br><br>
 
 ![16](https://raw.githubusercontent.com/kortopal/11A/main/11A%20Eklenti/img/16.png) <img src="https://img.shields.io/badge/developed%20by-Ekin-red?labelColor=gray"> ![16](https://raw.githubusercontent.com/kortopal/11A/main/11A%20Eklenti/img/16.png)
