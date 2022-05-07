@@ -1,7 +1,7 @@
 <div align="center">
   
 # 11/A Akıllı Tahta Eklentisi 
-## Sürüm: 2.1.1 🎉
+## Sürüm: 2.3.0 🎉
  
 <br> 
 <a href="https://forms.gle/KjQJ32UaovhmBi1w9"><img src="https://img.shields.io/badge/EKLENT%C4%B0%20%C4%B0%C3%87%C4%B0N%20%C3%96NER%C4%B0DE%20BULUN-TIKLA-red?style=for-the-badge&logo=google&logoColor=white"></a>
