@@ -10,7 +10,7 @@ window.addEventListener("load",function() {
                 $id("new-update").style.display = "block";
             }
 
-            do{
+            do {
                 music = json.musics[Math.floor(Math.random()*json.musics.length)];
             } while (lastMusics.includes(music) == true);
         } catch (error) {}
