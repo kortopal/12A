@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
             select_timer_seconds.value = seconds + " Saniye";
             timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
         }
-    }
+    } else{window.location = chrome.runtime.getURL("/timer.html") + "?timer=0";}
 }, false);
 
 select_timer_hours.addEventListener("change", function() {
