@@ -1,7 +1,7 @@
 {
   "name": "11/A Akıllı Tahta Eklentisi",
   "description": "Şimdiye kadar yapılmış en özel akıllı tahta eklentisi...",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "manifest_version": 3,
   "options_page": "popup.html#settings",
 
