@@ -130,7 +130,7 @@ $id("btn_change_currency").addEventListener("click", function() {
 $id("btn_dollar").addEventListener("click", function() {
     var direction = input_currency.getAttribute("direction").replace("Döviz","USD");
     if(input_currency.value.length > 0) {
-        openTab("https://www.google.com/search?q=" + input_currency.value + "+" + direction + "&ie=UTF-8", input_currency.value + input_currency.getAttribute("direction").replace("Döviz"," Dolar").replace("/"," Kaç ") + " - Google'da Ara", "www.google.com");
+        openTab("https://www.google.com/search?q=" + input_currency.value + "+" + direction + "&ie=UTF-8", input_currency.value + " " + input_currency.getAttribute("direction").replace("Döviz","Dolar").replace("/"," Kaç ") + " - Google'da Ara", "www.google.com");
     } else{
         openTab("https://www.google.com/search?q=" + direction + "&ie=UTF-8", direction + " - Google'da Ara", "www.google.com");
     }
@@ -138,7 +138,7 @@ $id("btn_dollar").addEventListener("click", function() {
 $id("btn_euro").addEventListener("click", function() {
     var direction = input_currency.getAttribute("direction").replace("Döviz","EURO");
     if(input_currency.value.length > 0) {
-        openTab("https://www.google.com/search?q=" + input_currency.value + "+" + direction + "&ie=UTF-8", input_currency.value + input_currency.getAttribute("direction").replace("Döviz"," Euro").replace("/"," Kaç ") + " - Google'da Ara", "www.google.com");
+        openTab("https://www.google.com/search?q=" + input_currency.value + "+" + direction + "&ie=UTF-8", input_currency.value + " " + input_currency.getAttribute("direction").replace("Döviz","Euro").replace("/"," Kaç ") + " - Google'da Ara", "www.google.com");
     } else{
         openTab("https://www.google.com/search?q=" + direction + "&ie=UTF-8", direction + " - Google'da Ara", "www.google.com");
     }
@@ -146,7 +146,7 @@ $id("btn_euro").addEventListener("click", function() {
 $id("btn_pound").addEventListener("click", function() {
     var direction = input_currency.getAttribute("direction").replace("Döviz","GBP");
     if(input_currency.value.length > 0) {
-        openTab("https://www.google.com/search?q=" + input_currency.value + "+" + direction + "&ie=UTF-8", input_currency.value + input_currency.getAttribute("direction").replace("Döviz"," Sterlin").replace("/"," Kaç ") + " - Google'da Ara", "www.google.com");
+        openTab("https://www.google.com/search?q=" + input_currency.value + "+" + direction + "&ie=UTF-8", input_currency.value + " " + input_currency.getAttribute("direction").replace("Döviz","Sterlin").replace("/"," Kaç ") + " - Google'da Ara", "www.google.com");
     } else{
         openTab("https://www.google.com/search?q=" + direction + "&ie=UTF-8", direction + " - Google'da Ara", "www.google.com");
     }
