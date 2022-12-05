@@ -61,5 +61,5 @@ birçok alanda kolaylık sağlamaktadır.
 
 ![16](https://raw.githubusercontent.com/kortopal/11A/main/11A%20Eklenti/img/16.png) <img src="https://img.shields.io/badge/developed%20by-Ekin-red?labelColor=gray"> ![16](https://raw.githubusercontent.com/kortopal/11A/main/11A%20Eklenti/img/16.png)
 
-© 2021-2022
+© 2021-2023
 </div>
