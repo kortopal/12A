@@ -21,13 +21,14 @@
     <div id="main">
         <div id="fragment1">
             <button id="btn_music" style="width: 100%;outline: 4px solid white;border: 1px solid gray;font-weight: bold;"><i style="float: left;" class="fas fa-music"></i> Keşif Kuyruğu <i style="float: right;" class="fas fa-random"></i></button>
-            <h3 class="ch"><i class="fas fa-chart-line icon"></i> 
-                Döviz Takibi
-                <button id="btn_change_currency" style="height: 25px;float: right;"><i class="fas fa-retweet"></i></button>
-            </h3>
-            <input type="number" id="input_currency" min="0" placeholder="Döviz Miktarı (Döviz/TL)" direction="Döviz/TL" autocomplete="off">
-            
-            <div id="div_currency" style="overflow: auto;white-space: nowrap;margin: auto;text-align: center;">
+            <h3 class="ch"><i class="fas fa-chart-line icon"></i> Döviz Takibi</h3>
+
+            <div style="display: flex;align-items: center;">
+                <input type="number" id="input_currency" style="flex-grow: 3;border-radius: var(--theme-border-radius) 0px 0px var(--theme-border-radius);" min="0" placeholder="Döviz Miktarı (Döviz/TL)" direction="Döviz/TL" autocomplete="off">
+                <button id="btn_change_currency" style="flex-grow: 1;margin: 0px;border-radius: 0px var(--theme-border-radius) var(--theme-border-radius) 0px;"><i class="fas fa-retweet"></i></button>
+            </div>
+
+            <div id="div_currency">
                 <button id="btn_dollar"><i class="fas fa-dollar-sign"></i> Dolar</button>
                 <button id="btn_euro"><i class="fas fa-euro-sign"></i> Euro</button>
                 <button id="btn_pound"><i class="fas fa-pound-sign"></i> Sterlin</button>
