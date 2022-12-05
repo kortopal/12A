@@ -3,10 +3,25 @@ body{
     background-color: rgb(23, 23, 23);
     color: white;
     margin: 0px;
+}
+
+#timer_bg{
     height: 100vh;
     background-image: url("/img/Dersim.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
+}
+
+#fill_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(23, 23, 23,0.6);
+    transition: 0.2s;
+    z-index: 0;
 }
 
 #main{
@@ -35,17 +50,6 @@ body{
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-#fill_bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(23, 23, 23,0.6);
-    transition: 0.2s;
-    z-index: -1;
 }
 
 @media screen and (max-width:930px) {
