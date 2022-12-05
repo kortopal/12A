@@ -113,10 +113,21 @@ header{
     display: none;
 }
 
+#div_currency{
+    display: flex;
+    column-gap: 5px;
+    overflow: auto;
+    margin: auto;
+    text-align: center;
+}
+#div_currency > *{
+    flex: 1;
+}
+
 #input_currency_numpad, #input_timer_numpad{border: 2px solid var(--theme-adaptive-color);}
 #input_timer,#input_timer_numpad{width: 100%;text-align: center;display: block;font-size: 20px;}
 #input_currency,#input_currency_numpad{width: 100%;text-align: center;display: block;font-size: 20px;}
-#div_currency button{width: 150px;}
+
 #div_other button{width: 230px;}
 #header{width: 150px;margin: auto;height: 45px;text-align: center;background: var(--theme-color);color: var(--theme-txt-color);padding: 5px;border-radius: 0px 0px 30px 30px;box-shadow: 0px 0px 23px 0px black;animation: headerAnim 3s linear;}
 #header_text{font-size: 25px;font-weight: bold;}
@@ -192,7 +203,6 @@ header{
         width: 50%;
         height: 82%;
     }
-    #div_currency button{width: calc(33.333% - 3.25px);}
     #div_other button{width: calc(50% - 3.25px);}
     #btn_fullscreen{display: none;}
     #dialog{width: 600px;}
