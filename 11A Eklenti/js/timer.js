@@ -117,7 +117,13 @@ btn_start_timer.addEventListener("click", function() {
     select_timer_minutes.disabled = true;
     select_timer_seconds.disabled = true;
     document.title = "Süre Devam Ediyor!";
-});
+
+    document.body.requestFullscreen()
+    .then(function() { })
+    .catch(function(error) {
+        console.log(error.message);
+    });
+    });
 btn_pause_timer.addEventListener("click", function() {
     clearInterval(timer);
     timer_text.innerHTML = (hours<10 ? "0" : "") + hours + ":" + (minutes<10 ? "0" : "") + minutes + ":" + (seconds<10 ? "0" : "") + seconds;
@@ -150,4 +156,10 @@ btn_reset_timer.addEventListener("click", function() {
     $id("timer_header").innerHTML = "Zamanlayıcı";
     document.title = "Zamanlayıcı - 11/A Akıllı Tahta Eklentisi";
     alarmSound.pause();
+
+    document.exitFullscreen()
+    .then(function() { })
+    .catch(function(error) {
+        console.log(error.message);
+    });
 });
