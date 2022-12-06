@@ -33,6 +33,7 @@ header{
     margin: auto;
     width: 80%;
     box-shadow: 0px 0px 23px 0px black;
+    border-radius: var(--theme-border-radius);
 }
 #fragment2{display: none;}
 #new-update{
