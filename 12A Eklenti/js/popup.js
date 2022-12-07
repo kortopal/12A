@@ -36,13 +36,13 @@ window.addEventListener("load",function() {
         header_text.innerHTML = "Günaydın";
         header_text.style.fontSize = "26px";
     } else if(9<getDateAndTime("Hours") && getDateAndTime("Hours")<12) {
-        header_text.innerHTML = "11/A";
+        header_text.innerHTML = "12/A";
         header_text.style.fontSize = "30px";
     } else if(12<=getDateAndTime("Hours") && getDateAndTime("Hours")<15) {
         header_text.innerHTML = "Tünaydın";
         header_text.style.fontSize = "26px";
     } else{
-        header_text.innerHTML = "11/A";
+        header_text.innerHTML = "12/A";
         header_text.style.fontSize = "30px";
     }
 },false);
@@ -96,7 +96,7 @@ $id("btn_settings_on").addEventListener("click", function() {
     fragment2.style.display = "block";
     $id("btn_settings_off").style.display = "block";
     window.location.hash = fragment2.getElementsByClassName("active-tab")[0].getAttribute("hash");
-    document.title = fragment2.getElementsByClassName("active-tab")[0].getAttribute("tabTitle") + " - 11/A Akıllı Tahta Eklentisi";
+    document.title = fragment2.getElementsByClassName("active-tab")[0].getAttribute("tabTitle") + " - 12/A Akıllı Tahta Eklentisi";
 });
 $id("btn_settings_off").addEventListener("click", function() {
     fragment1.style.display = "block";
@@ -106,7 +106,7 @@ $id("btn_settings_off").addEventListener("click", function() {
     $id("btn_hide_details").click();
     $id("btn_hide_history").click();
     window.location.hash = "#main";
-    document.title = "11/A Akıllı Tahta Eklentisi";
+    document.title = "12/A Akıllı Tahta Eklentisi";
 });
 $id("btn_fullscreen").addEventListener("click", function() {
     openTab(chrome.runtime.getURL("/popup.html"));
@@ -255,7 +255,7 @@ $id("fragment2_tab1").addEventListener("click", function() {
     $id("fragment2_tab2").classList.remove("active-tab");
     $id("fragment2_tab3").classList.remove("active-tab");
     window.location.hash = "#settings";
-    document.title = "Ayarlar - 11/A Akıllı Tahta Eklentisi";
+    document.title = "Ayarlar - 12/A Akıllı Tahta Eklentisi";
 });
 $id("fragment2_tab2").addEventListener("click", function() {
     $id("fragment2_tab-fragment2").style.display = "block";
@@ -265,7 +265,7 @@ $id("fragment2_tab2").addEventListener("click", function() {
     $id("fragment2_tab1").classList.remove("active-tab");
     $id("fragment2_tab3").classList.remove("active-tab");
     window.location.hash = "#history";
-    document.title = "Geçmiş - 11/A Akıllı Tahta Eklentisi";
+    document.title = "Geçmiş - 12/A Akıllı Tahta Eklentisi";
 });
 $id("fragment2_tab3").addEventListener("click", function() {
     $id("fragment2_tab-fragment3").style.display = "block";
@@ -275,7 +275,7 @@ $id("fragment2_tab3").addEventListener("click", function() {
     $id("fragment2_tab2").classList.remove("active-tab");
     $id("fragment2_tab1").classList.remove("active-tab");
     window.location.hash = "#other";
-    document.title = "Diğer - 11/A Akıllı Tahta Eklentisi";
+    document.title = "Diğer - 12/A Akıllı Tahta Eklentisi";
 });
 
 $id("input_theme_color").addEventListener("change", function() {
