@@ -1,6 +1,6 @@
 <div align="center">
   
-# 11/A Akıllı Tahta Eklentisi 
+# 12/A Akıllı Tahta Eklentisi 
 ## Sürüm: 3.0.0 🎉
  
 <br> 
