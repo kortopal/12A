@@ -1,5 +1,5 @@
 {
-  "name": "11/A Akıllı Tahta Eklentisi",
+  "name": "12/A Akıllı Tahta Eklentisi",
   "description": "Şimdiye kadar yapılmış en özel akıllı tahta eklentisi...",
   "version": "3.0.0",
   "manifest_version": 3,
@@ -23,7 +23,7 @@
   },
 
   "action": {
-    "default_title": "11/A Akıllı Tahta Eklentisi",
+    "default_title": "12/A Akıllı Tahta Eklentisi",
       "default_popup": "popup.html",
       "default_icon": {
         "16": "/img/16.png",
