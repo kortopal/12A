@@ -85,7 +85,7 @@ input::-webkit-inner-spin-button {
 .sh{display: inline-block;margin-bottom: 5px;}
 .border{border-bottom: 2px solid var(--theme-txt-color);margin-top: 5px;margin-bottom: 5px;}
 .tabs{display: flex;flex-direction: row;margin-bottom: 10px;}
-.tabs button{width: 100%;background-color: var(--theme-adaptive-color);color: var(--theme-color);border-radius: 0px;font-weight: bold;border-bottom: 4px solid var(--theme-color);}
+.tabs button{width: 100%;background-color: var(--theme-adaptive-color);color: var(--theme-color);border-radius: 0px;font-weight: bold;border-bottom: 5px solid var(--theme-color);}
 .tabs button:first-child{border-radius: var(--theme-border-radius) 0px 0px var(--theme-border-radius);}
 .tabs button:last-child{border-radius: 0px var(--theme-border-radius) var(--theme-border-radius) 0px;}
 .tabs .icon{font-size: 18px;}
