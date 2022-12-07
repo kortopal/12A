@@ -43,8 +43,8 @@ body{
     color: var(--theme-color);
     font-weight: bold;
 }
-#btn_start_timer{width: 100%;}
-#btn_pause_timer,#btn_resume_timer,#btn_reset_timer{width: calc(50% - 1.5px);display: none;}
+#btn_start_timer{width: 100%;flex: 1;}
+#btn_pause_timer,#btn_resume_timer,#btn_reset_timer{display: none;flex: 1;}
 #timer_text{
     font-size: 8vw;
     font-weight: bold;
