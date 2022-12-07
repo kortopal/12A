@@ -49,7 +49,6 @@ button:hover{opacity: 0.8;}
 input,select{
     margin: auto;
     font: var(--theme-font);
-    min-width: 150px;
     height: 45px;
     border: none;
     outline: none;

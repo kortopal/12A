@@ -37,7 +37,7 @@ body{
     transform: translateX(-50%) translateY(-50%);
     border-radius: var(--theme-border-radius);
 }
-#main select{display: inline-block; width: calc(33.333% - 3.5px);padding: 5px;border: 2px solid var(--theme-adaptive-color);}
+#main select{padding: 5px;border: 2px solid var(--theme-adaptive-color);width: 100%;margin: 0px;}
 #main button{
     background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
@@ -52,9 +52,8 @@ body{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width:930px) {
-    #main select{
-        display: block;
-        width: 100%;
+@media screen and (max-width:900px) {
+    #div_set_timer{
+        flex-direction: column;
     }
 }
