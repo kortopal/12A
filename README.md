@@ -9,12 +9,12 @@
 
 <br>
 
-## 11/A Akıllı Tahta Eklentisi Nedir?
+## 12/A Akıllı Tahta Eklentisi Nedir?
 Eklenti akıllı tahta için geliştirilmiştir.
 Akıllı tahta üzerinde çok fonksiyonelli bir yapı sunan bu eklenti
 birçok alanda kolaylık sağlamaktadır.
 
-## 11/A Akıllı Tahta Eklentisi Özellikleri
+## 12/A Akıllı Tahta Eklentisi Özellikleri
 
 ➤ <b>Keşif Kuyruğu</b> ile eklenti tarafından sana özel seçilen şarkıların tadını çıkar. <br>
 ➤ <b>Hızlı döviz sorgulama</b> özelliği ile kolayca döviz takibi yapabilirsiniz. <br>
