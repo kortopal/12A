@@ -59,7 +59,7 @@ birçok alanda kolaylık sağlamaktadır.
 
 <br><br>
 
-![16](https://raw.githubusercontent.com/kortopal/11A/main/11A%20Eklenti/img/16.png) <img src="https://img.shields.io/badge/developed%20by-Ekin-red?labelColor=gray"> ![16](https://raw.githubusercontent.com/kortopal/11A/main/11A%20Eklenti/img/16.png)
+![16](https://raw.githubusercontent.com/kortopal/12A/main/12A%20Eklenti/img/16.png) <img src="https://img.shields.io/badge/developed%20by-Ekin-red?labelColor=gray"> ![16](https://raw.githubusercontent.com/kortopal/12A/main/12A%20Eklenti/img/16.png)
 
 © 2021-2023
 </div>
