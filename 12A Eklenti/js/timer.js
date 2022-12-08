@@ -43,7 +43,7 @@ function setTimer() {
                 clearInterval(timer);
                 btn_pause_timer.style.display = "none";
                 btn_reset_timer.style.width = "100%";
-                $id("timer_header").innerHTML = "Süre Bitti!";
+                $id("timer_header").innerHTML = "Süre Bitti";
                 document.title = "Süre Bitti!";
                 alarmSound.load();
                 alarmSound.play();
@@ -130,12 +130,14 @@ btn_pause_timer.addEventListener("click", function() {
     btn_pause_timer.style.display = "none";
     btn_resume_timer.style.display = "inline-block";
     document.title = "Zamanlayıcı Duraklatıldı!";
+    $id("timer_header").innerHTML = "Duraklatıldı";
 });
 btn_resume_timer.addEventListener("click", function() {
     timer = setInterval(setTimer,1000);
     btn_pause_timer.style.display = "inline-block";
     btn_resume_timer.style.display = "none";
     document.title = "Süre Devam Ediyor!";
+    $id("timer_header").innerHTML = "Zamanlayıcı";
 });
 btn_reset_timer.addEventListener("click", function() {
     clearInterval(timer);
