@@ -1,3 +1,7 @@
+var music;
+var json_musics = [];
+var lastMusics = [];
+
 function setBackgroundFile(file) {
     if(file === "popup.html") {
         loadStorage();
@@ -17,6 +21,22 @@ function setBackgroundFile(file) {
             }
         });
     }
+}
+
+function fetchData(request) {
+    fetch('https://kortopal.github.io/data/12a/data.json', {method: 'GET'})
+    .then(function(response) { return response.json(); })
+    .then(function(json) {
+        json_musics = json.musics;
+        try {
+            if(json.last_version !== chrome.runtime.getManifest().version) {
+                $id("new-update").style.display = "block";
+            }
+        } catch (error) {}
+    })
+    .finally(function() {
+        if(request === "openMusic") {openMusic();}
+    });
 }
 
 function setStorage() {
@@ -84,7 +104,11 @@ function loadStorage() {
 function openTab(tabUrl, historyLabel, historyHostName) {
     var isTabActive = false;
     var tabId = 0;
-    totalHistoryContent++;
+    try {
+        totalHistoryContent++;
+    } catch (error) {
+        
+    }
     chrome.tabs.query({}, function(tabs) { 
         for(var i=0;i<tabs.length;i++) {
             if(tabs[i].url.toLowerCase().includes(tabUrl.toLowerCase()) == true) {
@@ -117,3 +141,30 @@ function setHistory(historyLabel, historyHostName) {
         loadStorage();
     } catch (error) {}
 }
+
+function openMusic() {
+    do {
+        music = json_musics[Math.floor(Math.random()*json_musics.length)];
+    } while (lastMusics.includes(music) == true);
+    openTab("https://www.youtube.com/" + music, "Şarkı Köşesi", "www.youtube.com");
+    if(lastMusics.length >= 20) {
+        lastMusics.shift();
+    }
+    if(lastMusics.includes(music) == false) {
+        lastMusics.push(music);
+    }
+    chrome.storage.local.set({"last_musics": lastMusics}, function() {
+    });
+    chrome.storage.local.get({"last_musics": []}, function(data) {
+        lastMusics = data.last_musics;
+    });
+}
+
+chrome.runtime.onMessage.addListener(
+    function(response, sender, sendResponse) {
+        console.log(sender.tab.id);
+        if (response.request === "call-func_openMusic")
+            fetchData("openMusic");
+            sendResponse();
+        }
+);

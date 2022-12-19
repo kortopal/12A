@@ -14,6 +14,7 @@ var numpadType;
 
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
+    fetchData();
     switch (window.location.hash) {
         case "#settings":
             $id("btn_settings_on").click();
@@ -227,15 +228,7 @@ $id("btn_numclose").addEventListener("click", function() {
     }
 });
 $id("btn_music").addEventListener("click", function() {
-    openTab("https://www.youtube.com/" + music, "Şarkı Köşesi", "www.youtube.com");
-    if(lastMusics.length >= 10) {
-        lastMusics.shift();
-    }
-    if(lastMusics.includes(music) == false) {
-        lastMusics.push(music);
-    }
-    setStorage();
-    loadStorage();
+    openMusic();
 });
 $id("btn_timer_numpad").addEventListener("click", function() {
     $id("btn_timer").disabled = false;
