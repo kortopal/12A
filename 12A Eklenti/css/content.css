@@ -12,6 +12,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     transition: 0.2s;
+    user-select: none;
 }
 
 #yt-btn-music-12atv:hover{opacity: 0.8;}
