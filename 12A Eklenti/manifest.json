@@ -5,9 +5,8 @@
   "manifest_version": 3,
   "options_page": "popup.html#settings",
 
-  "background.service_worker": {
-    "scripts": ["/js/background.js"],
-    "persistent": false
+  "background": {
+    "service_worker": "/js/background.js"
   },
 
   "permissions": [
