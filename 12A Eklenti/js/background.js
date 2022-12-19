@@ -147,7 +147,7 @@ function openMusic() {
         music = json_musics[Math.floor(Math.random()*json_musics.length)];
     } while (lastMusics.includes(music) == true);
     openTab("https://www.youtube.com/" + music, "Şarkı Köşesi", "www.youtube.com");
-    if(lastMusics.length >= 20) {
+    if(lastMusics.length >= 62) {
         lastMusics.shift();
     }
     if(lastMusics.includes(music) == false) {
@@ -162,7 +162,6 @@ function openMusic() {
 
 chrome.runtime.onMessage.addListener(
     function(response, sender, sendResponse) {
-        console.log(sender.tab.id);
         if (response.request === "call-func_openMusic")
             fetchData("openMusic");
             sendResponse();
