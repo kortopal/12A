@@ -9,6 +9,13 @@
     "service_worker": "/js/background.js"
   },
 
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": [ "/js/content.js" ],
+    "css": [ "/css/content.css" ],
+    "run_at": "document_end"
+  }],
+
   "permissions": [
     "storage",
     "unlimitedStorage",
