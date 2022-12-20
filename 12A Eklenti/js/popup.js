@@ -278,7 +278,7 @@ $id("input_theme_color").addEventListener("change", function() {
 });
 
 $id("btn_reset_settings").addEventListener("click", function() {
-    $id("input_theme_color").value = "#EFA110";
+    $id("input_theme_color").value = "#FF8E00";
     lastSettingsUpdate = getDateAndTime("DateAndTime");
     setStorage();
     loadStorage();

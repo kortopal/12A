@@ -6,7 +6,7 @@ function setBackgroundFile(file) {
     if(file === "popup.html") {
         loadStorage();
     } else{
-        chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
+        chrome.storage.sync.get({"theme_color": "#FF8E00"}, function(data) {
             document.documentElement.style.setProperty("--theme-color", data.theme_color);
             if((hexToRgba(getThemeColor(),"r")*0.299 + hexToRgba(getThemeColor(),"g")*0.587 + hexToRgba(getThemeColor(),"b")*0.114) > 80) {
                 document.documentElement.style.setProperty("--theme-txt-color", "#000000");
@@ -56,7 +56,7 @@ function setStorage() {
 
 function loadStorage() {
     //sync
-    chrome.storage.sync.get({"theme_color": "#EFA110"}, function(data) {
+    chrome.storage.sync.get({"theme_color": "#FF8E00"}, function(data) {
         $id("input_theme_color").value = data.theme_color;
         document.documentElement.style.setProperty("--theme-color", data.theme_color);
         if((hexToRgba(getThemeColor(),"r")*0.299 + hexToRgba(getThemeColor(),"g")*0.587 + hexToRgba(getThemeColor(),"b")*0.114) > 80) {
