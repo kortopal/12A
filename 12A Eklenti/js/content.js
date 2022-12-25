@@ -23,9 +23,9 @@ if(location.hostname.includes("youtube.com")){
 
         document.getElementById("below").insertBefore(yt_btn_music, document.getElementById("below").firstChild);
 
-        document.getElementById("yt-btn-music-12atv").addEventListener("click", function() {
+        document.getElementById("yt-btn-music-12atv").onclick = function() {
             document.querySelectorAll('.html5-main-video').forEach(vid => vid.pause());
             chrome.runtime.sendMessage({request: "call-func_openMusic"});
-        });
+        };
     }
 }
