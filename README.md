@@ -35,27 +35,30 @@ birçok alanda kolaylık sağlamaktadır.
   
 ## Ekran Görüntüleri 📷
 
-![Ekran görüntüsü 2022-12-05 203133-min](https://user-images.githubusercontent.com/95717415/205705381-640e1273-42a7-4c2c-9090-5fbbcf42dca1.png)
+![Ekran görüntüsü 2022-12-27 192930-min](https://user-images.githubusercontent.com/95717415/209695653-fe5f9199-38e8-4135-9de1-53b53e96ee97.png)
 
-![Ekran görüntüsü 2022-12-05 203208-min](https://user-images.githubusercontent.com/95717415/205705386-bcef6b1d-4cec-4130-9d8e-5d6dcac55fef.png)
+![Ekran görüntüsü 2022-12-27 192950-min](https://user-images.githubusercontent.com/95717415/209695656-491fb71c-320a-4de2-832a-e09fd0652799.png)
 
-![Ekran görüntüsü 2022-12-05 203322-min](https://user-images.githubusercontent.com/95717415/205705387-2ecc9e9f-d86c-440a-a542-adb73b597381.png)
+![Ekran görüntüsü 2022-12-27 193013-min](https://user-images.githubusercontent.com/95717415/209695657-a7fc445c-0c01-4e43-a3e5-b7d96787ffc5.png)
 
-![Ekran görüntüsü 2022-12-05 203440-min](https://user-images.githubusercontent.com/95717415/205705390-2d3d468b-c17e-4240-adc4-33cab7841620.png)
+![Ekran görüntüsü 2022-12-27 193049-min](https://user-images.githubusercontent.com/95717415/209695658-6021b5dc-83a9-4f0d-8419-c753a8471563.png)
 
-![Ekran görüntüsü 2022-12-05 203512-min](https://user-images.githubusercontent.com/95717415/205705434-da920518-0d6e-4c07-a165-94be58ba273d.png)
+![Ekran görüntüsü 2022-12-27 193108-min](https://user-images.githubusercontent.com/95717415/209695659-816e46a0-7219-49a0-8d1c-c6ea82fa9bc3.png)
 
-![Ekran görüntüsü 2022-12-05 203647-min](https://user-images.githubusercontent.com/95717415/205705439-35b3ad2c-2aeb-435a-8db0-50f8fd6acda2.png)
+![Ekran görüntüsü 2022-12-27 193140-min](https://user-images.githubusercontent.com/95717415/209695662-60eeddab-d2fe-4168-b428-af94b496508c.png)
 
-![Ekran görüntüsü 2022-12-05 203714-min](https://user-images.githubusercontent.com/95717415/205705440-f30fc1b4-2ebe-4c8a-a16a-96e2469e6830.png)
+![Ekran görüntüsü 2022-12-27 193232-min](https://user-images.githubusercontent.com/95717415/209695664-52908b97-3640-4d8a-b1d4-becbde39888b.png)
 
-![Ekran görüntüsü 2022-12-05 203756-min](https://user-images.githubusercontent.com/95717415/205705443-4038474e-0952-4803-bd7f-91f1aec7098f.png)
+![Ekran görüntüsü 2022-12-27 193300-min](https://user-images.githubusercontent.com/95717415/209695665-6cd0d70d-269e-46b4-9bdf-f72775b327c7.png)
 
-![Ekran Alıntısı-min](https://user-images.githubusercontent.com/95717415/166408862-d0dead95-1a54-4dbd-b277-867979cac0c4.PNG)
-  
-![Ekran Alıntısı 2-min](https://user-images.githubusercontent.com/95717415/166408769-1e5a0d12-07a3-4327-91dc-f441aeae0917.PNG)
-  
-![Ekran Alıntısı 3-min](https://user-images.githubusercontent.com/95717415/166408775-a8d92eaa-b974-4925-994c-77010217f212.PNG)
+![Ekran görüntüsü 2022-12-27 193541-min](https://user-images.githubusercontent.com/95717415/209695666-de400301-7d35-4af0-8d14-f8b1bfa877ef.png)
+
+![Ekran görüntüsü 2022-12-27 193611-min](https://user-images.githubusercontent.com/95717415/209695670-c55271ac-0859-4b08-804b-d4a2d88cbd9c.png)
+
+![Ekran görüntüsü 2022-12-27 193643-min](https://user-images.githubusercontent.com/95717415/209695672-4027ba4b-a0f8-4df8-ab3a-94ad0f478cbb.png)
+
+![Ekran görüntüsü 2022-12-27 193820-min](https://user-images.githubusercontent.com/95717415/209695675-7640d245-1a7d-4b42-aa21-9ec1ff7cf6dd.png)
+
 
 <br><br>
 
