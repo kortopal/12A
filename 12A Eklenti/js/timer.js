@@ -17,6 +17,9 @@ var seconds;
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
     setBackgroundFile("timer.html");
+    if(getDateAndTime("Month") <= 2 || getDateAndTime("Month") == 12) {
+        document.getElementById("winter-effect").style.display = "block";
+    }
 },false);
 
 function getParam(parameterName) {

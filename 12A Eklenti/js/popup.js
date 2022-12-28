@@ -15,6 +15,9 @@ var numpadType;
 document.oncontextmenu = function() {return false;}
 window.addEventListener("load",function() {
     fetchData();
+    if(getDateAndTime("Month") <= 2 || getDateAndTime("Month") == 12) {
+        document.getElementById("winter-effect").style.display = "block";
+    }
     switch (window.location.hash) {
         case "#settings":
             $id("btn_settings_on").click();
