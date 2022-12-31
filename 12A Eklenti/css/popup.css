@@ -177,7 +177,7 @@ header{
 #dialog button{
     background-color: var(--theme-adaptive-color);
     color: var(--theme-color);
-    width: calc(50% - 3.25px);
+    width: 100%;
     font-weight: bold;
 }
 
