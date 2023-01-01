@@ -146,7 +146,7 @@ function openMusic() {
     do {
         music = json_musics[Math.floor(Math.random()*json_musics.length)];
     } while (lastMusics.includes(music) == true);
-    openTab("https://www.youtube.com/" + music, "Şarkı Köşesi", "www.youtube.com");
+    openTab("https://www.youtube.com/" + music, "Keşif Kuyruğu", "www.youtube.com");
     if(lastMusics.length >= 62) {
         lastMusics.shift();
     }
