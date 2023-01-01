@@ -164,6 +164,7 @@ chrome.runtime.onMessage.addListener(
     function(response, sender, sendResponse) {
         if (response.request === "call-func_openMusic")
             fetchData("openMusic");
+            chrome.tabs.remove(sender.tab.id);
             sendResponse();
         }
 );
